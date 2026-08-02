@@ -760,8 +760,12 @@ export default function HomePage() {
                 <span>Nộp bài</span><Check size={17} />
               </button>
             )}
-            <button className="icon-button topbar-search" onClick={() => openLibrary()} aria-label="Tìm câu hỏi"><Search size={19} /></button>
-            <button className="icon-button topbar-settings" onClick={() => setSettingsOpen(true)} aria-label="Cài đặt"><Settings size={19} /></button>
+            {(!activeQuestion || showResults) && (
+              <>
+                <button className="icon-button topbar-search" onClick={() => openLibrary()} aria-label="Tìm câu hỏi"><Search size={19} /></button>
+                <button className="icon-button topbar-settings" onClick={() => setSettingsOpen(true)} aria-label="Cài đặt"><Settings size={19} /></button>
+              </>
+            )}
           </div>
         </div>
       </header>
