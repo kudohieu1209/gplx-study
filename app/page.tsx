@@ -2,20 +2,19 @@
 
 import {
   ArrowRight,
-  BarChart3,
   Bell,
   Bookmark,
   BookOpen,
-  Brain,
   CarFront,
   Check,
+  ChevronDown,
   ChevronRight,
   CircleAlert,
   Clock3,
-  Flame,
   GraduationCap,
   HeartHandshake,
   Home,
+  Lightbulb,
   ListChecks,
   Moon,
   Play,
@@ -24,9 +23,7 @@ import {
   Search,
   Settings,
   ShieldCheck,
-  Sparkles,
   Sun,
-  Target,
   TrafficCone,
   Trophy,
   Wrench,
@@ -173,6 +170,12 @@ function modeLabel(mode: SessionMode) {
   return "Học theo chương";
 }
 
+function formatClock(seconds: number) {
+  const minutes = Math.floor(seconds / 60);
+  const remainder = seconds % 60;
+  return `${String(minutes).padStart(2, "0")}:${String(remainder).padStart(2, "0")}`;
+}
+
 export default function HomePage() {
   const [progress, setProgress] = useState<Record<number, QuestionProgress>>({});
   const [bookmarks, setBookmarks] = useState<number[]>([]);
@@ -186,8 +189,11 @@ export default function HomePage() {
   const [answered, setAnswered] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [libraryOpen, setLibraryOpen] = useState(false);
+  const [libraryChapter, setLibraryChapter] = useState<number | null>(null);
+  const [infoModal, setInfoModal] = useState<"tips" | "critical" | null>(null);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
+  const [testSecondsLeft, setTestSecondsLeft] = useState(20 * 60);
 
   useEffect(() => {
     try {
@@ -265,23 +271,29 @@ export default function HomePage() {
     [progress],
   );
 
-  const nextChapter =
-    chapterProgress.find((chapter) => chapter.percent < 100) ?? chapterProgress[0];
-
   const searchResults = useMemo(() => {
     const term = searchTerm.trim().toLocaleLowerCase("vi");
-    if (!term) return bookmarks.length
-      ? questions.filter((question) => bookmarks.includes(question.id)).slice(0, 20)
-      : questions.slice(0, 20);
+    const chapterQuestions = libraryChapter
+      ? questions.filter((question) => question.chapter === libraryChapter)
+      : questions;
+    if (!term) return !libraryChapter && bookmarks.length
+      ? chapterQuestions.filter((question) => bookmarks.includes(question.id)).slice(0, 20)
+      : chapterQuestions.slice(0, 30);
     const exactId = Number(term.replace(/[^0-9]/g, ""));
-    return questions
+    return chapterQuestions
       .filter(
         (question) =>
           question.id === exactId ||
           question.question.toLocaleLowerCase("vi").includes(term),
       )
       .slice(0, 30);
-  }, [searchTerm, bookmarks]);
+  }, [searchTerm, bookmarks, libraryChapter]);
+
+  const openLibrary = useCallback((chapter: number | null = null) => {
+    setLibraryChapter(chapter);
+    setSearchTerm("");
+    setLibraryOpen(true);
+  }, []);
 
   const recordStudyDay = useCallback(() => {
     const today = dateKey();
@@ -367,6 +379,7 @@ export default function HomePage() {
       setAnswered(false);
       setShowResults(false);
       setLibraryOpen(false);
+      if (mode === "test") setTestSecondsLeft(20 * 60);
     },
     [progress],
   );
@@ -408,6 +421,20 @@ export default function HomePage() {
     setSessionIndex((current) => current + 1);
     setAnswered(false);
   }, [activeQuestion, finishSession, selectedAnswer, session.length, sessionIndex]);
+
+  useEffect(() => {
+    if (sessionMode !== "test" || !activeQuestion || showResults) return;
+    const timer = window.setInterval(() => {
+      setTestSecondsLeft((current) => Math.max(0, current - 1));
+    }, 1000);
+    return () => window.clearInterval(timer);
+  }, [sessionMode, activeQuestion, showResults]);
+
+  useEffect(() => {
+    if (sessionMode === "test" && activeQuestion && !showResults && testSecondsLeft === 0) {
+      finishSession();
+    }
+  }, [activeQuestion, finishSession, sessionMode, showResults, testSecondsLeft]);
 
   useEffect(() => {
     if (!activeQuestion || showResults) return;
@@ -460,7 +487,7 @@ export default function HomePage() {
           </nav>
 
           <div className="topbar-actions">
-            <button className="icon-button" onClick={() => setLibraryOpen(true)} aria-label="Tìm câu hỏi"><Search size={19} /></button>
+            <button className="icon-button" onClick={() => openLibrary()} aria-label="Tìm câu hỏi"><Search size={19} /></button>
             <button className="icon-button desktop-only" aria-label="Thông báo"><Bell size={19} /></button>
             <button className="icon-button" onClick={() => setSettingsOpen(true)} aria-label="Cài đặt"><Settings size={19} /></button>
             <div className="mini-progress" title={`${summary.completion}% đã thành thạo`}>
@@ -473,96 +500,67 @@ export default function HomePage() {
       </header>
 
       <div className="content-wrap">
-        <section className="hero-card">
-          <div className="hero-copy">
-            <span className="eyebrow"><Sparkles size={15} /> Lộ trình thông minh</span>
-            <h1>Mỗi ngày vững hơn<br />một chặng đường.</h1>
-            <p>
-              Hệ thống tự ưu tiên câu chưa học và câu bạn từng trả lời sai.
-              Chỉ cần đều đặn 15 phút mỗi ngày.
-            </p>
-            <div className="hero-actions">
-              <button className="primary-button" onClick={() => startSession("learn", nextChapter.id)}>
-                <Play size={17} fill="currentColor" />
-                {summary.attempts ? "Học tiếp" : "Bắt đầu học"}
-              </button>
-              <button className="secondary-button" onClick={() => setLibraryOpen(true)}>
-                Xem 600 câu <ArrowRight size={17} />
-              </button>
-            </div>
+        <section className="exam-summary" aria-label="Cấu trúc đề thi hạng B">
+          <div className="summary-license">
+            <span><CarFront size={20} /></span>
+            <strong>Hạng B</strong>
+            <ChevronDown size={17} />
           </div>
+          <div className="exam-stat"><strong>30</strong><span>Câu hỏi/đề</span></div>
+          <div className="exam-stat"><strong>20&apos;</strong><span>Thời gian</span></div>
+          <div className="exam-stat"><strong>27/30</strong><span>Điểm đạt</span></div>
+          <div className="exam-stat"><strong>600</strong><span>Tổng câu</span></div>
+        </section>
 
-          <div className="hero-progress-wrap">
-            <div
-              className="hero-progress"
-              style={{ "--progress": `${summary.completion * 3.6}deg` } as React.CSSProperties}
+        <section className="exam-hub" aria-label="Chức năng học và thi">
+          <article className="exam-primary-card">
+            <div className="exam-card-orb orb-one" />
+            <div className="exam-card-orb orb-two" />
+            <span className="exam-primary-icon"><GraduationCap size={27} /></span>
+            <div>
+              <span className="exam-kicker">MÔ PHỎNG ĐỀ HẠNG B</span>
+              <h1>Thi thử Online</h1>
+              <p>30 câu trong 20 phút, cần đúng tối thiểu 27 câu để đạt.</p>
+            </div>
+            <button onClick={() => startSession("test")}>
+              Bắt đầu thi <ArrowRight size={18} />
+            </button>
+          </article>
+
+          <div className="feature-grid">
+            <button
+              className="feature-card theory-card"
+              onClick={() => document.getElementById("lo-trinh-600")?.scrollIntoView({ behavior: "smooth" })}
             >
-              <div className="hero-progress-inner">
-                <strong>{summary.completion}%</strong>
-                <span>đã thành thạo</span>
-              </div>
-            </div>
-            <div className="hero-progress-caption">
-              <ShieldCheck size={18} />
-              <span><strong>{summary.mastered}/600 câu</strong><small>Đang tiến bộ đúng hướng</small></span>
-            </div>
+              <span className="feature-icon green"><BookOpen size={23} /></span>
+              <span><strong>Học lý thuyết theo chương</strong><small>Học toàn bộ câu hỏi theo 6 chủ đề</small></span>
+              <ChevronRight className="feature-arrow" size={18} />
+            </button>
+
+            <button className="feature-card sign-card" onClick={() => openLibrary(5)}>
+              <span className="feature-icon orange"><TrafficCone size={23} /></span>
+              <span><strong>Biển báo</strong><small>Tra cứu hệ thống biển báo giao thông</small></span>
+              <ChevronRight className="feature-arrow" size={18} />
+            </button>
+
+            <button className="feature-card tips-card" onClick={() => setInfoModal("tips")}>
+              <span className="feature-icon yellow"><Lightbulb size={23} /></span>
+              <span><strong>Mẹo ghi nhớ</strong><small>Cách học nhanh, nhớ lâu và tránh học vẹt</small></span>
+              <ChevronRight className="feature-arrow" size={18} />
+            </button>
+
+            <button className="feature-card critical-card" onClick={() => setInfoModal("critical")}>
+              <span className="feature-icon red"><CircleAlert size={23} /></span>
+              <span><strong>Câu điểm liệt</strong><small>60 câu hỏi cần đặc biệt lưu ý</small></span>
+              <ChevronRight className="feature-arrow" size={18} />
+            </button>
           </div>
         </section>
 
-        <section className="stats-grid" aria-label="Thống kê học tập">
-          <article className="stat-card">
-            <span className="stat-icon blue"><Target size={20} /></span>
-            <div><small>Đã làm</small><strong>{summary.attempts}</strong><span>lượt trả lời</span></div>
-          </article>
-          <article className="stat-card">
-            <span className="stat-icon green"><BarChart3 size={20} /></span>
-            <div><small>Độ chính xác</small><strong>{summary.accuracy}%</strong><span>{summary.correct} câu đúng</span></div>
-          </article>
-          <article className="stat-card">
-            <span className="stat-icon orange"><Flame size={20} /></span>
-            <div><small>Chuỗi học</small><strong>{calculateStreak(studyDays)}</strong><span>ngày liên tiếp</span></div>
-          </article>
-          <article className="stat-card">
-            <span className="stat-icon purple"><Brain size={20} /></span>
-            <div><small>Cần ôn lại</small><strong>{summary.needsReview}</strong><span>câu đang chờ</span></div>
-          </article>
-        </section>
-
-        <section className="section-block">
-          <div className="section-heading">
-            <div><span>Gợi ý cho bạn</span><h2>Tiếp tục hành trình</h2></div>
-          </div>
-          <div className="continue-grid">
-            <article className="continue-card primary-continue">
-              <div className="continue-glow" />
-              <div className="continue-content">
-                <span className="continue-kicker">ĐANG HỌC · CHƯƠNG {nextChapter.roman}</span>
-                <h3>{nextChapter.shortTitle}</h3>
-                <p>{nextChapter.attempted}/{nextChapter.count} câu đã xem · {nextChapter.mastered} câu thành thạo</p>
-                <div className="light-progress"><span style={{ width: `${Math.max(3, nextChapter.percent)}%` }} /></div>
-                <button onClick={() => startSession("learn", nextChapter.id)}>
-                  Tiếp tục học <ChevronRight size={18} />
-                </button>
-              </div>
-              <nextChapter.icon className="continue-illustration" strokeWidth={1.25} />
-            </article>
-
-            <article className="continue-card quick-continue">
-              <div className="quick-icon"><Clock3 size={25} /></div>
-              <div>
-                <span className="continue-kicker dark">PHIÊN NGẮN · 5–7 PHÚT</span>
-                <h3>Ôn nhanh 10 câu</h3>
-                <p>Ưu tiên câu sai và câu sắp đến hạn ôn.</p>
-              </div>
-              <button className="round-arrow" onClick={() => startSession("quick")} aria-label="Bắt đầu ôn nhanh"><ArrowRight size={20} /></button>
-            </article>
-          </div>
-        </section>
-
-        <section className="section-block chapters-section">
+        <section className="section-block chapters-section" id="lo-trinh-600">
           <div className="section-heading">
             <div><span>Lộ trình 600 câu</span><h2>Học theo 6 chương</h2></div>
-            <button className="text-button" onClick={() => setLibraryOpen(true)}>Xem tất cả <ChevronRight size={16} /></button>
+            <button className="text-button" onClick={() => openLibrary()}>Xem tất cả <ChevronRight size={16} /></button>
           </div>
 
           <div className="chapter-grid">
@@ -588,12 +586,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="test-banner">
-          <div className="test-banner-icon"><Trophy size={28} /></div>
-          <div><span>SẴN SÀNG KIỂM TRA?</span><h2>Thi thử 30 câu ngẫu nhiên</h2><p>Làm liền mạch, xem kết quả và các câu sai sau khi nộp bài.</p></div>
-          <button onClick={() => startSession("test")}>Bắt đầu thi <ArrowRight size={18} /></button>
-        </section>
-
         <footer className="app-footer">
           <span><CarFront size={17} /> Lái Vững</span>
           <p>Dữ liệu được trích từ bộ 600 câu hỏi sát hạch lái xe cơ giới đường bộ 2025.</p>
@@ -604,7 +596,7 @@ export default function HomePage() {
         <button className="active"><Home size={20} /><span>Tổng quan</span></button>
         <button onClick={() => startSession("review")}><RotateCcw size={20} /><span>Ôn tập</span></button>
         <button onClick={() => startSession("test")}><GraduationCap size={21} /><span>Thi thử</span></button>
-        <button onClick={() => setLibraryOpen(true)}><ListChecks size={20} /><span>600 câu</span></button>
+        <button onClick={() => openLibrary()}><ListChecks size={20} /><span>600 câu</span></button>
       </nav>
 
       {activeQuestion && !showResults && (
@@ -614,7 +606,13 @@ export default function HomePage() {
             <div className="quiz-progress-track"><span style={{ width: `${((sessionIndex + 1) / session.length) * 100}%` }} /></div>
             <header className="quiz-header">
               <button className="icon-button quiet" onClick={() => setSession([])} aria-label="Đóng phiên học"><X size={20} /></button>
-              <div><small>{modeLabel(sessionMode)}</small><strong>Câu {sessionIndex + 1} / {session.length}</strong></div>
+              <div>
+                <small>{modeLabel(sessionMode)}</small>
+                <strong className={sessionMode === "test" ? "quiz-clock" : ""}>
+                  {sessionMode === "test" && <><Clock3 size={13} /> {formatClock(testSecondsLeft)} · </>}
+                  Câu {sessionIndex + 1} / {session.length}
+                </strong>
+              </div>
               <button
                 className={`icon-button quiet ${bookmarks.includes(activeQuestion.id) ? "bookmarked" : ""}`}
                 onClick={() => toggleBookmark(activeQuestion.id)}
@@ -698,8 +696,15 @@ export default function HomePage() {
           <section className="result-modal">
             <div className="result-icon"><Trophy size={36} /></div>
             <span className="eyebrow centered">HOÀN THÀNH PHIÊN HỌC</span>
-            <h2>{resultPercent >= 80 ? "Một phiên học rất tốt!" : "Mỗi lần ôn là một lần tiến bộ."}</h2>
-            <p>Bạn trả lời đúng <strong>{resultScore}/{session.length} câu</strong>. Các câu chưa đúng đã được đưa vào lịch ôn.</p>
+            <h2>
+              {sessionMode === "test"
+                ? resultScore >= 27 ? "Bạn đã đạt bài thi thử!" : "Chưa đạt, mình ôn lại nhé."
+                : resultPercent >= 80 ? "Một phiên học rất tốt!" : "Mỗi lần ôn là một lần tiến bộ."}
+            </h2>
+            <p>
+              Bạn trả lời đúng <strong>{resultScore}/{session.length} câu</strong>.
+              {sessionMode === "test" ? " Mốc đạt của đề là 27/30 câu." : " Các câu chưa đúng đã được đưa vào lịch ôn."}
+            </p>
             <div className="result-score"><strong>{resultPercent}%</strong><span>Độ chính xác</span></div>
             <div className="result-actions">
               <button className="secondary-button" onClick={() => { setShowResults(false); setSession([]); }}>Về tổng quan</button>
@@ -714,11 +719,11 @@ export default function HomePage() {
           <button className="modal-backdrop" aria-label="Đóng" onClick={() => setLibraryOpen(false)} />
           <section className="library-sheet">
             <header className="sheet-header">
-              <div><small>THƯ VIỆN</small><h2>Tra cứu 600 câu</h2></div>
+              <div><small>THƯ VIỆN</small><h2>{libraryChapter === 5 ? "Tra cứu biển báo" : "Tra cứu 600 câu"}</h2></div>
               <button className="icon-button quiet" onClick={() => setLibraryOpen(false)} aria-label="Đóng"><X size={20} /></button>
             </header>
             <div className="search-box"><Search size={19} /><input autoFocus value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} placeholder="Nhập số câu hoặc nội dung…" /></div>
-            {!searchTerm && bookmarks.length > 0 && <p className="sheet-note"><Bookmark size={14} /> Đang hiển thị các câu bạn đã đánh dấu</p>}
+            {!libraryChapter && !searchTerm && bookmarks.length > 0 && <p className="sheet-note"><Bookmark size={14} /> Đang hiển thị các câu bạn đã đánh dấu</p>}
             <div className="question-list">
               {searchResults.map((question) => (
                 <button key={question.id} onClick={() => startSession("single", undefined, question)}>
@@ -728,6 +733,35 @@ export default function HomePage() {
                 </button>
               ))}
             </div>
+          </section>
+        </div>
+      )}
+
+      {infoModal && (
+        <div className="modal-layer" role="dialog" aria-modal="true" aria-label={infoModal === "tips" ? "Mẹo ghi nhớ" : "Câu điểm liệt"}>
+          <button className="modal-backdrop" aria-label="Đóng" onClick={() => setInfoModal(null)} />
+          <section className="info-modal">
+            <header className="sheet-header">
+              <div>
+                <small>{infoModal === "tips" ? "HỌC NHẸ, NHỚ LÂU" : "LƯU Ý QUAN TRỌNG"}</small>
+                <h2>{infoModal === "tips" ? "Mẹo ghi nhớ" : "Câu điểm liệt"}</h2>
+              </div>
+              <button className="icon-button quiet" onClick={() => setInfoModal(null)} aria-label="Đóng"><X size={19} /></button>
+            </header>
+            {infoModal === "tips" ? (
+              <div className="tips-list">
+                <div><span>01</span><p><strong>Học từng chương nhỏ</strong>Đừng làm cả 600 câu một lượt. Hoàn thành từng nhóm 15 câu để giữ tập trung.</p></div>
+                <div><span>02</span><p><strong>Ôn câu sai trước</strong>Câu trả lời sai sẽ được Lái Vững tự động đưa lên đầu phiên học sau.</p></div>
+                <div><span>03</span><p><strong>Không học vị trí đáp án</strong>Hãy đọc lại câu hỏi và tự nói lý do trước khi xem đáp án đúng.</p></div>
+                <div><span>04</span><p><strong>Lặp lại cách quãng</strong>Đúng liên tiếp 3 lần ở các phiên khác nhau mới được tính là thành thạo.</p></div>
+              </div>
+            ) : (
+              <div className="critical-note">
+                <span><CircleAlert size={26} /></span>
+                <h3>Đang đối chiếu danh sách 60 câu</h3>
+                <p>Tài liệu PDF xác nhận có 60 câu về tình huống mất an toàn nghiêm trọng nhưng không đánh dấu riêng từng câu. Mình chưa mở chế độ luyện để tránh gắn nhầm.</p>
+              </div>
+            )}
           </section>
         </div>
       )}
