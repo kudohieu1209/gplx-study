@@ -192,6 +192,7 @@ export default function HomePage() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [testSecondsLeft, setTestSecondsLeft] = useState(20 * 60);
+  const [chaptersOpen, setChaptersOpen] = useState(false);
 
   useEffect(() => {
     try {
@@ -522,7 +523,14 @@ export default function HomePage() {
           <div className="feature-grid">
             <button
               className="feature-card theory-card"
-              onClick={() => document.getElementById("lo-trinh-600")?.scrollIntoView({ behavior: "smooth" })}
+              aria-controls="lo-trinh-600"
+              aria-expanded={chaptersOpen}
+              onClick={() => {
+                setChaptersOpen(true);
+                window.requestAnimationFrame(() => {
+                  document.getElementById("lo-trinh-600")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                });
+              }}
             >
               <span className="feature-icon green"><BookOpen size={23} /></span>
               <span><strong>Học lý thuyết theo chương</strong><small>Học toàn bộ câu hỏi theo 6 chủ đề</small></span>
@@ -549,6 +557,7 @@ export default function HomePage() {
           </div>
         </section>
 
+        {chaptersOpen && (
         <section className="section-block chapters-section" id="lo-trinh-600">
           <div className="section-heading">
             <div><span>Lộ trình 600 câu</span><h2>Học theo 6 chương</h2></div>
@@ -577,6 +586,7 @@ export default function HomePage() {
             })}
           </div>
         </section>
+        )}
 
         <footer className="app-footer">
           <span><CarFront size={17} /> GPLX</span>
