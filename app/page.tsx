@@ -29,6 +29,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import criticalExplanationsData from "./data/critical-explanations.json";
 import criticalQuestionsData from "./data/critical-questions.json";
 import questionsData from "./data/questions.json";
 
@@ -72,6 +73,7 @@ type QuestionExplanation = {
 
 const questions = questionsData as Question[];
 const criticalQuestions = criticalQuestionsData as Question[];
+const criticalQuestionExplanations = criticalExplanationsData as Record<number, QuestionExplanation>;
 const PROGRESS_KEY = "lai-vung-progress-v1";
 const BOOKMARK_KEY = "lai-vung-bookmarks-v1";
 const DAYS_KEY = "lai-vung-study-days-v1";
@@ -304,7 +306,7 @@ const questionExplanations: Record<number, QuestionExplanation> = {
 };
 
 function getQuestionExplanation(question: Question): QuestionExplanation | null {
-  return questionExplanations[question.id] ?? null;
+  return questionExplanations[question.id] ?? criticalQuestionExplanations[question.id] ?? null;
 }
 
 function shuffle<T>(items: T[]) {
@@ -368,6 +370,7 @@ export default function HomePage() {
   const [chaptersOpen, setChaptersOpen] = useState(false);
   const [activeChapter, setActiveChapter] = useState<number | null>(null);
   const [chapterReplay, setChapterReplay] = useState(false);
+  const [answerSheetOpen, setAnswerSheetOpen] = useState(false);
 
   useEffect(() => {
     try {
@@ -422,6 +425,11 @@ export default function HomePage() {
   const sessionDisplayTotal = activeChapter
     ? activeChapterQuestions.length
     : session.length;
+  const answerSheetQuestions = activeChapter ? activeChapterQuestions : session;
+  const answerSheetCompleted = answerSheetQuestions.filter((question) => {
+    if (sessionAnswers[question.id] !== undefined) return true;
+    return Boolean(activeChapter && !chapterReplay && progress[question.id]?.attempts);
+  }).length;
 
   const summary = useMemo(() => {
     const values = Object.entries(progress)
@@ -585,6 +593,7 @@ export default function HomePage() {
       setSessionAnswers({});
       setShowResults(false);
       setLibraryOpen(false);
+      setAnswerSheetOpen(false);
       if (mode === "test") setTestSecondsLeft(20 * 60);
       window.scrollTo({ top: 0, behavior: "auto" });
     },
@@ -605,6 +614,35 @@ export default function HomePage() {
     },
     [applyAttempt, recordStudyDay, sessionAnswers, sessionMode],
   );
+
+  const resetCurrentStudy = () => {
+    if (!activeQuestion || sessionMode === "test") return;
+    const resetQuestions = activeChapter ? activeChapterQuestions : session;
+    const resetLabel = activeChapter
+      ? `chương ${chapterMeta[activeChapter - 1].roman}`
+      : "phiên ôn tập này";
+    if (!window.confirm(`Đặt lại ${resetLabel}? Tất cả câu trong phạm vi này sẽ trở về trạng thái chưa làm.`)) return;
+
+    setProgress((current) => {
+      const next = { ...current };
+      resetQuestions.forEach((question) => delete next[question.id]);
+      return next;
+    });
+    setSession(activeChapter
+      ? [...resetQuestions].sort((first, second) => first.id - second.id)
+      : [...resetQuestions]);
+    setSessionAnswers({});
+    setChapterReplay(false);
+    setAnswerSheetOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const jumpToQuestion = (questionId: number) => {
+    setAnswerSheetOpen(false);
+    window.requestAnimationFrame(() => {
+      document.getElementById(`cau-${questionId}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  };
 
   const finishSession = useCallback(() => {
     if (sessionMode === "test") {
@@ -661,6 +699,7 @@ export default function HomePage() {
     setShowResults(false);
     setActiveChapter(null);
     setChapterReplay(false);
+    setAnswerSheetOpen(false);
     setChaptersOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -696,13 +735,23 @@ export default function HomePage() {
           )}
 
           <div className="topbar-actions">
+            {activeQuestion && !showResults && sessionMode !== "test" && (
+              <button className="icon-button" onClick={resetCurrentStudy} aria-label="Đặt lại tiến độ phiên ôn tập" title="Đặt lại tiến độ">
+                <RotateCcw size={18} />
+              </button>
+            )}
+            {activeQuestion && !showResults && (
+              <button className="icon-button" onClick={() => setAnswerSheetOpen(true)} aria-label="Mở Answer sheet" title="Answer sheet">
+                <ListChecks size={19} />
+              </button>
+            )}
             {activeQuestion && !showResults && sessionMode === "test" && (
               <button className="primary-button topbar-submit" onClick={finishSession} disabled={answeredCount !== session.length}>
                 <span>Nộp bài</span><Check size={17} />
               </button>
             )}
             <button className="icon-button topbar-search" onClick={() => openLibrary()} aria-label="Tìm câu hỏi"><Search size={19} /></button>
-            <button className="icon-button" onClick={() => setSettingsOpen(true)} aria-label="Cài đặt"><Settings size={19} /></button>
+            <button className="icon-button topbar-settings" onClick={() => setSettingsOpen(true)} aria-label="Cài đặt"><Settings size={19} /></button>
           </div>
         </div>
       </header>
@@ -904,6 +953,59 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+      )}
+
+      {answerSheetOpen && activeQuestion && !showResults && (
+        <div className="modal-layer answer-sheet-layer" role="dialog" aria-modal="true" aria-label="Answer sheet">
+          <button className="modal-backdrop" aria-label="Đóng Answer sheet" onClick={() => setAnswerSheetOpen(false)} />
+          <section className="answer-sheet-panel">
+            <header className="answer-sheet-header">
+              <div>
+                <small>ANSWER SHEET</small>
+                <h2>{answerSheetCompleted}/{answerSheetQuestions.length} câu đã làm</h2>
+              </div>
+              <button className="icon-button quiet" onClick={() => setAnswerSheetOpen(false)} aria-label="Đóng Answer sheet"><X size={19} /></button>
+            </header>
+
+            <div className="answer-sheet-legend" aria-label="Chú thích trạng thái">
+              <span><i className="unanswered" /> Chưa làm</span>
+              <span><i className="completed" /> Đã làm</span>
+              {sessionMode !== "test" && <><span><i className="correct" /> Đúng</span><span><i className="wrong" /> Chưa đúng</span></>}
+            </div>
+
+            <div className="answer-sheet-grid">
+              {answerSheetQuestions.map((question) => {
+                const currentAnswer = sessionAnswers[question.id];
+                const sessionIndex = session.findIndex((item) => item.id === question.id);
+                const isInCurrentSession = sessionIndex >= 0;
+                const answeredEarlier = Boolean(activeChapter && !chapterReplay && progress[question.id]?.attempts);
+                let status = "unanswered";
+                if (currentAnswer !== undefined) {
+                  status = sessionMode === "test"
+                    ? "completed"
+                    : currentAnswer === question.correctAnswer ? "correct" : "wrong";
+                } else if (answeredEarlier) {
+                  status = "completed";
+                }
+                const displayNumber = sessionMode === "test" || sessionMode === "critical"
+                  ? sessionIndex + 1
+                  : question.id;
+                return (
+                  <button
+                    className={status}
+                    key={`answer-sheet-${question.id}`}
+                    onClick={() => jumpToQuestion(question.id)}
+                    disabled={!isInCurrentSession}
+                    title={isInCurrentSession ? `Đi tới câu ${displayNumber}` : "Câu này đã hoàn thành ở phiên trước"}
+                    aria-label={`Câu ${displayNumber}: ${status === "unanswered" ? "chưa làm" : status === "correct" ? "đúng" : status === "wrong" ? "chưa đúng" : "đã làm"}`}
+                  >
+                    {displayNumber}
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+        </div>
       )}
 
       {showResults && (

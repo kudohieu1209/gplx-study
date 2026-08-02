@@ -1,0 +1,242 @@
+{
+  "1001": {
+    "reason": "Cọc tiêu, gương cầu và dải phân cách là công trình, thiết bị bảo đảm an toàn giao thông. Cố ý làm hư hỏng các thiết bị này có thể xóa mất chỉ dẫn hoặc khả năng cảnh báo nguy hiểm nên là hành vi bị nghiêm cấm; còn dừng, đỗ hay dùng còi chỉ bị cấm tại những nơi, thời điểm cụ thể theo quy định.",
+    "takeaway": "Cố ý phá hoại công trình, thiết bị giao thông luôn bị nghiêm cấm."
+  },
+  "1002": {
+    "reason": "Phương tiện tham gia giao thông phải đáp ứng đồng thời yêu cầu về an toàn kỹ thuật và bảo vệ môi trường. Xe không đạt các tiêu chuẩn này có nguy cơ gây tai nạn, ô nhiễm nên không được đưa vào lưu thông, không phụ thuộc tuyến đường hay loại xe.",
+    "takeaway": "Không đủ an toàn kỹ thuật hoặc môi trường thì không được lưu thông."
+  },
+  "1003": {
+    "reason": "Đua xe tạo rủi ro rất lớn và chỉ hợp pháp khi được tổ chức dưới sự kiểm soát, với phương án bảo đảm an toàn do cơ quan có thẩm quyền chấp thuận. Đường vắng hoặc sự ủng hộ của người dân không thay thế được giấy phép.",
+    "takeaway": "Đua xe chỉ được tổ chức khi cơ quan có thẩm quyền cấp phép."
+  },
+  "1004": {
+    "reason": "Chất ma túy làm suy giảm nhận thức, phản xạ và khả năng điều khiển phương tiện. Quy định cấm người điều khiển phương tiện có chất ma túy trong cơ thể, không có ngoại lệ cho mức được cho là “nhẹ”.",
+    "takeaway": "Có chất ma túy trong cơ thể: tuyệt đối không điều khiển phương tiện."
+  },
+  "1005": {
+    "reason": "Rượu, bia ảnh hưởng đến phán đoán và tốc độ phản ứng ngay cả khi người uống vẫn cảm thấy tỉnh táo. Vì vậy đã uống rượu, bia thì không được lái mô tô, ô tô hoặc máy kéo; đi chậm, đi gần hay tự đánh giá nồng độ thấp đều không phải ngoại lệ.",
+    "takeaway": "Đã uống rượu, bia thì không lái xe."
+  },
+  "1006": {
+    "reason": "Người điều khiển mô tô, ô tô, máy kéo bị cấm khi trong máu hoặc hơi thở có nồng độ cồn. Quy tắc này không đặt ra một mức cồn “nhẹ” để vẫn được tiếp tục lái xe.",
+    "takeaway": "Nồng độ cồn phải bằng 0 khi điều khiển xe."
+  },
+  "1007": {
+    "reason": "Lái xe sau khi sử dụng rượu, bia là hành vi vi phạm và trước hết có thể bị xử phạt hành chính. Nếu hành vi đủ yếu tố cấu thành tội phạm, chẳng hạn gây hậu quả nghiêm trọng, người vi phạm còn có thể bị xử lý hình sự; vì vậy không thể coi đây chỉ là lỗi để nhắc nhở.",
+    "takeaway": "Vi phạm nồng độ cồn có thể bị xử phạt hành chính hoặc xử lý hình sự."
+  },
+  "1008": {
+    "reason": "Lệnh cấm sử dụng rượu, bia khi tham gia giao thông trong câu hỏi áp dụng cho người trực tiếp điều khiển ô tô, mô tô, xe gắn máy và cả xe đạp. Người ngồi sau hoặc người đi bộ không phải là nhóm “người điều khiển phương tiện” được nêu ở đáp án này.",
+    "takeaway": "Lệnh cấm rượu, bia áp dụng cả với người điều khiển xe đạp."
+  },
+  "1009": {
+    "reason": "Người được giao xe phải đáp ứng các điều kiện luật định như độ tuổi, sức khỏe, giấy phép phù hợp và khả năng điều khiển. Việc đã được hướng dẫn, là người thân hay chỉ lái trong một trường hợp cụ thể không hợp pháp hóa việc giao xe cho người không đủ điều kiện.",
+    "takeaway": "Chỉ giao xe cho người có đủ điều kiện điều khiển."
+  },
+  "1010": {
+    "reason": "Chạy quá tốc độ, giành đường và vượt ẩu trực tiếp làm giảm thời gian xử lý, tạo xung đột với phương tiện khác và tăng nguy cơ tai nạn. Đây đều là hành vi bị nghiêm cấm, không phụ thuộc việc đường đông hay vắng.",
+    "takeaway": "Không quá tốc độ, không giành đường, không vượt ẩu."
+  },
+  "1011": {
+    "reason": "Tốc độ tối đa cho phép là giới hạn bắt buộc trong mọi điều kiện. Đường vắng hoặc ban đêm không cho phép chạy vượt giới hạn; ngược lại người lái còn phải giảm dưới mức tối đa khi tầm nhìn, mặt đường hoặc giao thông không an toàn.",
+    "takeaway": "Không bao giờ vượt tốc độ tối đa; điều kiện xấu còn phải đi chậm hơn."
+  },
+  "1012": {
+    "reason": "Phương tiện chạy chậm phải đi về bên phải để không cản trở dòng xe có tốc độ cao hơn và để việc vượt xe diễn ra đúng quy tắc. Đi bên trái hoặc giữa đường dễ gây ùn tắc và xung đột giao thông.",
+    "takeaway": "Xe chạy chậm đi về bên phải."
+  },
+  "1013": {
+    "reason": "Trên đường nhiều làn cùng chiều, xe chạy chậm phải giữ làn bên phải trong cùng để dành các làn bên trái cho dòng xe nhanh hơn hoặc cho việc vượt xe theo quy định. Đèn cảnh báo nguy hiểm không cho phép xe chậm tùy ý chiếm làn.",
+    "takeaway": "Nhiều làn cùng chiều: xe chậm giữ làn phải trong cùng."
+  },
+  "1014": {
+    "reason": "Ở đường vòng, đầu dốc hoặc nơi tầm nhìn bị che khuất, người vượt không thể quan sát đủ khoảng đường ngược chiều để chắc chắn an toàn. Vì vậy vượt xe tại các vị trí này bị cấm; vội hoặc tự cho là khẩn cấp không làm mất nguy cơ va chạm trực diện.",
+    "takeaway": "Tầm nhìn hạn chế, đường vòng, đầu dốc: không vượt xe."
+  },
+  "1015": {
+    "reason": "Còi và đèn là bộ phận an toàn được thiết kế, kiểm định phù hợp với từng loại xe. Tự lắp hoặc sử dụng loại sai thiết kế có thể gây chói, gây nhiễu tín hiệu, tạo tiếng ồn và làm xe không còn bảo đảm tiêu chuẩn kỹ thuật nên không được phép.",
+    "takeaway": "Không tự ý thay còi, đèn khác thiết kế của xe."
+  },
+  "1016": {
+    "reason": "Biển số là dấu hiệu quản lý do cơ quan có thẩm quyền cấp, không phải hàng hóa được tự sản xuất hoặc mua bán để thay thế. Khi mất biển phải làm thủ tục cấp lại; mọi việc sản xuất, mua bán hoặc sử dụng biển số trái phép đều bị nghiêm cấm.",
+    "takeaway": "Mất biển số phải xin cấp lại, không tự làm hoặc mua biển."
+  },
+  "1017": {
+    "reason": "Cầu hẹp chỉ có một làn, nơi giao nhau, đường bộ giao cùng mức với đường sắt và khi xe ưu tiên đang phát tín hiệu làm nhiệm vụ đều là các tình huống không đủ điều kiện vượt an toàn hoặc phải nhường quyền ưu tiên. Các trường hợp ở phương án B và C không mặc nhiên tạo thành lệnh cấm vượt như nhóm ở phương án A.",
+    "takeaway": "Không vượt tại điểm thắt hẹp, điểm giao nguy hiểm hoặc khi xe ưu tiên làm nhiệm vụ."
+  },
+  "1018": {
+    "reason": "Quay đầu tại vạch người đi bộ, cầu và đầu cầu, đường cao tốc, đường hẹp, đường dốc hoặc giao cắt đồng mức với đường sắt làm xe chiếm nhiều phần đường ở nơi tầm nhìn, không gian hay tốc độ không cho phép xử lý an toàn. Vì vậy tất cả các vị trí được liệt kê đều cấm quay đầu.",
+    "takeaway": "Các điểm hẹp, khuất, tốc độ cao và giao cắt đường sắt đều cấm quay đầu."
+  },
+  "1019": {
+    "reason": "Nhóm vị trí ở phương án A là danh sách các nơi pháp luật cấm quay đầu vì nguy cơ cản trở người đi bộ, hạn chế tầm nhìn hoặc xung đột với tàu và dòng xe tốc độ cao. Phương án B mở rộng sang những nơi không bị cấm một cách mặc nhiên nên không đúng.",
+    "takeaway": "Nhớ nhóm cấm quay đầu: vạch người đi bộ, cầu, cao tốc, đường hẹp/dốc, giao cắt đường sắt."
+  },
+  "1020": {
+    "reason": "Dừng hoặc đỗ trên miệng cống, hầm kỹ thuật hay điểm lấy nước chữa cháy sẽ cản trở việc vận hành, sửa chữa hạ tầng và đặc biệt có thể làm chậm hoạt động cứu hỏa. Vì vậy cả dừng lẫn đỗ tại các vị trí này đều không được phép.",
+    "takeaway": "Không dừng, đỗ trên hạ tầng kỹ thuật hoặc điểm lấy nước chữa cháy."
+  },
+  "1021": {
+    "reason": "Mô tô và xe gắn máy có độ ổn định thấp; dùng xe để kéo hoặc đẩy phương tiện khác làm thay đổi lực lái, quãng phanh và rất dễ mất thăng bằng. Hành vi này bị cấm dù phương tiện được kéo nhẹ hơn hay chỉ đi một đoạn ngắn.",
+    "takeaway": "Không dùng mô tô, xe gắn máy để kéo hoặc đẩy phương tiện khác."
+  },
+  "1022": {
+    "reason": "Buông cả hai tay làm mất khả năng điều khiển; kéo, đẩy vật khác tạo lực lệch; còn quệt chân chống xuống đường có thể làm xe văng hoặc đổ. Cả ba hành vi đều đặc biệt nguy hiểm nên không được phép khi xe đang chạy.",
+    "takeaway": "Hai tay kiểm soát xe; không kéo đẩy và không quệt chân chống."
+  },
+  "1023": {
+    "reason": "Phương án A tập hợp đúng các hành vi làm người lái mất kiểm soát hoặc khiến xe mất ổn định: buông cả hai tay, kéo hay đẩy xe/vật khác và quệt chân chống khi đang chạy. Những hành vi an toàn ở phương án C rõ ràng là nghĩa vụ phải thực hiện, không phải điều bị cấm.",
+    "takeaway": "Mọi hành vi làm mất tay lái hoặc mất cân bằng xe đều phải tránh."
+  },
+  "1024": {
+    "reason": "Vật cồng kềnh làm thay đổi trọng tâm, che khuất tầm nhìn và có thể va quệt vào người, xe bên cạnh. Vì vậy người ngồi trên mô tô, xe ba bánh hoặc xe gắn máy không được mang, vác vật cồng kềnh, kể cả khi cho rằng mình đủ khỏe.",
+    "takeaway": "Ngồi trên mô tô, xe gắn máy không mang hoặc vác vật cồng kềnh."
+  },
+  "1025": {
+    "reason": "Bám, kéo hoặc đẩy phương tiện khác khi đang ngồi trên mô tô, xe ba bánh hay xe gắn máy khiến cả người lẫn xe dễ mất thăng bằng và không chủ động được khoảng cách. Xe hỏng không tạo ra ngoại lệ cho hành vi nguy hiểm này.",
+    "takeaway": "Người ngồi trên xe không được bám, kéo hay đẩy xe khác."
+  },
+  "1026": {
+    "reason": "Ô có thể che tầm nhìn, cản gió mạnh và làm người cầm không thể bám giữ chắc chắn, từ đó khiến xe mất ổn định. Vì vậy cả người lái lẫn người ngồi sau đều không được sử dụng ô khi tham gia giao thông bằng các loại xe này.",
+    "takeaway": "Đi mô tô, xe gắn máy: dùng áo mưa phù hợp, không dùng ô."
+  },
+  "1027": {
+    "reason": "Việc người ngồi trên mô tô kéo người đang đi xe đạp tạo liên kết không an toàn giữa hai xe vốn khó giữ thăng bằng, đặc biệt khi lên dốc. Đội mũ, đường vắng hay người đi xe đạp mệt đều không làm hành vi này trở nên hợp pháp.",
+    "takeaway": "Không dùng người hoặc xe mô tô để kéo xe đạp."
+  },
+  "1028": {
+    "reason": "Xe hết xăng vẫn không được kéo hoặc đẩy bằng một xe mô tô khác vì dây kéo, lực đẩy và khả năng phanh không đồng bộ dễ làm cả hai xe ngã. Khoảng cách đến trạm xăng và mật độ giao thông không phải là ngoại lệ.",
+    "takeaway": "Mô tô hỏng hoặc hết xăng cũng không được mô tô khác kéo, đẩy."
+  },
+  "1029": {
+    "reason": "Đồ vật cồng kềnh làm xe khó giữ thăng bằng, tăng kích thước chiếm đường và có thể che đèn, biển số hoặc tầm nhìn. Chằng buộc hay quãng đường ngắn không loại bỏ hết các nguy cơ đó nên xe mô tô, xe gắn máy không được vận chuyển loại đồ này.",
+    "takeaway": "Không chở vật cồng kềnh bằng mô tô, xe gắn máy."
+  },
+  "1030": {
+    "reason": "Người điều khiển giao thông xử lý tình hình thực tế tại thời điểm đó nên hiệu lệnh của họ có giá trị ưu tiên khi khác với đèn hoặc biển báo. Người tham gia giao thông không được tự chọn tín hiệu thuận tiện cho mình.",
+    "takeaway": "Thứ tự ưu tiên cao nhất tại chỗ: hiệu lệnh người điều khiển giao thông."
+  },
+  "1031": {
+    "reason": "Cầu, đường ngầm và nơi đường bộ giao đồng mức với đường sắt là các vị trí có không gian thoát hạn chế hoặc xung đột đặc biệt nguy hiểm. Người lái phải tiếp tục đến nơi được phép, không được tận dụng chỗ rộng hay nhờ người khác ra hiệu để quay đầu tại đó.",
+    "takeaway": "Trên cầu, đường ngầm, giao cắt đường sắt: không quay đầu."
+  },
+  "1032": {
+    "reason": "Tàu hỏa chạy trên đường ray, có khối lượng lớn và quãng đường phanh rất dài nên không thể tránh hoặc dừng nhanh như phương tiện đường bộ. Vì vậy tại giao cắt đồng mức và cầu đi chung, phương tiện đường sắt được quyền ưu tiên đi trước.",
+    "takeaway": "Đường bộ giao đường sắt: luôn ưu tiên tàu."
+  },
+  "1033": {
+    "reason": "Khi nhập cao tốc, xe đang chạy trên cao tốc có quyền đi trước. Xe nhập phải bật tín hiệu, quan sát và nhường đường; nếu có làn tăng tốc thì dùng làn này để đạt tốc độ phù hợp rồi chỉ nhập vào làn sát mép ngoài khi đã an toàn.",
+    "takeaway": "Nhập cao tốc: báo hiệu – nhường – tăng tốc – nhập khi an toàn."
+  },
+  "1034": {
+    "reason": "Mũ bảo hiểm đạt chuẩn và quai cài đúng cách bảo vệ người ngồi trên mô tô, xe gắn máy trong mọi hành trình tham gia giao thông đường bộ. Nghĩa vụ này không chỉ giới hạn ở quốc lộ, tỉnh lộ hay một loại đường cụ thể.",
+    "takeaway": "Lên mô tô, xe gắn máy tham gia giao thông là phải đội mũ và cài quai đúng."
+  },
+  "1035": {
+    "reason": "Dàn hàng ngang, đi vào phần đường của người đi bộ hoặc phương tiện khác và dùng ô, điện thoại hay thiết bị âm thanh đều làm giảm khả năng quan sát, điều khiển hoặc xâm phạm phần đường. Các hành vi được liệt kê vì thế đều không được phép.",
+    "takeaway": "Đi đúng phần đường, không dàn hàng và không dùng thiết bị gây phân tâm."
+  },
+  "1036": {
+    "reason": "Đoàn xe, đoàn tang hoặc đoàn người có tổ chức cần được giữ liền mạch để bảo đảm trật tự và an toàn cho cả đoàn. Cắt ngang, dù đi chậm hay có báo hiệu, vẫn chia cắt đội hình và tạo điểm xung đột nên bị cấm.",
+    "takeaway": "Không cắt ngang đoàn xe hoặc đoàn người có tổ chức."
+  },
+  "1037": {
+    "reason": "Buồn ngủ làm giảm tập trung và có thể gây những khoảng mất ý thức ngắn mà người lái không kiểm soát được. Cách an toàn là quan sát, dừng đúng nơi quy định và nghỉ đến khi tỉnh táo; tăng tốc, nghe nhạc hay uống rượu không khắc phục được nguy cơ.",
+    "takeaway": "Buồn ngủ: dừng đúng chỗ và nghỉ, không cố lái tiếp."
+  },
+  "1038": {
+    "reason": "Trên cao tốc, quay đầu, lùi xe hoặc chạy trên lề để trở lại lối ra đều cực kỳ nguy hiểm vì đi ngược quy luật của dòng xe tốc độ cao. Khi lỡ lối ra, phải tiếp tục đi đúng chiều đến lối ra kế tiếp.",
+    "takeaway": "Lỡ lối ra cao tốc: đi tiếp đến lối ra sau, tuyệt đối không lùi hoặc quay đầu."
+  },
+  "1039": {
+    "reason": "Phương tiện đường sắt bị giới hạn bởi đường ray và cần quãng đường rất dài để dừng, nên tại điểm giao cắt nó có quyền ưu tiên hơn mọi phương tiện đường bộ, kể cả các loại xe ưu tiên. Xe đường bộ phải dừng và chỉ đi qua khi chắc chắn an toàn.",
+    "takeaway": "Tại giao cắt, tàu hỏa ưu tiên hơn phương tiện đường bộ."
+  },
+  "1040": {
+    "reason": "Chắn đường ngang được đóng để ngăn người và xe đi vào vùng nguy hiểm khi tàu sắp tới hoặc đang qua. Chỉ người có nhiệm vụ mới được vận hành; tự ý mở chắn dù nghĩ rằng đang an toàn có thể dẫn đến tai nạn đặc biệt nghiêm trọng.",
+    "takeaway": "Chắn đường sắt đã đóng: không tự ý mở."
+  },
+  "1041": {
+    "reason": "Lạng lách, đánh võng tạo ra các thay đổi hướng bất ngờ, khiến người lái và phương tiện xung quanh không đủ thời gian phản ứng. Thay đổi tốc độ hoặc tay số là thao tác lái xe bình thường khi được thực hiện đúng quy tắc, còn lạng lách, đánh võng là hành vi bị nghiêm cấm.",
+    "takeaway": "Lạng lách, đánh võng là hành vi bị nghiêm cấm."
+  },
+  "1042": {
+    "reason": "Đèn đỏ hoặc chuông tại giao cắt báo rằng tàu đang đến, trong khi tàu không thể dừng nhanh để nhường xe đường bộ. Người lái phải dừng trước đường sắt và giữ khoảng cách tối thiểu 5 mét tính từ ray gần nhất, không cố tranh thủ vượt qua.",
+    "takeaway": "Có đèn đỏ hoặc chuông đường sắt: dừng cách ray gần nhất ít nhất 5 m."
+  },
+  "1043": {
+    "reason": "Người đi bộ đang qua tại vạch dành riêng có quyền được phương tiện tạo điều kiện đi qua an toàn. Người lái phải giảm tốc và dừng trước vạch dừng xe khi cần thiết; cố vượt trước người đi bộ có thể gây va chạm ngay trên phần đường ưu tiên của họ.",
+    "takeaway": "Gặp người đi bộ trên vạch: giảm tốc, sẵn sàng dừng và nhường."
+  },
+  "1044": {
+    "reason": "Điều kiện cốt lõi để lùi xe là phải quan sát được phía sau và chắc chắn không gây nguy hiểm. Lùi chậm, mở cửa hay bấm còi không thay thế được tầm nhìn; nếu không quan sát được thì không được lùi.",
+    "takeaway": "Không quan sát được phía sau thì không lùi xe."
+  },
+  "1045": {
+    "reason": "Phần đường xe chạy trên cao tốc dành cho dòng xe liên tục ở tốc độ cao, nên một xe dừng hoặc đỗ tại đó tạo chướng ngại rất khó phát hiện và tránh kịp. Khi gặp sự cố phải cố gắng đưa xe ra làn dừng khẩn cấp hoặc vị trí an toàn và thực hiện cảnh báo theo quy định.",
+    "takeaway": "Không dừng, đỗ trên phần đường xe chạy của cao tốc."
+  },
+  "1046": {
+    "reason": "Cố tình sai làn, phóng nhanh, vượt ẩu, vượt đèn đỏ hoặc đi vào đường cấm thể hiện việc coi thường quy tắc và sự an toàn của cộng đồng. Vì vậy đây là biểu hiện thiếu văn hóa giao thông, không phải cách tham gia giao thông bình thường.",
+    "takeaway": "Văn hóa giao thông bắt đầu từ đi đúng luật và tôn trọng người khác."
+  },
+  "1047": {
+    "reason": "Người gây tai nạn có trách nhiệm dừng lại, hỗ trợ người bị nạn, bảo vệ hiện trường và phối hợp với cơ quan chức năng theo quy định. Bỏ trốn để né trách nhiệm hoặc cố ý không cứu người dù có điều kiện đều làm hậu quả nặng hơn nên bị nghiêm cấm.",
+    "takeaway": "Gây tai nạn: không bỏ trốn, không bỏ mặc người bị nạn."
+  },
+  "1048": {
+    "reason": "Cả việc xâm phạm tính mạng, sức khỏe, tài sản của người liên quan lẫn bỏ trốn để trốn tránh trách nhiệm đều cản trở cứu nạn và xử lý tai nạn đúng pháp luật. Hai hành vi độc lập này đều bị nghiêm cấm nên phải chọn phương án bao gồm cả hai.",
+    "takeaway": "Bảo vệ người và tài sản tại hiện trường; tuyệt đối không bỏ trốn."
+  },
+  "1049": {
+    "reason": "Xâm phạm tính mạng, sức khỏe hoặc tài sản của người bị nạn và người gây tai nạn là hành vi bị nghiêm cấm. Ngược lại, sơ cứu kịp thời cho bất kỳ người nào bị thương là việc cần làm để hạn chế hậu quả, không phải chờ cơ quan có thẩm quyền cho phép mới được cứu người.",
+    "takeaway": "Không xâm hại người, tài sản; ưu tiên sơ cứu người bị thương."
+  },
+  "1050": {
+    "reason": "Khi xe tay ga xuống dốc dài, cần duy trì động cơ hoạt động và giữ tay ga ở mức phù hợp, đồng thời phối hợp phanh trước và phanh sau để kiểm soát tốc độ, độ ổn định. Tắt động cơ làm giảm khả năng chủ động, còn chỉ dùng phanh trước dễ gây mất cân bằng hoặc trượt bánh.",
+    "takeaway": "Xuống dốc bằng xe tay ga: không tắt máy, phối hợp cả hai phanh."
+  },
+  "1051": {
+    "reason": "Số thấp giúp tận dụng lực hãm của động cơ để giữ tốc độ khi xuống dốc, nhờ đó phanh chân không phải làm việc liên tục và ít bị quá nhiệt. Số cao làm lực hãm yếu, còn về số 0 khiến xe trôi tự do và khó kiểm soát.",
+    "takeaway": "Xuống dốc cao: về số thấp, nhả ga và dùng phanh chân phù hợp."
+  },
+  "1052": {
+    "reason": "Khi có chuông hoặc chắn đã hạ, xe phải dừng đúng khoảng cách và giữ xe chắc nếu đường dốc hay phải chờ lâu. Khi chưa có cảnh báo, người lái vẫn phải quan sát, chỉ qua khi an toàn, dùng số thấp và tránh đổi số giữa đường ray để hạn chế chết máy; vì vậy cả hai ý đều đúng.",
+    "takeaway": "Qua đường sắt: dừng khi có cảnh báo; khi được qua thì dùng số thấp và không đổi số trên ray."
+  },
+  "1053": {
+    "reason": "Về số thấp tạo lực hãm động cơ, kết hợp nhả ga và phanh chân vừa mức sẽ kiểm soát tốc độ ổn định trên dốc dài. Đạp hết côn làm mất phanh động cơ, còn lên số cao làm giảm lực hãm và khiến phanh chân dễ quá nhiệt.",
+    "takeaway": "Dốc dài: số thấp + phanh động cơ + phanh chân vừa mức."
+  },
+  "1054": {
+    "reason": "Mở cửa xe đột ngột có thể va vào xe đạp, mô tô hoặc người đang đi sát bên. Người lái phải quan sát cả trước lẫn sau, chỉ mở hé để kiểm tra lần cuối rồi mở vừa đủ khi chắc chắn an toàn; không mở hết cửa ngay.",
+    "takeaway": "Quan sát trước–sau, mở hé kiểm tra rồi mới xuống xe."
+  },
+  "1055": {
+    "reason": "Số thấp tăng lực kéo trên đường trơn, lầy và tạo phanh động cơ khi xuống dốc, giúp xe ổn định hơn khi phối hợp với phanh chân. Về N làm xe mất lực hãm động cơ, còn dùng phanh tay để giảm tốc khi xe đang chạy có thể khóa bánh và gây mất lái.",
+    "takeaway": "Đường trơn hoặc dốc dài với xe số tự động: chọn số thấp, không về N."
+  },
+  "1056": {
+    "reason": "Mưa to hoặc sương mù làm giảm tầm nhìn và tăng quãng phanh, nên phải giảm tốc, tăng khoảng cách và dùng đèn sương mù cùng đèn chiếu gần. Đèn pha có thể phản xạ vào hạt nước làm người lái càng khó nhìn, còn bám gần xe trước làm mất khoảng xử lý.",
+    "takeaway": "Tầm nhìn kém: giảm tốc, tăng khoảng cách, bật đèn sương mù và đèn gần."
+  },
+  "1057": {
+    "reason": "Làn dừng khẩn cấp được dành cho xe gặp sự cố, tai nạn hoặc tình huống khẩn cấp khiến xe không thể tiếp tục di chuyển bình thường. Dùng làn này để nghỉ, chụp ảnh hay làm việc riêng vừa cản xe cứu hộ vừa tạo nguy cơ va chạm nên không được phép.",
+    "takeaway": "Làn khẩn cấp chỉ dùng cho sự cố, tai nạn hoặc tình huống bất khả kháng."
+  },
+  "1058": {
+    "reason": "Với xe số tự động xuống dốc dài và cao, chọn L, 1 hoặc 2 giúp động cơ tham gia hãm xe; người lái nhả ga và bổ sung phanh chân ở mức phù hợp. Về N làm mất phanh động cơ, còn kéo phanh tay khi xe đang chạy có thể gây khóa bánh và mất lái.",
+    "takeaway": "Xe số tự động xuống dốc: dùng L/1/2, không về N."
+  },
+  "1059": {
+    "reason": "Xe từ đường nhánh đi vào đường chính đang nhập vào dòng giao thông có quyền ưu tiên cao hơn. Vì vậy phải giảm tốc, quan sát và nhường mọi xe trên đường chính từ bất kỳ hướng nào tới; kích thước xe, còi hoặc đèn không làm thay đổi quy tắc này.",
+    "takeaway": "Từ đường nhánh ra đường chính: giảm tốc và nhường xe trên đường chính."
+  },
+  "1060": {
+    "reason": "Nhắn tin hoặc gọi điện khi đang điều khiển xe làm mắt, tay và sự chú ý rời khỏi việc lái xe; chỉ giảm tốc vẫn không loại bỏ nguy hiểm. Người lái phải tìm nơi được phép, giảm tốc và dừng xe an toàn rồi mới sử dụng điện thoại.",
+    "takeaway": "Cần dùng điện thoại: dừng xe đúng nơi cho phép trước."
+  }
+}
