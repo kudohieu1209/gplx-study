@@ -736,10 +736,14 @@ export default function HomePage() {
 
           {activeQuestion && !showResults && (
             <div className="topbar-session-status" aria-live="polite">
-              <small>{modeLabel(sessionMode)}</small>
+              <small>
+                {activeChapter
+                  ? `CHƯƠNG ${chapterMeta[activeChapter - 1].roman}: ${chapterMeta[activeChapter - 1].title}`
+                  : modeLabel(sessionMode)}
+              </small>
               <strong className={sessionMode === "test" ? "quiz-clock" : ""}>
                 {sessionMode === "test" && <><Clock3 size={13} /> {formatClock(testSecondsLeft)} · </>}
-                Đã làm {sessionDisplayAnswered} / {sessionDisplayTotal} câu
+                {sessionDisplayAnswered}/{sessionDisplayTotal}
               </strong>
             </div>
           )}
