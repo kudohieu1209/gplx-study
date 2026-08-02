@@ -366,6 +366,8 @@ export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [testSecondsLeft, setTestSecondsLeft] = useState(20 * 60);
   const [chaptersOpen, setChaptersOpen] = useState(false);
+  const [activeChapter, setActiveChapter] = useState<number | null>(null);
+  const [chapterReplay, setChapterReplay] = useState(false);
 
   useEffect(() => {
     try {
@@ -408,6 +410,18 @@ export default function HomePage() {
   const answeredCount = session.filter(
     (question) => sessionAnswers[question.id] !== undefined,
   ).length;
+  const activeChapterQuestions = activeChapter
+    ? questions.filter((question) => question.chapter === activeChapter)
+    : [];
+  const learnedChapterCount = activeChapterQuestions.filter(
+    (question) => progress[question.id]?.attempts || sessionAnswers[question.id] !== undefined,
+  ).length;
+  const sessionDisplayAnswered = activeChapter && !chapterReplay
+    ? learnedChapterCount
+    : answeredCount;
+  const sessionDisplayTotal = activeChapter
+    ? activeChapterQuestions.length
+    : session.length;
 
   const summary = useMemo(() => {
     const values = Object.entries(progress)
@@ -439,7 +453,7 @@ export default function HomePage() {
           ...chapter,
           mastered,
           attempted,
-          percent: Math.round((mastered / chapter.count) * 100),
+          percent: Math.round((attempted / chapter.count) * 100),
         };
       }),
     [progress],
@@ -509,8 +523,20 @@ export default function HomePage() {
   const startSession = useCallback(
     (mode: SessionMode, chapter?: number, singleQuestion?: Question) => {
       let selected: Question[] = [];
+      let nextActiveChapter: number | null = null;
+      let nextChapterReplay = false;
       if (singleQuestion) {
         selected = [singleQuestion];
+      } else if (mode === "learn" && chapter) {
+        const chapterQuestions = questions
+          .filter((question) => question.chapter === chapter)
+          .sort((first, second) => first.id - second.id);
+        const remainingQuestions = chapterQuestions.filter(
+          (question) => !progress[question.id]?.attempts,
+        );
+        nextActiveChapter = chapter;
+        nextChapterReplay = remainingQuestions.length === 0;
+        selected = nextChapterReplay ? chapterQuestions : remainingQuestions;
       } else if (mode === "critical") {
         selected = [...criticalQuestions].sort((first, second) => {
           const firstProgress = progress[first.id];
@@ -522,9 +548,7 @@ export default function HomePage() {
       } else if (mode === "test") {
         selected = shuffle(questions).slice(0, 30);
       } else {
-        const pool = chapter
-          ? questions.filter((question) => question.chapter === chapter)
-          : mode === "review" ? [...questions, ...criticalQuestions] : questions;
+        const pool = mode === "review" ? [...questions, ...criticalQuestions] : questions;
         const prioritized = [...pool].sort((first, second) => {
           const firstProgress = progress[first.id];
           const secondProgress = progress[second.id];
@@ -556,6 +580,8 @@ export default function HomePage() {
       }
       setSession(selected);
       setSessionMode(mode);
+      setActiveChapter(nextActiveChapter);
+      setChapterReplay(nextChapterReplay);
       setSessionAnswers({});
       setShowResults(false);
       setLibraryOpen(false);
@@ -630,6 +656,11 @@ export default function HomePage() {
     : 0;
 
   const showDashboard = () => {
+    setSession([]);
+    setSessionAnswers({});
+    setShowResults(false);
+    setActiveChapter(null);
+    setChapterReplay(false);
     setChaptersOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -644,11 +675,9 @@ export default function HomePage() {
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
 
-      {(!activeQuestion || showResults) && (
-      <>
-      <header className="topbar">
-        <div className="topbar-inner">
-          <button className="brand" aria-label="Về trang tổng quan" onClick={showDashboard}>
+      <header className={`topbar ${activeQuestion && !showResults ? "session-topbar" : ""}`}>
+        <div className={`topbar-inner ${activeQuestion && !showResults ? "session-active" : ""}`}>
+          <button className="brand" aria-label={activeQuestion ? "Rời phiên học và về trang tổng quan" : "Về trang tổng quan"} onClick={showDashboard}>
             <span className="brand-mark"><CarFront size={22} strokeWidth={2.2} /></span>
             <span>
               <strong>GPLX</strong>
@@ -656,13 +685,30 @@ export default function HomePage() {
             </span>
           </button>
 
+          {activeQuestion && !showResults && (
+            <div className="topbar-session-status" aria-live="polite">
+              <small>{modeLabel(sessionMode)}</small>
+              <strong className={sessionMode === "test" ? "quiz-clock" : ""}>
+                {sessionMode === "test" && <><Clock3 size={13} /> {formatClock(testSecondsLeft)} · </>}
+                Đã làm {sessionDisplayAnswered} / {sessionDisplayTotal} câu
+              </strong>
+            </div>
+          )}
+
           <div className="topbar-actions">
-            <button className="icon-button" onClick={() => openLibrary()} aria-label="Tìm câu hỏi"><Search size={19} /></button>
+            {activeQuestion && !showResults && sessionMode === "test" && (
+              <button className="primary-button topbar-submit" onClick={finishSession} disabled={answeredCount !== session.length}>
+                <span>Nộp bài</span><Check size={17} />
+              </button>
+            )}
+            <button className="icon-button topbar-search" onClick={() => openLibrary()} aria-label="Tìm câu hỏi"><Search size={19} /></button>
             <button className="icon-button" onClick={() => setSettingsOpen(true)} aria-label="Cài đặt"><Settings size={19} /></button>
           </div>
         </div>
       </header>
 
+      {(!activeQuestion || showResults) && (
+      <>
       <div className="content-wrap">
         {!chaptersOpen && (
         <>
@@ -743,7 +789,7 @@ export default function HomePage() {
                   <div className="chapter-meta"><span>{chapter.count} câu hỏi</span><span>{chapter.percent}%</span></div>
                   <div className="chapter-progress"><span style={{ width: `${chapter.percent}%`, background: chapter.color }} /></div>
                   <button onClick={() => startSession("learn", chapter.id)}>
-                    {chapter.attempted ? "Học tiếp chương này" : "Bắt đầu chương này"}
+                    {chapter.percent === 100 ? "Học lại chương này" : chapter.attempted ? "Học tiếp chương này" : "Bắt đầu chương này"}
                     <ChevronRight size={17} />
                   </button>
                 </article>
@@ -766,27 +812,6 @@ export default function HomePage() {
 
       {activeQuestion && !showResults && (
         <section className="quiz-page" aria-label={modeLabel(sessionMode)}>
-          <header className="quiz-floating-bar">
-            <div className="quiz-progress-track"><span style={{ width: `${(answeredCount / session.length) * 100}%` }} /></div>
-            <div className="quiz-header">
-              <button className="icon-button quiet" onClick={() => setSession([])} aria-label="Đóng phiên học"><X size={20} /></button>
-              <div>
-                <small>{modeLabel(sessionMode)}</small>
-                <strong className={sessionMode === "test" ? "quiz-clock" : ""}>
-                  {sessionMode === "test" && <><Clock3 size={13} /> {formatClock(testSecondsLeft)} · </>}
-                  Đã làm {answeredCount} / {session.length} câu
-                </strong>
-              </div>
-              <div className="quiz-header-actions">
-                <span className="quiz-header-count">{answeredCount}/{session.length}</span>
-                <button className="primary-button quiz-next" onClick={finishSession} disabled={answeredCount !== session.length}>
-                  <span>{sessionMode === "test" ? "Nộp bài" : "Hoàn thành"}</span>
-                  <Check size={18} />
-                </button>
-              </div>
-            </div>
-          </header>
-
           <div className="quiz-page-content">
             <div className="quiz-body quiz-list-body">
               {session.map((question, questionIndex) => {
@@ -898,7 +923,7 @@ export default function HomePage() {
             </p>
             <div className="result-score"><strong>{resultPercent}%</strong><span>Độ chính xác</span></div>
             <div className="result-actions">
-              <button className="secondary-button" onClick={() => { setShowResults(false); setSession([]); }}>Về tổng quan</button>
+              <button className="secondary-button" onClick={showDashboard}>Về tổng quan</button>
               <button className="primary-button" onClick={() => startSession("review")}><RotateCcw size={17} /> Ôn câu sai</button>
             </div>
           </section>
