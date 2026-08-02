@@ -31,6 +31,7 @@ import {
 import { useCallback, useEffect, useMemo, useState } from "react";
 import criticalExplanationsData from "./data/critical-explanations.json";
 import criticalQuestionsData from "./data/critical-questions.json";
+import questionExplanationsData from "./data/question-explanations.json";
 import questionsData from "./data/questions.json";
 
 type Question = {
@@ -75,6 +76,7 @@ type QuestionExplanation = {
 const questions = questionsData as Question[];
 const criticalQuestions = criticalQuestionsData as Question[];
 const criticalQuestionExplanations = criticalExplanationsData as Record<number, QuestionExplanation>;
+const additionalQuestionExplanations = questionExplanationsData as Record<number, QuestionExplanation>;
 const PROGRESS_KEY = "lai-vung-progress-v1";
 const BOOKMARK_KEY = "lai-vung-bookmarks-v1";
 const DAYS_KEY = "lai-vung-study-days-v1";
@@ -307,7 +309,10 @@ const questionExplanations: Record<number, QuestionExplanation> = {
 };
 
 function getQuestionExplanation(question: Question): QuestionExplanation | null {
-  return questionExplanations[question.id] ?? criticalQuestionExplanations[question.id] ?? null;
+  return questionExplanations[question.id]
+    ?? additionalQuestionExplanations[question.id]
+    ?? criticalQuestionExplanations[question.id]
+    ?? null;
 }
 
 function shuffle<T>(items: T[]) {
