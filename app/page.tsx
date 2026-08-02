@@ -51,6 +51,7 @@ type QuestionProgress = {
   mastered: boolean;
   lastSeen: number;
   nextReview: number;
+  lastAnswer?: number;
 };
 
 type SessionMode = "learn" | "review" | "quick" | "test" | "single" | "critical";
@@ -523,6 +524,7 @@ export default function HomePage() {
           mastered: streak >= 3,
           lastSeen: now,
           nextReview: now + delay,
+          lastAnswer: answer,
         },
       };
     });
@@ -531,6 +533,7 @@ export default function HomePage() {
   const startSession = useCallback(
     (mode: SessionMode, chapter?: number, singleQuestion?: Question) => {
       let selected: Question[] = [];
+      const restoredAnswers: Record<number, number> = {};
       let nextActiveChapter: number | null = null;
       let nextChapterReplay = false;
       if (singleQuestion) {
@@ -539,12 +542,19 @@ export default function HomePage() {
         const chapterQuestions = questions
           .filter((question) => question.chapter === chapter)
           .sort((first, second) => first.id - second.id);
-        const remainingQuestions = chapterQuestions.filter(
-          (question) => !progress[question.id]?.attempts,
-        );
         nextActiveChapter = chapter;
-        nextChapterReplay = remainingQuestions.length === 0;
-        selected = nextChapterReplay ? chapterQuestions : remainingQuestions;
+        nextChapterReplay = chapterQuestions.every(
+          (question) => progress[question.id]?.attempts,
+        );
+        selected = chapterQuestions;
+        if (!nextChapterReplay) {
+          chapterQuestions.forEach((question) => {
+            const savedProgress = progress[question.id];
+            const savedAnswer = savedProgress?.lastAnswer
+              ?? (savedProgress?.streak ? question.correctAnswer : undefined);
+            if (savedAnswer !== undefined) restoredAnswers[question.id] = savedAnswer;
+          });
+        }
       } else if (mode === "critical") {
         selected = [...criticalQuestions].sort((first, second) => {
           const firstProgress = progress[first.id];
@@ -590,7 +600,7 @@ export default function HomePage() {
       setSessionMode(mode);
       setActiveChapter(nextActiveChapter);
       setChapterReplay(nextChapterReplay);
-      setSessionAnswers({});
+      setSessionAnswers(restoredAnswers);
       setShowResults(false);
       setLibraryOpen(false);
       setAnswerSheetOpen(false);
