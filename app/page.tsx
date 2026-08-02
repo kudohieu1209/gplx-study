@@ -2,12 +2,10 @@
 
 import {
   ArrowRight,
-  Bell,
   Bookmark,
   BookOpen,
   CarFront,
   Check,
-  ChevronDown,
   ChevronRight,
   CircleAlert,
   Clock3,
@@ -475,8 +473,8 @@ export default function HomePage() {
           <button className="brand" aria-label="Về trang tổng quan">
             <span className="brand-mark"><CarFront size={22} strokeWidth={2.2} /></span>
             <span>
-              <strong>Lái Vững</strong>
-              <small>600 câu hạng B</small>
+              <strong>GPLX</strong>
+              <small>Hạng B</small>
             </span>
           </button>
 
@@ -488,7 +486,6 @@ export default function HomePage() {
 
           <div className="topbar-actions">
             <button className="icon-button" onClick={() => openLibrary()} aria-label="Tìm câu hỏi"><Search size={19} /></button>
-            <button className="icon-button desktop-only" aria-label="Thông báo"><Bell size={19} /></button>
             <button className="icon-button" onClick={() => setSettingsOpen(true)} aria-label="Cài đặt"><Settings size={19} /></button>
             <div className="mini-progress" title={`${summary.completion}% đã thành thạo`}>
               <span style={{ "--mini-progress": `${summary.completion * 3.6}deg` } as React.CSSProperties}>
@@ -501,11 +498,6 @@ export default function HomePage() {
 
       <div className="content-wrap">
         <section className="exam-summary" aria-label="Cấu trúc đề thi hạng B">
-          <div className="summary-license">
-            <span><CarFront size={20} /></span>
-            <strong>Hạng B</strong>
-            <ChevronDown size={17} />
-          </div>
           <div className="exam-stat"><strong>30</strong><span>Câu hỏi/đề</span></div>
           <div className="exam-stat"><strong>20&apos;</strong><span>Thời gian</span></div>
           <div className="exam-stat"><strong>27/30</strong><span>Điểm đạt</span></div>
@@ -587,7 +579,7 @@ export default function HomePage() {
         </section>
 
         <footer className="app-footer">
-          <span><CarFront size={17} /> Lái Vững</span>
+          <span><CarFront size={17} /> GPLX</span>
           <p>Dữ liệu được trích từ bộ 600 câu hỏi sát hạch lái xe cơ giới đường bộ 2025.</p>
         </footer>
       </div>
@@ -751,7 +743,7 @@ export default function HomePage() {
             {infoModal === "tips" ? (
               <div className="tips-list">
                 <div><span>01</span><p><strong>Học từng chương nhỏ</strong>Đừng làm cả 600 câu một lượt. Hoàn thành từng nhóm 15 câu để giữ tập trung.</p></div>
-                <div><span>02</span><p><strong>Ôn câu sai trước</strong>Câu trả lời sai sẽ được Lái Vững tự động đưa lên đầu phiên học sau.</p></div>
+                <div><span>02</span><p><strong>Ôn câu sai trước</strong>Câu trả lời sai sẽ được GPLX tự động đưa lên đầu phiên học sau.</p></div>
                 <div><span>03</span><p><strong>Không học vị trí đáp án</strong>Hãy đọc lại câu hỏi và tự nói lý do trước khi xem đáp án đúng.</p></div>
                 <div><span>04</span><p><strong>Lặp lại cách quãng</strong>Đúng liên tiếp 3 lần ở các phiên khác nhau mới được tính là thành thạo.</p></div>
               </div>
