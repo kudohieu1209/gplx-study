@@ -11,9 +11,9 @@
   --muted-strong: #45536a;
   --line: rgba(15, 23, 42, 0.09);
   --line-strong: rgba(15, 23, 42, 0.15);
-  --blue: #0866ff;
-  --blue-deep: #0757d7;
-  --blue-soft: #eaf2ff;
+  --blue: #059669;
+  --blue-deep: #047857;
+  --blue-soft: #ecfdf5;
   --green: #0eaa72;
   --green-soft: #e8f8f1;
   --red: #e84c5b;
@@ -34,9 +34,9 @@
   --muted-strong: #c2cad6;
   --line: rgba(255, 255, 255, 0.08);
   --line-strong: rgba(255, 255, 255, 0.15);
-  --blue: #4a96ff;
-  --blue-deep: #2f7eea;
-  --blue-soft: rgba(57, 132, 246, 0.15);
+  --blue: #10b981;
+  --blue-deep: #059669;
+  --blue-soft: rgba(16, 185, 129, 0.15);
   --green-soft: rgba(14, 170, 114, 0.14);
   --red-soft: rgba(232, 76, 91, 0.14);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.15), 0 12px 30px rgba(0, 0, 0, 0.18);
@@ -102,7 +102,7 @@ button {
 
 button:focus-visible,
 input:focus-visible {
-  outline: 3px solid rgba(8, 102, 255, 0.22);
+  outline: 3px solid rgba(5, 150, 105, 0.25);
   outline-offset: 2px;
 }
 
@@ -124,7 +124,7 @@ input:focus-visible {
 .ambient-one {
   width: 380px;
   height: 380px;
-  background: #c8dcff;
+  background: #a7f3d0;
   top: 80px;
   left: -170px;
 }
@@ -243,8 +243,8 @@ input:focus-visible {
   display: grid;
   place-items: center;
   color: #fff;
-  background: linear-gradient(145deg, #1977ff, #064fd1);
-  box-shadow: 0 8px 20px rgba(8, 102, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  background: linear-gradient(145deg, #10b981, #047857);
+  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.28);
 }
 
 .brand > span:last-child {
@@ -464,8 +464,8 @@ input:focus-visible {
   flex-direction: column;
   align-items: flex-start;
   color: #fff;
-  background: linear-gradient(145deg, #1265f4 0%, #2749eb 50%, #4728de 100%);
-  box-shadow: 0 22px 52px rgba(36, 60, 210, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.19);
+  background: linear-gradient(145deg, #059669 0%, #047857 48%, #064e3b 100%);
+  box-shadow: 0 22px 52px rgba(4, 120, 87, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.19);
 }
 
 .exam-card-orb {
@@ -488,7 +488,7 @@ input:focus-visible {
   height: 140px;
   left: -80px;
   bottom: -70px;
-  background: rgba(90, 212, 255, 0.13);
+  background: rgba(52, 211, 153, 0.16);
   filter: blur(8px);
 }
 
@@ -765,13 +765,13 @@ input:focus-visible {
 .primary-button {
   border: 1px solid rgba(0, 0, 0, 0.04);
   color: #fff;
-  background: linear-gradient(180deg, #1878ff, #0863ee);
-  box-shadow: 0 9px 22px rgba(8, 102, 255, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.26);
+  background: linear-gradient(180deg, #10b981, #059669);
+  box-shadow: 0 9px 22px rgba(5, 150, 105, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.26);
 }
 
 .primary-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(8, 102, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.26);
+  box-shadow: 0 12px 28px rgba(5, 150, 105, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.26);
 }
 
 .primary-button:disabled {
@@ -804,7 +804,7 @@ input:focus-visible {
   height: 204px;
   padding: 13px;
   border-radius: 50%;
-  background: conic-gradient(var(--blue) var(--progress, 0deg), rgba(27, 85, 172, 0.11) 0deg);
+  background: conic-gradient(var(--blue) var(--progress, 0deg), rgba(5, 150, 105, 0.12) 0deg);
   box-shadow: 0 14px 40px rgba(29, 84, 166, 0.12);
 }
 
@@ -1108,7 +1108,7 @@ input:focus-visible {
   place-items: center;
   color: #fff;
   background: var(--blue);
-  box-shadow: 0 8px 20px rgba(8, 102, 255, 0.23);
+  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.25);
   cursor: pointer;
   transition: transform 180ms ease;
 }
@@ -1985,7 +1985,7 @@ input:focus-visible {
 
 .answer-option:hover:not(:disabled) {
   transform: translateY(-1px);
-  border-color: rgba(8, 102, 255, 0.38);
+  border-color: rgba(5, 150, 105, 0.38);
   box-shadow: 0 7px 20px rgba(16, 24, 40, 0.06);
 }
 
@@ -2014,7 +2014,7 @@ input:focus-visible {
 .answer-option.selected {
   border-color: var(--blue);
   background: var(--blue-soft);
-  box-shadow: 0 0 0 3px rgba(8, 102, 255, 0.09);
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.12);
 }
 
 .answer-option.selected .answer-letter,
