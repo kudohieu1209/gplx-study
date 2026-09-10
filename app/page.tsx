@@ -1710,8 +1710,8 @@ export default function HomePage() {
               className="setting-row informational"
               onClick={() => {
                 setSettingsOpen(false);
-                setSyncStatusMsg(null);
-                setSyncModalOpen(true);
+                setAuthStatusMsg(null);
+                setAuthModalOpen(true);
               }}
               style={{ cursor: "pointer" }}
             >

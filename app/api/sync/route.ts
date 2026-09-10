@@ -1,6 +1,4 @@
-import { eq } from "drizzle-orm";
-import { getDb, ensureSyncTable } from "@/db";
-import { userSync } from "@/db/schema";
+import { findUserByCode, saveUser, updateUserRecord } from "@/db";
 
 async function hashPassword(password: string): Promise<string> {
   const encoder = new TextEncoder();
@@ -12,8 +10,6 @@ async function hashPassword(password: string): Promise<string> {
 
 export async function POST(request: Request) {
   try {
-    await ensureSyncTable();
-    const db = getDb();
     const body = await request.json();
 
     const action = body.action;
@@ -41,25 +37,19 @@ export async function POST(request: Request) {
         );
       }
 
-      // Kiểm tra tài khoản đã tồn tại chưa
-      const existing = await db
-        .select()
-        .from(userSync)
-        .where(eq(userSync.syncCode, username))
-        .limit(1);
-
+      const existing = await findUserByCode(username);
       const passwordHash = await hashPassword(password);
       const initialDataStr = typeof data === "object" ? JSON.stringify(data) : (data || "{}");
       const now = new Date().toISOString();
 
-      if (existing.length > 0) {
+      if (existing) {
         // Nếu đã tồn tại và mật khẩu khớp -> tự động đăng nhập luôn cho tiện
-        if (existing[0].pinHash === passwordHash) {
+        if (existing.pinHash === passwordHash) {
           return Response.json({
             success: true,
-            username: existing[0].syncCode,
-            data: JSON.parse(existing[0].data || "{}"),
-            updatedAt: existing[0].updatedAt,
+            username: existing.syncCode,
+            data: JSON.parse(existing.data || "{}"),
+            updatedAt: existing.updatedAt,
             message: "Tài khoản đã tồn tại, đã tự động đăng nhập!",
           });
         }
@@ -69,7 +59,7 @@ export async function POST(request: Request) {
         );
       }
 
-      await db.insert(userSync).values({
+      await saveUser({
         syncCode: username,
         pinHash: passwordHash,
         data: initialDataStr,
@@ -94,13 +84,9 @@ export async function POST(request: Request) {
         );
       }
 
-      const existing = await db
-        .select()
-        .from(userSync)
-        .where(eq(userSync.syncCode, username))
-        .limit(1);
+      const existing = await findUserByCode(username);
 
-      if (existing.length === 0) {
+      if (!existing) {
         return Response.json(
           { error: "Tài khoản không tồn tại. Vui lòng kiểm tra lại hoặc chuyển sang tab Đăng ký." },
           { status: 404 }
@@ -108,7 +94,7 @@ export async function POST(request: Request) {
       }
 
       const passwordHash = await hashPassword(password);
-      if (existing[0].pinHash !== passwordHash) {
+      if (existing.pinHash !== passwordHash) {
         return Response.json(
           { error: "Mật khẩu không chính xác. Vui lòng thử lại!" },
           { status: 401 }
@@ -117,16 +103,16 @@ export async function POST(request: Request) {
 
       let parsedData = {};
       try {
-        parsedData = JSON.parse(existing[0].data || "{}");
+        parsedData = JSON.parse(existing.data || "{}");
       } catch {
         parsedData = {};
       }
 
       return Response.json({
         success: true,
-        username: existing[0].syncCode,
+        username: existing.syncCode,
         data: parsedData,
-        updatedAt: existing[0].updatedAt,
+        updatedAt: existing.updatedAt,
         message: "Đăng nhập và đồng bộ thành công!",
       });
     }
@@ -140,13 +126,9 @@ export async function POST(request: Request) {
         );
       }
 
-      const existing = await db
-        .select()
-        .from(userSync)
-        .where(eq(userSync.syncCode, username))
-        .limit(1);
+      const existing = await findUserByCode(username);
 
-      if (existing.length === 0) {
+      if (!existing) {
         return Response.json(
           { error: "Tài khoản không tồn tại." },
           { status: 404 }
@@ -154,7 +136,7 @@ export async function POST(request: Request) {
       }
 
       const passwordHash = await hashPassword(password);
-      if (existing[0].pinHash !== passwordHash) {
+      if (existing.pinHash !== passwordHash) {
         return Response.json(
           { error: "Xác thực tài khoản thất bại." },
           { status: 401 }
@@ -164,13 +146,7 @@ export async function POST(request: Request) {
       const dataStr = typeof data === "object" ? JSON.stringify(data) : String(data || "{}");
       const now = new Date().toISOString();
 
-      await db
-        .update(userSync)
-        .set({
-          data: dataStr,
-          updatedAt: now,
-        })
-        .where(eq(userSync.syncCode, username));
+      await updateUserRecord(username, dataStr, now);
 
       return Response.json({
         success: true,
