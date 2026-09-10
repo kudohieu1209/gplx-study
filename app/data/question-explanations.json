@@ -118,5 +118,2125 @@
   "45": {
     "reason": "Khi xe sau xin vượt và điều kiện cho phép, xe phía trước phải giảm tốc, bật tín hiệu rẽ phải và đi sát bên phải để tạo khoảng trống vượt an toàn. Chỉ hỗ trợ khi đủ điều kiện, không thực hiện thao tác này một cách máy móc nếu phía trước hoặc bên phải đang có nguy hiểm.",
     "takeaway": "Xe sau xin vượt an toàn: giảm tốc, báo phải, đi sát phải để nhường."
+  },
+  "46": {
+    "reason": "Vượt xe là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước. Vượt xe chỉ an toàn khi có đủ tầm nhìn và khoảng trống; báo hiệu rõ để xe trước cùng phương tiện ngược chiều dự đoán được thao tác.",
+    "takeaway": "Điểm cần nhớ: tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía…"
+  },
+  "47": {
+    "reason": "Không được phép vượt. Cầu hẹp một làn không có khoảng tránh, còn đường cong khuất tầm nhìn không cho phép kiểm tra xe ngược chiều; vượt tại đây không có lối thoát an toàn.",
+    "takeaway": "Điểm cần nhớ: không được phép vượt."
+  },
+  "48": {
+    "reason": "Báo hiệu nhấp nháy bằng đèn chiếu sáng phía trước hoặc còi. Còi là tín hiệu phòng ngừa nguy hiểm, không phải phương tiện thúc ép xe khác hoặc gây tiếng ồn tùy ý.",
+    "takeaway": "Điểm cần nhớ: báo hiệu nhấp nháy bằng đèn chiếu sáng phía trước hoặc còi."
+  },
+  "49": {
+    "reason": "Mốc cần chọn là Từ 05 giờ đến 22 giờ. Còi là tín hiệu phòng ngừa nguy hiểm, không phải phương tiện thúc ép xe khác hoặc gây tiếng ồn tùy ý.",
+    "takeaway": "Chốt đúng mốc: từ 05 giờ đến 22 giờ."
+  },
+  "50": {
+    "reason": "Để báo hiệu cho người tham gia giao thông đường bộ khi xuất hiện tình huống có thể mất an toàn giao thông hoặc báo hiệu chuẩn bị vượt xe. Còi là tín hiệu phòng ngừa nguy hiểm, không phải phương tiện thúc ép xe khác hoặc gây tiếng ồn tùy ý.",
+    "takeaway": "Điểm cần nhớ: để báo hiệu cho người tham gia giao thông đường bộ khi xuất hiện tình huống có thể mất an toàn giao thông hoặc báo hiệu chuẩn bị vượt xe."
+  },
+  "51": {
+    "reason": "Chỉ bật đèn chiếu gần (đèn cốt). Đèn chiếu gần vẫn bảo đảm vùng quan sát cần thiết nhưng không rọi chùm sáng cao vào mắt người đi ngược chiều, nhất là nơi đã có chiếu sáng đường phố.",
+    "takeaway": "Điểm cần nhớ: chỉ bật đèn chiếu gần (đèn cốt)."
+  },
+  "52": {
+    "reason": "Dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khác. Cầm và thao tác thiết bị làm mắt, tay và sự chú ý rời khỏi việc lái xe nên bị cấm khi đang điều khiển phương tiện.",
+    "takeaway": "Tránh tuyệt đối: dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khác."
+  },
+  "53": {
+    "reason": "Trên cầu hẹp có một làn đường; nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; khi gặp xe ưu tiên. Cầu hẹp không có khoảng tránh, giao cắt đường sắt có nguy cơ tàu đến, còn xe ưu tiên phải được nhường; cả ba trường hợp đều không đủ điều kiện vượt an toàn.",
+    "takeaway": "Tránh tuyệt đối: trên cầu hẹp có một làn đường; nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; khi gặp xe ưu tiên."
+  },
+  "54": {
+    "reason": "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, gầm cầu vượt, ngầm; đồng thời tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn đường cong tầm nhìn bị che khuất, trên đường cao tốc, trong hầm đường bộ, trên đường một chiều. Quay đầu làm xe cắt qua nhiều dòng giao thông, vì vậy chỉ được thực hiện nơi đủ tầm nhìn, đủ mặt đường và không thuộc vị trí cấm.",
+    "takeaway": "Tránh tuyệt đối: ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, gầm cầu vượt, ngầm; đồng thời tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn…"
+  },
+  "55": {
+    "reason": "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, trên đường cao tốc, tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc. Quay đầu làm xe cắt qua nhiều dòng giao thông, vì vậy chỉ được thực hiện nơi đủ tầm nhìn, đủ mặt đường và không thuộc vị trí cấm.",
+    "takeaway": "Tránh tuyệt đối: ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, trên đường cao tốc, tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc."
+  },
+  "56": {
+    "reason": "Phải quan sát, bảo đảm khoảng cách an toàn với xe phía sau; giảm tốc độ và có tín hiệu báo hướng rẽ; đồng thời chuyển dần sang làn gần nhất với hướng rẽ. Khi bảo đảm an toàn, không gây trở ngại cho người và phương tiện khác mới được chuyển hướng. Báo hiệu sớm, giảm tốc và quan sát điểm mù giúp phương tiện xung quanh có thời gian phản ứng trước khi xe cắt sang hướng khác.",
+    "takeaway": "Nhớ đúng trình tự: phải quan sát, bảo đảm khoảng cách an toàn với xe phía sau; giảm tốc độ và có tín hiệu báo hướng rẽ; đồng thời chuyển dần sang làn gần nhất với hướng rẽ. Khi bảo đảm an toàn,…"
+  },
+  "57": {
+    "reason": "Trước khi thay đổi làn đường. Đèn báo rẽ phải bật trước khi xe dịch chuyển sang làn khác để xe phía sau nhận biết và điều chỉnh khoảng cách, không bật đồng thời với lúc đánh lái.",
+    "takeaway": "Điểm cần nhớ: trước khi thay đổi làn đường."
+  },
+  "58": {
+    "reason": "Ở đường một chiều, khu vực cấm dừng, trên phần đường dành cho người đi bộ qua đường; nơi đường bộ giao nhau, đường bộ giao nhau cùng mức với đường sắt; đồng thời nơi tầm nhìn bị che khuất, trong hầm đường bộ, trên đường cao tốc. Khi lùi, điểm mù phía sau lớn và hướng quan sát ngược chiều chuyển động; người lái phải bảo đảm chắc chắn không có người hoặc xe trong quỹ đạo.",
+    "takeaway": "Tránh tuyệt đối: ở đường một chiều, khu vực cấm dừng, trên phần đường dành cho người đi bộ qua đường; nơi đường bộ giao nhau, đường bộ giao nhau cùng mức với đường sắt; đồng thời nơi tầm nhìn…"
+  },
+  "59": {
+    "reason": "Trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; đồng thời trong phạm vi an toàn của đường sắt. Vị trí dừng, đỗ phải giữ được tầm nhìn và phần đường lưu thông; chiếm làn hoặc che khuất nút giao sẽ tạo xung đột cho xe khác.",
+    "takeaway": "Tránh tuyệt đối: trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; đồng thời trong phạm vi an toàn của đường sắt."
+  },
+  "60": {
+    "reason": "Mốc cần chọn là 0,25 mét. Vị trí dừng, đỗ phải giữ được tầm nhìn và phần đường lưu thông; chiếm làn hoặc che khuất nút giao sẽ tạo xung đột cho xe khác.",
+    "takeaway": "Chốt đúng mốc: 0,25 mét."
+  },
+  "61": {
+    "reason": "Mốc cần chọn là 20 mét. Vị trí dừng, đỗ phải giữ được tầm nhìn và phần đường lưu thông; chiếm làn hoặc che khuất nút giao sẽ tạo xung đột cho xe khác.",
+    "takeaway": "Chốt đúng mốc: 20 mét."
+  },
+  "62": {
+    "reason": "Song song cùng chiều với một xe khác đang dừng, đỗ trên đường; trên đoạn đường cong hoặc gần đầu dốc mà tầm nhìn bị che khuất; bên trái đường một chiều. Đi đúng phần đường, giảm tốc ở nơi khuất tầm nhìn và nhường xe khó điều khiển hơn giúp hai luồng xe không cắt vào quỹ đạo của nhau.",
+    "takeaway": "Tránh tuyệt đối: song song cùng chiều với một xe khác đang dừng, đỗ trên đường; trên đoạn đường cong hoặc gần đầu dốc mà tầm nhìn bị che khuất; bên trái đường một chiều."
+  },
+  "63": {
+    "reason": "Không được phép. Kéo, đẩy hoặc bám phương tiện khác làm hai xe phụ thuộc chuyển động lẫn nhau, dễ lệch hướng và ngã khi một bên phanh hoặc đổi hướng.",
+    "takeaway": "Điểm cần nhớ: không được phép."
+  },
+  "64": {
+    "reason": "Buông cả hai tay; đứng, nằm trên xe điều khiển xe; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Tránh tuyệt đối: buông cả hai tay; đứng, nằm trên xe điều khiển xe; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy."
+  },
+  "65": {
+    "reason": "Buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy. Kéo, đẩy hoặc bám phương tiện khác làm hai xe phụ thuộc chuyển động lẫn nhau, dễ lệch hướng và ngã khi một bên phanh hoặc đổi hướng.",
+    "takeaway": "Tránh tuyệt đối: buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy."
+  },
+  "66": {
+    "reason": "Mang, vác vật cồng kềnh; đồng thời bám, kéo hoặc đẩy các phương tiện khác. Kéo, đẩy hoặc bám phương tiện khác làm hai xe phụ thuộc chuyển động lẫn nhau, dễ lệch hướng và ngã khi một bên phanh hoặc đổi hướng.",
+    "takeaway": "Tránh tuyệt đối: mang, vác vật cồng kềnh; đồng thời bám, kéo hoặc đẩy các phương tiện khác."
+  },
+  "67": {
+    "reason": "Không được phép. Kéo, đẩy hoặc bám phương tiện khác làm hai xe phụ thuộc chuyển động lẫn nhau, dễ lệch hướng và ngã khi một bên phanh hoặc đổi hướng.",
+    "takeaway": "Điểm cần nhớ: không được phép."
+  },
+  "68": {
+    "reason": "Đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Điểm cần nhớ: đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách."
+  },
+  "69": {
+    "reason": "Chở người bệnh đi cấp cứu; áp giải người có hành vi vi phạm pháp luật; trẻ em dưới 12 tuổi; người già yếu hoặc người khuyết tật. Đây là nhóm dễ bị tổn thương trong giao thông, nên người lái phải giảm xung đột và dành đủ thời gian, không gian để họ di chuyển an toàn.",
+    "takeaway": "Điểm cần nhớ: chở người bệnh đi cấp cứu; áp giải người có hành vi vi phạm pháp luật; trẻ em dưới 12 tuổi; người già yếu hoặc người khuyết tật."
+  },
+  "70": {
+    "reason": "Đi xe dàn hàng ngang; buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác, dẫn dắt vật nuôi, mang, vác và chở vật cồng kềnh; chở người đứng trên xe, giá đèo hàng hoặc ngồi trên tay lái; xếp hàng hóa trên xe quá giới hạn quy định; đồng thời ngồi về một bên điều khiển xe; đứng, nằm trên xe điều khiển xe; thay người lái xe khi xe đang chạy; quay người về phía sau để điều khiển xe hoặc bịt mắt điều khiển xe; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy. Kéo, đẩy hoặc bám phương tiện khác làm hai xe phụ thuộc chuyển động lẫn nhau, dễ lệch hướng và ngã khi một bên phanh hoặc đổi hướng.",
+    "takeaway": "Tránh tuyệt đối: đi xe dàn hàng ngang; buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác, dẫn dắt vật nuôi, mang, vác và chở vật cồng kềnh; chở người đứng trên xe, giá đèo hàng hoặc…"
+  },
+  "71": {
+    "reason": "Đi xe dàn hàng ngang; đi xe vào phần đường dành cho người đi bộ và phương tiện khác; đồng thời sử dụng ô, thiết bị âm thanh, trừ thiết bị trợ thính. Đây là nhóm dễ bị tổn thương trong giao thông, nên người lái phải giảm xung đột và dành đủ thời gian, không gian để họ di chuyển an toàn.",
+    "takeaway": "Tránh tuyệt đối: đi xe dàn hàng ngang; đi xe vào phần đường dành cho người đi bộ và phương tiện khác; đồng thời sử dụng ô, thiết bị âm thanh, trừ thiết bị trợ thính."
+  },
+  "72": {
+    "reason": "Đi xe dàn hàng ngang, đi xe vào phần đường dành cho người đi bộ. Đây là nhóm dễ bị tổn thương trong giao thông, nên người lái phải giảm xung đột và dành đủ thời gian, không gian để họ di chuyển an toàn.",
+    "takeaway": "Tránh tuyệt đối: đi xe dàn hàng ngang, đi xe vào phần đường dành cho người đi bộ."
+  },
+  "73": {
+    "reason": "Không được sử dụng. Ô che tầm nhìn, chịu lực gió và chiếm một tay giữ thăng bằng, nên người ngồi trên mô tô không được sử dụng khi xe đang chạy.",
+    "takeaway": "Điểm cần nhớ: không được sử dụng."
+  },
+  "74": {
+    "reason": "Không được phép. Kéo, đẩy hoặc bám phương tiện khác làm hai xe phụ thuộc chuyển động lẫn nhau, dễ lệch hướng và ngã khi một bên phanh hoặc đổi hướng.",
+    "takeaway": "Điểm cần nhớ: không được phép."
+  },
+  "75": {
+    "reason": "Xử phạt cả người điều khiển và người được chở trên xe mô tô, xe gắn máy. Đây là nhóm dễ bị tổn thương trong giao thông, nên người lái phải giảm xung đột và dành đủ thời gian, không gian để họ di chuyển an toàn.",
+    "takeaway": "Điểm cần nhớ: xử phạt cả người điều khiển và người được chở trên xe mô tô, xe gắn máy."
+  },
+  "76": {
+    "reason": "Phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách, không sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính). Ô che tầm nhìn, chịu lực gió và chiếm một tay giữ thăng bằng, nên người ngồi trên mô tô không được sử dụng khi xe đang chạy.",
+    "takeaway": "Điểm cần nhớ: phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách, không sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính)."
+  },
+  "77": {
+    "reason": "Xe cơ giới, xe máy chuyên dùng xuống trước, xe thô sơ, người đi bộ xuống sau. Đây là nhóm dễ bị tổn thương trong giao thông, nên người lái phải giảm xung đột và dành đủ thời gian, không gian để họ di chuyển an toàn.",
+    "takeaway": "Điểm cần nhớ: xe cơ giới, xe máy chuyên dùng xuống trước, xe thô sơ, người đi bộ xuống sau."
+  },
+  "78": {
+    "reason": "Phải cho xe đi trong một làn đường và chỉ được chuyển làn đường ở những nơi cho phép; mỗi lần chuyển làn đường chỉ được phép chuyển sang một làn đường liền kề; khi chuyển làn đường phải có tín hiệu báo trước; phải quan sát bảo đảm khoảng cách an toàn với xe phía trước, phía sau và hai bên mới được chuyển làn. Báo hiệu sớm, giảm tốc và quan sát điểm mù giúp phương tiện xung quanh có thời gian phản ứng trước khi xe cắt sang hướng khác.",
+    "takeaway": "Điểm cần nhớ: phải cho xe đi trong một làn đường và chỉ được chuyển làn đường ở những nơi cho phép; mỗi lần chuyển làn đường chỉ được phép chuyển sang một làn đường liền kề; khi chuyển làn…"
+  },
+  "79": {
+    "reason": "Xe thô sơ phải đi trên làn đường bên phải trong cùng, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên trái. Đi đúng phần đường, giảm tốc ở nơi khuất tầm nhìn và nhường xe khó điều khiển hơn giúp hai luồng xe không cắt vào quỹ đạo của nhau.",
+    "takeaway": "Điểm cần nhớ: xe thô sơ phải đi trên làn đường bên phải trong cùng, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên trái."
+  },
+  "80": {
+    "reason": "Chỉ được báo hiệu bằng đèn. Dùng đúng loại đèn vừa giúp xe khác nhận biết hướng di chuyển, vừa tránh gây chói và làm giảm khả năng quan sát của người đối diện.",
+    "takeaway": "Điểm cần nhớ: chỉ được báo hiệu bằng đèn."
+  },
+  "81": {
+    "reason": "Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt. Vượt xe chỉ an toàn khi có đủ tầm nhìn và khoảng trống; báo hiệu rõ để xe trước cùng phương tiện ngược chiều dự đoán được thao tác.",
+    "takeaway": "Nhớ đúng trình tự: giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy…"
+  },
+  "82": {
+    "reason": "Có tín hiệu rẽ trái để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết là chưa được vượt. Vượt xe chỉ an toàn khi có đủ tầm nhìn và khoảng trống; báo hiệu rõ để xe trước cùng phương tiện ngược chiều dự đoán được thao tác.",
+    "takeaway": "Nhớ đúng trình tự: có tín hiệu rẽ trái để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết là chưa được vượt."
+  },
+  "83": {
+    "reason": "Phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác. Báo hiệu sớm, giảm tốc và quan sát điểm mù giúp phương tiện xung quanh có thời gian phản ứng trước khi xe cắt sang hướng khác.",
+    "takeaway": "Nhớ đúng trình tự: phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác."
+  },
+  "84": {
+    "reason": "Quan sát, bảo đảm khoảng cách an toàn với xe phía sau, giảm tốc độ và có tín hiệu báo hướng rẽ hoặc có tín hiệu bằng tay theo hướng rẽ đối với xe thô sơ không có đèn báo hướng rẽ, chuyển dần sang làn gần nhất với hướng rẽ. Tín hiệu báo hướng rẽ hoặc tín hiệu bằng tay phải sử dụng liên tục trong quá trình chuyển hướng. Khi bảo đảm an toàn, không gây trở ngại cho người và phương tiện khác mới được chuyển hướng. Dùng đúng loại đèn vừa giúp xe khác nhận biết hướng di chuyển, vừa tránh gây chói và làm giảm khả năng quan sát của người đối diện.",
+    "takeaway": "Điểm cần nhớ: quan sát, bảo đảm khoảng cách an toàn với xe phía sau, giảm tốc độ và có tín hiệu báo hướng rẽ hoặc có tín hiệu bằng tay theo hướng rẽ đối với xe thô sơ không có đèn báo hướng…"
+  },
+  "85": {
+    "reason": "Phải quan sát hai bên và phía sau xe, có tín hiệu lùi và chỉ lùi xe khi bảo đảm an toàn. Khi lùi, điểm mù phía sau lớn và hướng quan sát ngược chiều chuyển động; người lái phải bảo đảm chắc chắn không có người hoặc xe trong quỹ đạo.",
+    "takeaway": "Nhớ đúng trình tự: phải quan sát hai bên và phía sau xe, có tín hiệu lùi và chỉ lùi xe khi bảo đảm an toàn."
+  },
+  "86": {
+    "reason": "Không được lùi xe. Khi lùi, điểm mù phía sau lớn và hướng quan sát ngược chiều chuyển động; người lái phải bảo đảm chắc chắn không có người hoặc xe trong quỹ đạo.",
+    "takeaway": "Nhớ đúng trình tự: không được lùi xe."
+  },
+  "87": {
+    "reason": "Giảm tốc độ và cho xe đi về bên phải theo chiều xe chạy của mình. Đi đúng phần đường, giảm tốc ở nơi khuất tầm nhìn và nhường xe khó điều khiển hơn giúp hai luồng xe không cắt vào quỹ đạo của nhau.",
+    "takeaway": "Điểm cần nhớ: giảm tốc độ và cho xe đi về bên phải theo chiều xe chạy của mình."
+  },
+  "88": {
+    "reason": "Nơi đường hẹp chỉ đủ cho một xe chạy và có chỗ tránh xe thì xe nào ở gần chỗ tránh hơn phải vào vị trí tránh, nhường đường cho xe đi ngược chiều; xe xuống dốc phải nhường đường cho xe lên dốc; đồng thời xe có chướng ngại vật phía trước phải nhường đường cho xe không có chướng ngại vật phía trước. Đi đúng phần đường, giảm tốc ở nơi khuất tầm nhìn và nhường xe khó điều khiển hơn giúp hai luồng xe không cắt vào quỹ đạo của nhau.",
+    "takeaway": "Điểm cần nhớ: nơi đường hẹp chỉ đủ cho một xe chạy và có chỗ tránh xe thì xe nào ở gần chỗ tránh hơn phải vào vị trí tránh, nhường đường cho xe đi ngược chiều; xe xuống dốc phải nhường…"
+  },
+  "89": {
+    "reason": "Nhường đường cho xe lên dốc. Đi đúng phần đường, giảm tốc ở nơi khuất tầm nhìn và nhường xe khó điều khiển hơn giúp hai luồng xe không cắt vào quỹ đạo của nhau.",
+    "takeaway": "Nhớ đúng trình tự: nhường đường cho xe lên dốc."
+  },
+  "90": {
+    "reason": "Quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn. Đi đúng phần đường, giảm tốc ở nơi khuất tầm nhìn và nhường xe khó điều khiển hơn giúp hai luồng xe không cắt vào quỹ đạo của nhau.",
+    "takeaway": "Nhớ đúng trình tự: quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn."
+  },
+  "91": {
+    "reason": "Nhường đường cho xe đi trên đường ưu tiên hoặc đường chính từ bất kỳ hướng nào tới. Quy tắc ưu tiên tạo một thứ tự thống nhất tại điểm xung đột; người không có quyền ưu tiên phải chủ động giảm tốc và nhường.",
+    "takeaway": "Điểm cần nhớ: nhường đường cho xe đi trên đường ưu tiên hoặc đường chính từ bất kỳ hướng nào tới."
+  },
+  "92": {
+    "reason": "Nhường đường cho xe đi đến từ bên trái. Quy tắc ưu tiên tạo một thứ tự thống nhất tại điểm xung đột; người không có quyền ưu tiên phải chủ động giảm tốc và nhường.",
+    "takeaway": "Điểm cần nhớ: nhường đường cho xe đi đến từ bên trái."
+  },
+  "93": {
+    "reason": "Phải nhường đường cho xe đi đến từ bên phải. Quy tắc ưu tiên tạo một thứ tự thống nhất tại điểm xung đột; người không có quyền ưu tiên phải chủ động giảm tốc và nhường.",
+    "takeaway": "Điểm cần nhớ: phải nhường đường cho xe đi đến từ bên phải."
+  },
+  "94": {
+    "reason": "Xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực lượng quân sự, công an và kiểm sát đi làm nhiệm vụ khẩn cấp; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương đi làm nhiệm vụ cấp cứu; xe hộ đê đi làm nhiệm vụ; xe đi làm nhiệm vụ cứu nạn, cứu hộ, khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật; đoàn xe tang. Quy tắc ưu tiên tạo một thứ tự thống nhất tại điểm xung đột; người không có quyền ưu tiên phải chủ động giảm tốc và nhường.",
+    "takeaway": "Điểm cần nhớ: xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực…"
+  },
+  "95": {
+    "reason": "Không bị hạn chế tốc độ; được phép đi không phụ thuộc vào tín hiệu đèn giao thông, đi vào đường ngược chiều, các đường khác có thể đi được; đồng thời được đi ngược chiều trên làn dừng xe khẩn cấp trên đường cao tốc. Dùng đúng loại đèn vừa giúp xe khác nhận biết hướng di chuyển, vừa tránh gây chói và làm giảm khả năng quan sát của người đối diện.",
+    "takeaway": "Điểm cần nhớ: không bị hạn chế tốc độ; được phép đi không phụ thuộc vào tín hiệu đèn giao thông, đi vào đường ngược chiều, các đường khác có thể đi được; đồng thời được đi ngược chiều trên…"
+  },
+  "96": {
+    "reason": "Giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường. Quy tắc ưu tiên tạo một thứ tự thống nhất tại điểm xung đột; người không có quyền ưu tiên phải chủ động giảm tốc và nhường.",
+    "takeaway": "Điểm cần nhớ: giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường."
+  },
+  "97": {
+    "reason": "Được vượt khi bảo đảm an toàn. Xe chỉ được hưởng quyền ưu tiên khi đang làm nhiệm vụ và phát tín hiệu theo quy định; có tín hiệu thì xe khác phải nhường, không có tín hiệu thì áp dụng quy tắc thông thường.",
+    "takeaway": "Điểm cần nhớ: được vượt khi bảo đảm an toàn."
+  },
+  "98": {
+    "reason": "Không được vượt. Xe chỉ được hưởng quyền ưu tiên khi đang làm nhiệm vụ và phát tín hiệu theo quy định; có tín hiệu thì xe khác phải nhường, không có tín hiệu thì áp dụng quy tắc thông thường.",
+    "takeaway": "Điểm cần nhớ: không được vượt."
+  },
+  "99": {
+    "reason": "Dừng lại về bên phải đường của mình, trước vạch dừng xe và quan sát hai phía, khi không có phương tiện giao thông đường sắt tới mới được đi qua. Dùng đúng loại đèn vừa giúp xe khác nhận biết hướng di chuyển, vừa tránh gây chói và làm giảm khả năng quan sát của người đối diện.",
+    "takeaway": "Nhớ đúng trình tự: dừng lại về bên phải đường của mình, trước vạch dừng xe và quan sát hai phía, khi không có phương tiện giao thông đường sắt tới mới được đi qua."
+  },
+  "100": {
+    "reason": "Dừng lại về bên phải đường của mình, trước vạch dừng xe. Dùng đúng loại đèn vừa giúp xe khác nhận biết hướng di chuyển, vừa tránh gây chói và làm giảm khả năng quan sát của người đối diện.",
+    "takeaway": "Nhớ đúng trình tự: dừng lại về bên phải đường của mình, trước vạch dừng xe."
+  },
+  "101": {
+    "reason": "Người lái xe và người có mặt phải ngay lập tức báo hiệu để dừng tàu, thực hiện các biện pháp bảo đảm an toàn. Tàu chạy trên đường ray không thể đổi hướng và cần quãng đường phanh rất dài, nên phương tiện đường bộ phải dừng ngoài phạm vi an toàn.",
+    "takeaway": "Nhớ đúng trình tự: người lái xe và người có mặt phải ngay lập tức báo hiệu để dừng tàu, thực hiện các biện pháp bảo đảm an toàn."
+  },
+  "102": {
+    "reason": "Hiệu lệnh của nhân viên gác chắn; đèn đỏ sáng nhấp nháy, chuông kêu; đồng thời chắn đường bộ đang dịch chuyển hoặc đã đóng. Dùng đúng loại đèn vừa giúp xe khác nhận biết hướng di chuyển, vừa tránh gây chói và làm giảm khả năng quan sát của người đối diện.",
+    "takeaway": "Điểm cần nhớ: hiệu lệnh của nhân viên gác chắn; đèn đỏ sáng nhấp nháy, chuông kêu; đồng thời chắn đường bộ đang dịch chuyển hoặc đã đóng."
+  },
+  "103": {
+    "reason": "Xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu gần; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu; không dừng xe, đỗ xe trong hầm đường bộ; trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải dừng xe, đỗ xe, người lái xe, người điều khiển xe máy chuyên dùng phải đưa xe vào vị trí dừng xe, đỗ xe khẩn cấp, nếu không di chuyển được, phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách bảo đảm an toàn. Đèn chiếu gần vẫn bảo đảm vùng quan sát cần thiết nhưng không rọi chùm sáng cao vào mắt người đi ngược chiều, nhất là nơi đã có chiếu sáng đường phố.",
+    "takeaway": "Điểm cần nhớ: xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu gần; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu; không dừng xe, đỗ xe trong hầm đường bộ; trường hợp gặp sự cố kỹ…"
+  },
+  "104": {
+    "reason": "Nối bằng thanh nối cứng. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: nối bằng thanh nối cứng."
+  },
+  "105": {
+    "reason": "Chỉ được kéo rơ moóc, sơ mi rơ moóc phù hợp với thiết kế của xe; việc kết nối xe kéo với rơ moóc, xe ô tô đầu kéo với sơ mi rơ moóc phải bảo đảm chắc chắn, an toàn. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: chỉ được kéo rơ moóc, sơ mi rơ moóc phù hợp với thiết kế của xe; việc kết nối xe kéo với rơ moóc, xe ô tô đầu kéo với sơ mi rơ moóc phải bảo đảm chắc chắn, an toàn."
+  },
+  "106": {
+    "reason": "Xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực; việc nối xe kéo với xe được kéo phải bảo đảm chắc chắn, an toàn; trường hợp hệ thống hãm của xe được kéo không còn hiệu lực thì xe kéo nhau phải nối bằng thanh nối cứng. Phía trước của xe kéo và phía sau của xe được kéo phải có biển báo hiệu, có đèn cảnh báo nhấp nháy màu vàng. Dùng đúng loại đèn vừa giúp xe khác nhận biết hướng di chuyển, vừa tránh gây chói và làm giảm khả năng quan sát của người đối diện.",
+    "takeaway": "Điểm cần nhớ: xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực; việc nối xe kéo với xe được kéo phải bảo đảm chắc chắn, an toàn; trường hợp hệ thống hãm của…"
+  },
+  "107": {
+    "reason": "Có báo hiệu cảnh báo nguy hiểm hoặc có chướng ngại vật trên đường; chuyển hướng xe chạy hoặc tầm nhìn bị hạn chế; nơi cầu, cống hẹp, đập tràn, đường ngầm, hầm chui, hầm đường bộ; có vật nuôi đi trên đường hoặc chăn thả ở ven đường; đồng thời điểm dừng xe, đỗ xe trên đường bộ có khách đang lên, xuống xe. Báo hiệu sớm, giảm tốc và quan sát điểm mù giúp phương tiện xung quanh có thời gian phản ứng trước khi xe cắt sang hướng khác.",
+    "takeaway": "Điểm cần nhớ: có báo hiệu cảnh báo nguy hiểm hoặc có chướng ngại vật trên đường; chuyển hướng xe chạy hoặc tầm nhìn bị hạn chế; nơi cầu, cống hẹp, đập tràn, đường ngầm, hầm chui, hầm đường…"
+  },
+  "108": {
+    "reason": "Có chướng ngại vật phía trước, xe chạy phía trước có tín hiệu vượt xe khác. Vượt xe chỉ an toàn khi có đủ tầm nhìn và khoảng trống; báo hiệu rõ để xe trước cùng phương tiện ngược chiều dự đoán được thao tác.",
+    "takeaway": "Tránh tuyệt đối: có chướng ngại vật phía trước, xe chạy phía trước có tín hiệu vượt xe khác."
+  },
+  "109": {
+    "reason": "Xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái. Vượt xe chỉ an toàn khi có đủ tầm nhìn và khoảng trống; báo hiệu rõ để xe trước cùng phương tiện ngược chiều dự đoán được thao tác.",
+    "takeaway": "Điểm cần nhớ: xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái."
+  },
+  "110": {
+    "reason": "Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt. Vượt xe chỉ an toàn khi có đủ tầm nhìn và khoảng trống; báo hiệu rõ để xe trước cùng phương tiện ngược chiều dự đoán được thao tác.",
+    "takeaway": "Nhớ đúng trình tự: giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy…"
+  },
+  "111": {
+    "reason": "Xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ, xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô, xe gắn máy, xe thô sơ, người đi bộ. Đây là nhóm dễ bị tổn thương trong giao thông, nên người lái phải giảm xung đột và dành đủ thời gian, không gian để họ di chuyển an toàn.",
+    "takeaway": "Tránh tuyệt đối: xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ, xe mô…"
+  },
+  "112": {
+    "reason": "Chỉ được đi ngược chiều trên làn dừng xe khẩn cấp. Vị trí dừng, đỗ phải giữ được tầm nhìn và phần đường lưu thông; chiếm làn hoặc che khuất nút giao sẽ tạo xung đột cho xe khác.",
+    "takeaway": "Điểm cần nhớ: chỉ được đi ngược chiều trên làn dừng xe khẩn cấp."
+  },
+  "113": {
+    "reason": "Dừng, đỗ xe trên phần đường xe chạy, trừ trường hợp xe không thể di chuyển được vào làn đường khẩn cấp; đồng thời lùi xe, quay đầu xe. Quay đầu làm xe cắt qua nhiều dòng giao thông, vì vậy chỉ được thực hiện nơi đủ tầm nhìn, đủ mặt đường và không thuộc vị trí cấm.",
+    "takeaway": "Tránh tuyệt đối: dừng, đỗ xe trên phần đường xe chạy, trừ trường hợp xe không thể di chuyển được vào làn đường khẩn cấp; đồng thời lùi xe, quay đầu xe."
+  },
+  "114": {
+    "reason": "Dừng xe, đỗ xe ở làn dừng khẩn cấp cùng chiều xe chạy và phải có báo hiệu bằng đèn khẩn cấp; trường hợp xe không thể di chuyển được vào làn dừng khẩn cấp, phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách tối thiểu 150 mét, nhanh chóng báo cho cơ quan Cảnh sát giao thông thực hiện nhiệm vụ bảo đảm trật tự, an toàn giao thông trên tuyến hoặc cơ quan quản lý đường cao tốc. Dùng đúng loại đèn vừa giúp xe khác nhận biết hướng di chuyển, vừa tránh gây chói và làm giảm khả năng quan sát của người đối diện.",
+    "takeaway": "Nhớ đúng trình tự: dừng xe, đỗ xe ở làn dừng khẩn cấp cùng chiều xe chạy và phải có báo hiệu bằng đèn khẩn cấp; trường hợp xe không thể di chuyển được vào làn dừng khẩn cấp, phải có báo hiệu…"
+  },
+  "115": {
+    "reason": "Tiếp tục lái xe và rẽ ở lối ra tiếp theo. Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Nhớ đúng trình tự: tiếp tục lái xe và rẽ ở lối ra tiếp theo."
+  },
+  "116": {
+    "reason": "Không. Vị trí dừng, đỗ phải giữ được tầm nhìn và phần đường lưu thông; chiếm làn hoặc che khuất nút giao sẽ tạo xung đột cho xe khác.",
+    "takeaway": "Điểm cần nhớ: không."
+  },
+  "117": {
+    "reason": "Có tín hiệu xin vào và phải nhường đường cho xe đang chạy trên đường; quan sát xe phía sau bảo đảm khoảng cách an toàn mới cho xe nhập vào làn đường sát bên phải; đồng thời nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi nhập vào làn đường của đường cao tốc. Đi đúng phần đường, giảm tốc ở nơi khuất tầm nhìn và nhường xe khó điều khiển hơn giúp hai luồng xe không cắt vào quỹ đạo của nhau.",
+    "takeaway": "Điểm cần nhớ: có tín hiệu xin vào và phải nhường đường cho xe đang chạy trên đường; quan sát xe phía sau bảo đảm khoảng cách an toàn mới cho xe nhập vào làn đường sát bên phải; đồng thời…"
+  },
+  "118": {
+    "reason": "Mốc cần chọn là 18 tuổi. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Chốt đúng mốc: 18 tuổi."
+  },
+  "119": {
+    "reason": "Mốc cần chọn là 18 tuổi. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Chốt đúng mốc: 18 tuổi."
+  },
+  "120": {
+    "reason": "Mốc cần chọn là 27 tuổi. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Chốt đúng mốc: 27 tuổi."
+  },
+  "121": {
+    "reason": "Mốc cần chọn là Đủ 57 tuổi đối với nam và đủ 55 tuổi đối với nữ. Mỗi độ tuổi và hạng giấy phép gắn với nhóm xe có khối lượng, số chỗ hoặc tổ hợp rơ moóc cụ thể; không được suy rộng sang hạng cao hơn.",
+    "takeaway": "Chốt đúng mốc: đủ 57 tuổi đối với nam và đủ 55 tuổi đối với nữ."
+  },
+  "122": {
+    "reason": "Mốc cần chọn là 24 tuổi. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Chốt đúng mốc: 24 tuổi."
+  },
+  "123": {
+    "reason": "Xe gắn máy. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Điểm cần nhớ: xe gắn máy."
+  },
+  "124": {
+    "reason": "Xe mô tô ba bánh. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Tránh tuyệt đối: xe mô tô ba bánh."
+  },
+  "125": {
+    "reason": "Xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Điểm cần nhớ: xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW."
+  },
+  "126": {
+    "reason": "Xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW; đồng thời xe mô tô hai bánh có dung tích xi-lanh trên 125 cm3 hoặc có công suất động cơ điện trên 11 kW. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Điểm cần nhớ: xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW; đồng thời xe mô tô hai bánh có dung tích xi-lanh trên 125 cm3 hoặc có công suất…"
+  },
+  "127": {
+    "reason": "Xe ô tô chở người đến 08 chỗ (không kể chỗ của người lái xe); đồng thời xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế đến 3.500 kg. Mỗi độ tuổi và hạng giấy phép gắn với nhóm xe có khối lượng, số chỗ hoặc tổ hợp rơ moóc cụ thể; không được suy rộng sang hạng cao hơn.",
+    "takeaway": "Điểm cần nhớ: xe ô tô chở người đến 08 chỗ (không kể chỗ của người lái xe); đồng thời xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế đến 3.500 kg."
+  },
+  "128": {
+    "reason": "Xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 3.500 kg đến 7.500 kg; các loại xe ô tô tải quy định cho giấy phép lái xe hạng C1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 3.500 kg đến 7.500 kg; các loại xe ô tô tải quy định cho giấy phép lái xe hạng C1 kéo rơ moóc có khối…"
+  },
+  "129": {
+    "reason": "Xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 3.500 kg đến 7.500 kg; các loại xe ô tô tải quy định cho giấy phép lái xe hạng C1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg; đồng thời xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 7.500 kg; các loại xe ô tô tải quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 3.500 kg đến 7.500 kg; các loại xe ô tô tải quy định cho giấy phép lái xe hạng C1 kéo rơ moóc có khối…"
+  },
+  "130": {
+    "reason": "Xe ô tô chở người trên 08 chỗ (không kể chỗ của người lái xe) đến 16 chỗ (không kể chỗ của người lái xe); các loại xe ô tô chở người quy định cho giấy phép lái xe hạng D1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: xe ô tô chở người trên 08 chỗ (không kể chỗ của người lái xe) đến 16 chỗ (không kể chỗ của người lái xe); các loại xe ô tô chở người quy định cho giấy phép lái xe hạng D1 kéo…"
+  },
+  "131": {
+    "reason": "Xe ô tô chở người (kể cả xe buýt) trên 16 chỗ (không kể chỗ của người lái xe) đến 29 chỗ (không kể chỗ của người lái xe); các loại xe ô tô chở người quy định cho giấy phép lái xe hạng D2 kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg; đồng thời xe ô tô chở người trên 08 chỗ (không kể chỗ của người lái xe) đến 16 chỗ (không kể chỗ của người lái xe); các loại xe ô tô chở người quy định cho giấy phép lái xe hạng D1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: xe ô tô chở người (kể cả xe buýt) trên 16 chỗ (không kể chỗ của người lái xe) đến 29 chỗ (không kể chỗ của người lái xe); các loại xe ô tô chở người quy định cho giấy phép lái…"
+  },
+  "132": {
+    "reason": "Xe ô tô chở người (kể cả xe buýt) trên 29 chỗ (không kể chỗ của người lái xe); xe ô tô chở người giường nằm; các loại xe ô tô chở người quy định cho giấy phép lái xe hạng D kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg; đồng thời xe ô tô chở người (kể cả xe buýt) trên 16 chỗ (không kể chỗ của người lái xe) đến 29 chỗ (không kể chỗ của người lái xe). Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: xe ô tô chở người (kể cả xe buýt) trên 29 chỗ (không kể chỗ của người lái xe); xe ô tô chở người giường nằm; các loại xe ô tô chở người quy định cho giấy phép lái xe hạng D…"
+  },
+  "133": {
+    "reason": "Các loại xe ô tô quy định cho giấy phép lái xe hạng B kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: các loại xe ô tô quy định cho giấy phép lái xe hạng B kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg."
+  },
+  "134": {
+    "reason": "Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc."
+  },
+  "135": {
+    "reason": "Các loại xe ô tô quy định cho giấy phép lái xe hạng D kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô chở khách nối toa. Liên kết kéo phải chắc chắn và còn khả năng điều khiển; khi xe được kéo mất phanh, thanh nối cứng ngăn xe đó lao vào xe kéo.",
+    "takeaway": "Điểm cần nhớ: các loại xe ô tô quy định cho giấy phép lái xe hạng D kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô chở khách nối toa."
+  },
+  "136": {
+    "reason": "Phải thực hành trên xe tập lái, trên tuyến đường tập lái và có giáo viên dạy lái bảo trợ tay lái. Các điều kiện về người lái, giấy tờ và thiết bị giúp xác nhận đúng năng lực điều khiển, tình trạng phương tiện và trách nhiệm của chủ xe.",
+    "takeaway": "Điểm cần nhớ: phải thực hành trên xe tập lái, trên tuyến đường tập lái và có giáo viên dạy lái bảo trợ tay lái."
+  },
+  "137": {
+    "reason": "Phải đủ tuổi, sức khỏe theo quy định của pháp luật; có giấy phép lái xe đang còn điểm, còn hiệu lực phù hợp với loại xe đang điều khiển do cơ quan có thẩm quyền cấp (trừ người lái xe gắn máy). Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Điểm cần nhớ: phải đủ tuổi, sức khỏe theo quy định của pháp luật; có giấy phép lái xe đang còn điểm, còn hiệu lực phù hợp với loại xe đang điều khiển do cơ quan có thẩm quyền cấp (trừ người…"
+  },
+  "138": {
+    "reason": "Chứng nhận đăng ký xe hoặc bản sao Chứng nhận đăng ký xe có chứng thực kèm bản gốc giấy tờ xác nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài còn hiệu lực trong trường hợp xe đang được thế chấp tại tổ chức tín dụng, chi nhánh ngân hàng nước ngoài; giấy phép lái xe phù hợp với loại xe đang điều khiển; chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới theo quy định của pháp luật; chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới; đồng thời trường hợp các giấy tờ nêu trên đã được tích hợp vào tài khoản định danh điện tử thì việc xuất trình, kiểm tra có thể thực hiện thông qua tài khoản định danh điện tử. Mỗi độ tuổi và hạng giấy phép gắn với nhóm xe có khối lượng, số chỗ hoặc tổ hợp rơ moóc cụ thể; không được suy rộng sang hạng cao hơn.",
+    "takeaway": "Điểm cần nhớ: chứng nhận đăng ký xe hoặc bản sao Chứng nhận đăng ký xe có chứng thực kèm bản gốc giấy tờ xác nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài còn hiệu lực trong…"
+  },
+  "139": {
+    "reason": "Người được cấp giấy phép lái xe không đủ điều kiện sức khỏe theo kết luận của cơ sở khám bệnh, chữa bệnh đối với từng hạng giấy phép lái xe; giấy phép lái xe được cấp sai quy định; đồng thời giấy phép lái xe đã quá thời hạn tạm giữ hoặc hết thời hiệu thi hành quyết định xử phạt vi phạm hành chính theo quy định của pháp luật về xử lý vi phạm hành chính nếu người vi phạm không đến nhận mà không có lý do chính đáng. Mỗi độ tuổi và hạng giấy phép gắn với nhóm xe có khối lượng, số chỗ hoặc tổ hợp rơ moóc cụ thể; không được suy rộng sang hạng cao hơn.",
+    "takeaway": "Điểm cần nhớ: người được cấp giấy phép lái xe không đủ điều kiện sức khỏe theo kết luận của cơ sở khám bệnh, chữa bệnh đối với từng hạng giấy phép lái xe; giấy phép lái xe được cấp sai quy…"
+  },
+  "140": {
+    "reason": "Được phục hồi đủ 12 điểm, nếu không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất. Mỗi độ tuổi và hạng giấy phép gắn với nhóm xe có khối lượng, số chỗ hoặc tổ hợp rơ moóc cụ thể; không được suy rộng sang hạng cao hơn.",
+    "takeaway": "Điểm cần nhớ: được phục hồi đủ 12 điểm, nếu không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất."
+  },
+  "141": {
+    "reason": "Sau thời hạn ít nhất là 06 tháng kể từ ngày bị trừ hết điểm, người có phép lái xe được tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ theo quy định, có kết quả đạt yêu cầu thì được phục hồi đủ 12 điểm. Mỗi độ tuổi và hạng giấy phép gắn với nhóm xe có khối lượng, số chỗ hoặc tổ hợp rơ moóc cụ thể; không được suy rộng sang hạng cao hơn.",
+    "takeaway": "Nhớ đúng trình tự: sau thời hạn ít nhất là 06 tháng kể từ ngày bị trừ hết điểm, người có phép lái xe được tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ…"
+  },
+  "142": {
+    "reason": "Tiếp tục chịu trách nhiệm của chủ xe. Các điều kiện về người lái, giấy tờ và thiết bị giúp xác nhận đúng năng lực điều khiển, tình trạng phương tiện và trách nhiệm của chủ xe.",
+    "takeaway": "Điểm cần nhớ: tiếp tục chịu trách nhiệm của chủ xe."
+  },
+  "143": {
+    "reason": "Xe ô tô kinh doanh vận tải; đồng thời xe ô tô chở người từ 08 chỗ trở lên (không kể chỗ của người lái xe) kinh doanh vận tải, xe ô tô đầu kéo, xe cứu thương. Các điều kiện về người lái, giấy tờ và thiết bị giúp xác nhận đúng năng lực điều khiển, tình trạng phương tiện và trách nhiệm của chủ xe.",
+    "takeaway": "Điểm cần nhớ: xe ô tô kinh doanh vận tải; đồng thời xe ô tô chở người từ 08 chỗ trở lên (không kể chỗ của người lái xe) kinh doanh vận tải, xe ô tô đầu kéo, xe cứu thương."
+  },
+  "144": {
+    "reason": "Mốc cần chọn là 40 km/h. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Chốt đúng mốc: 40 km/h."
+  },
+  "145": {
+    "reason": "Mốc cần chọn là 60 km/h. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Chốt đúng mốc: 60 km/h."
+  },
+  "146": {
+    "reason": "Mốc cần chọn là 50 km/h. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Chốt đúng mốc: 50 km/h."
+  },
+  "147": {
+    "reason": "Ô tô tải, ô tô chở người trên 28 chỗ không kể chỗ của người lái xe. Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Điểm cần nhớ: ô tô tải, ô tô chở người trên 28 chỗ không kể chỗ của người lái xe."
+  },
+  "148": {
+    "reason": "Ô tô tải, ô tô chở người trên 28 chỗ không kể chỗ của người lái xe. Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Điểm cần nhớ: ô tô tải, ô tô chở người trên 28 chỗ không kể chỗ của người lái xe."
+  },
+  "149": {
+    "reason": "Xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn. Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Điểm cần nhớ: xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn."
+  },
+  "150": {
+    "reason": "Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc). Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Điểm cần nhớ: xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc)."
+  },
+  "151": {
+    "reason": "Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động). Kéo, đẩy hoặc bám phương tiện khác làm hai xe phụ thuộc chuyển động lẫn nhau, dễ lệch hướng và ngã khi một bên phanh hoặc đổi hướng.",
+    "takeaway": "Điểm cần nhớ: xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động)."
+  },
+  "152": {
+    "reason": "Ô tô kéo rơ moóc; ô tô kéo xe khác; ô tô trộn vữa, ô tô trộn bê tông lưu động, ô tô xi téc, ô tô đầu kéo kéo sơ mi rơ moóc xi téc, ô tô kéo theo rơ moóc xi téc. Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Điểm cần nhớ: ô tô kéo rơ moóc; ô tô kéo xe khác; ô tô trộn vữa, ô tô trộn bê tông lưu động, ô tô xi téc, ô tô đầu kéo kéo sơ mi rơ moóc xi téc, ô tô kéo theo rơ moóc xi téc."
+  },
+  "153": {
+    "reason": "Xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn. Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Điểm cần nhớ: xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn."
+  },
+  "154": {
+    "reason": "Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc). Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Điểm cần nhớ: xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc)."
+  },
+  "155": {
+    "reason": "Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động). Kéo, đẩy hoặc bám phương tiện khác làm hai xe phụ thuộc chuyển động lẫn nhau, dễ lệch hướng và ngã khi một bên phanh hoặc đổi hướng.",
+    "takeaway": "Điểm cần nhớ: xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động)."
+  },
+  "156": {
+    "reason": "Ô tô kéo rơ moóc; ô tô kéo xe khác; ô tô trộn vữa, ô tô trộn bê tông lưu động, ô tô xi téc, ô tô đầu kéo kéo sơ mi rơ moóc xi téc, ô tô kéo theo rơ moóc xi téc. Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Điểm cần nhớ: ô tô kéo rơ moóc; ô tô kéo xe khác; ô tô trộn vữa, ô tô trộn bê tông lưu động, ô tô xi téc, ô tô đầu kéo kéo sơ mi rơ moóc xi téc, ô tô kéo theo rơ moóc xi téc."
+  },
+  "157": {
+    "reason": "Xe chở hàng bốn bánh có gắn động cơ khi tham gia giao thông trong phạm vi và thời gian cho phép hoạt động. Trên cao tốc, chênh lệch tốc độ lớn nên chỉ một thao tác sai làn hoặc dừng không đúng chỗ cũng có thể gây va chạm dây chuyền.",
+    "takeaway": "Điểm cần nhớ: xe chở hàng bốn bánh có gắn động cơ khi tham gia giao thông trong phạm vi và thời gian cho phép hoạt động."
+  },
+  "158": {
+    "reason": "Mốc cần chọn là 70 m. Tốc độ càng cao thì quãng đường phản ứng và phanh càng dài; khoảng cách phải đủ để xe sau dừng lại nếu xe trước giảm tốc đột ngột.",
+    "takeaway": "Chốt đúng mốc: 70 m."
+  },
+  "159": {
+    "reason": "Mốc cần chọn là 100 m. Tốc độ càng cao thì quãng đường phản ứng và phanh càng dài; khoảng cách phải đủ để xe sau dừng lại nếu xe trước giảm tốc đột ngột.",
+    "takeaway": "Chốt đúng mốc: 100 m."
+  },
+  "160": {
+    "reason": "Mốc cần chọn là 55 m. Tốc độ càng cao thì quãng đường phản ứng và phanh càng dài; khoảng cách phải đủ để xe sau dừng lại nếu xe trước giảm tốc đột ngột.",
+    "takeaway": "Chốt đúng mốc: 55 m."
+  },
+  "161": {
+    "reason": "Mốc cần chọn là 35 m. Tốc độ càng cao thì quãng đường phản ứng và phanh càng dài; khoảng cách phải đủ để xe sau dừng lại nếu xe trước giảm tốc đột ngột.",
+    "takeaway": "Chốt đúng mốc: 35 m."
+  },
+  "162": {
+    "reason": "Chủ động giữ khoảng cách an toàn phù hợp với xe chạy liền trước xe của mình; đồng thời bảo đảm khoảng cách an toàn tùy thuộc vào mật độ phương tiện, tình hình giao thông thực tế. Tốc độ càng cao thì quãng đường phản ứng và phanh càng dài; khoảng cách phải đủ để xe sau dừng lại nếu xe trước giảm tốc đột ngột.",
+    "takeaway": "Điểm cần nhớ: chủ động giữ khoảng cách an toàn phù hợp với xe chạy liền trước xe của mình; đồng thời bảo đảm khoảng cách an toàn tùy thuộc vào mật độ phương tiện, tình hình giao thông thực…"
+  },
+  "163": {
+    "reason": "Gặp biển báo nguy hiểm và cảnh báo trên đường. Tốc độ càng cao thì quãng đường phản ứng và phanh càng dài; khoảng cách phải đủ để xe sau dừng lại nếu xe trước giảm tốc đột ngột.",
+    "takeaway": "Điểm cần nhớ: gặp biển báo nguy hiểm và cảnh báo trên đường."
+  },
+  "164": {
+    "reason": "Tổ chức phân luồng, điều tiết giao thông, bố trí nơi dừng xe, đỗ xe tại khu vực trường học và tại các điểm trên lộ trình đưa đón trẻ em mầm non, học sinh. Đây là nhóm dễ bị tổn thương trong giao thông, nên người lái phải giảm xung đột và dành đủ thời gian, không gian để họ di chuyển an toàn.",
+    "takeaway": "Điểm cần nhớ: tổ chức phân luồng, điều tiết giao thông, bố trí nơi dừng xe, đỗ xe tại khu vực trường học và tại các điểm trên lộ trình đưa đón trẻ em mầm non, học sinh."
+  },
+  "165": {
+    "reason": "Tại nơi có vạch kẻ đường hoặc báo hiệu khác dành cho người đi bộ hoặc tại nơi mà người đi bộ, xe lăn của người khuyết tật đang qua đường; nơi đường bộ giao nhau cùng mức với đường bộ, đường bộ giao nhau cùng mức với đường sắt; đường hẹp, đường vòng, đường quanh co, đường đèo, dốc; đồng thời khu vực có trường học, bệnh viện, bến xe, công trình công cộng tập trung đông người, khu vực đông dân cư, chợ, khu vực đang thi công trên đường bộ, hiện trường vụ tai nạn giao thông đường bộ. Đây là nhóm dễ bị tổn thương trong giao thông, nên người lái phải giảm xung đột và dành đủ thời gian, không gian để họ di chuyển an toàn.",
+    "takeaway": "Điểm cần nhớ: tại nơi có vạch kẻ đường hoặc báo hiệu khác dành cho người đi bộ hoặc tại nơi mà người đi bộ, xe lăn của người khuyết tật đang qua đường; nơi đường bộ giao nhau cùng mức với…"
+  },
+  "166": {
+    "reason": "Chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường. Đi đúng phần đường, giảm tốc ở nơi khuất tầm nhìn và nhường xe khó điều khiển hơn giúp hai luồng xe không cắt vào quỹ đạo của nhau.",
+    "takeaway": "Điểm cần nhớ: chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường."
+  },
+  "167": {
+    "reason": "Quan sát, giảm tốc độ đi qua xe buýt hoặc dừng lại để bảo đảm an toàn. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Nhớ đúng trình tự: quan sát, giảm tốc độ đi qua xe buýt hoặc dừng lại để bảo đảm an toàn."
+  },
+  "168": {
+    "reason": "Đón, trả hành khách đúng nơi quy định; hướng dẫn sử dụng trang thiết bị an toàn trên xe; có biện pháp giữ gìn vệ sinh trong xe; vận chuyển hành khách đúng lịch trình, lộ trình đã đăng ký, trừ trường hợp bất khả kháng; không chở hành khách trên nóc xe, trong khoang chở hành lý hoặc để hành khách đu, bám bên ngoài xe. Các điều kiện vận tải giúp kiểm soát người lái, phương tiện và hành trình, qua đó bảo vệ hành khách, hàng hóa và người cùng tham gia giao thông.",
+    "takeaway": "Điểm cần nhớ: đón, trả hành khách đúng nơi quy định; hướng dẫn sử dụng trang thiết bị an toàn trên xe; có biện pháp giữ gìn vệ sinh trong xe; vận chuyển hành khách đúng lịch trình, lộ trình…"
+  },
+  "169": {
+    "reason": "Vận chuyển hàng hóa cấm lưu hành; vận chuyển trái phép hoặc không thực hiện đầy đủ các quy định của pháp luật về vận chuyển hàng hóa nguy hiểm; đồng thời vận chuyển động vật hoang dã. Tải trọng và cách xếp hàng ảnh hưởng trực tiếp đến độ ổn định, quãng đường phanh, tầm nhìn và khả năng chịu tải của đường.",
+    "takeaway": "Điểm cần nhớ: vận chuyển hàng hóa cấm lưu hành; vận chuyển trái phép hoặc không thực hiện đầy đủ các quy định của pháp luật về vận chuyển hàng hóa nguy hiểm; đồng thời vận chuyển động vật…"
+  },
+  "170": {
+    "reason": "Đe dọa, xúc phạm, tranh giành, lôi kéo hành khách; đe doạ, cưỡng ép hành khách sử dụng dịch vụ ngoài ý muốn; chuyển tải, xuống khách hoặc các hành vi khác nhằm trốn tránh phát hiện xe chở quá tải, quá số người theo quy định của pháp luật. Tải trọng và cách xếp hàng ảnh hưởng trực tiếp đến độ ổn định, quãng đường phanh, tầm nhìn và khả năng chịu tải của đường.",
+    "takeaway": "Điểm cần nhớ: đe dọa, xúc phạm, tranh giành, lôi kéo hành khách; đe doạ, cưỡng ép hành khách sử dụng dịch vụ ngoài ý muốn; chuyển tải, xuống khách hoặc các hành vi khác nhằm trốn tránh phát…"
+  },
+  "171": {
+    "reason": "Không quá 4 giờ. Giới hạn thời gian lái nhằm ngăn mệt mỏi tích lũy, vì phản xạ và khả năng phán đoán giảm rõ khi người lái thiếu nghỉ ngơi.",
+    "takeaway": "Điểm cần nhớ: không quá 4 giờ."
+  },
+  "172": {
+    "reason": "Không quá 10 giờ trong một ngày. Các điều kiện vận tải giúp kiểm soát người lái, phương tiện và hành trình, qua đó bảo vệ hành khách, hàng hóa và người cùng tham gia giao thông.",
+    "takeaway": "Điểm cần nhớ: không quá 10 giờ trong một ngày."
+  },
+  "173": {
+    "reason": "Kiểm tra các điều kiện bảo đảm an toàn của xe; đồng thời hướng dẫn cho hành khách về an toàn giao thông đường bộ và thoát hiểm khi gặp sự cố. Các điều kiện vận tải giúp kiểm soát người lái, phương tiện và hành trình, qua đó bảo vệ hành khách, hàng hóa và người cùng tham gia giao thông.",
+    "takeaway": "Điểm cần nhớ: kiểm tra các điều kiện bảo đảm an toàn của xe; đồng thời hướng dẫn cho hành khách về an toàn giao thông đường bộ và thoát hiểm khi gặp sự cố."
+  },
+  "174": {
+    "reason": "Có thiết bị ghi nhận hình ảnh trẻ em mầm non, học sinh và thiết bị có chức năng cảnh báo, chống bỏ quên trẻ em trên xe; có niên hạn sử dụng không quá 20 năm; có màu sơn theo quy định của Chính phủ; có dây đai an toàn phù hợp với lứa tuổi hoặc sử dụng xe có ghế ngồi phù hợp với lứa tuổi theo quy định của pháp luật; đồng thời được cấp chứng nhận đăng kí xe và gắn biển số xe, bảo đảm an toàn kĩ thuật và bảo vệ môi trường theo quy định của pháp luật; xe ô tô chở người từ 08 chỗ trở lên (không kể chỗ của người lái xe) phải lắp thiết bị giám sát hành trình và thiết bị ghi nhận hình ảnh người lái xe. Đây là nhóm dễ bị tổn thương trong giao thông, nên người lái phải giảm xung đột và dành đủ thời gian, không gian để họ di chuyển an toàn.",
+    "takeaway": "Điểm cần nhớ: có thiết bị ghi nhận hình ảnh trẻ em mầm non, học sinh và thiết bị có chức năng cảnh báo, chống bỏ quên trẻ em trên xe; có niên hạn sử dụng không quá 20 năm; có màu sơn theo…"
+  },
+  "175": {
+    "reason": "Người lái xe phải mang đủ giấy tờ theo quy định của pháp luật; phương tiện vận chuyển phải có kết cấu phù hợp với loại động vật chuyên chở; đồng thời trong quá trình vận chuyển phải chấp hành các quy định của pháp luật về trật tự, an toàn giao thông đường bộ, vệ sinh dịch tễ, phòng dịch và bảo đảm vệ sinh môi trường. Các điều kiện về người lái, giấy tờ và thiết bị giúp xác nhận đúng năng lực điều khiển, tình trạng phương tiện và trách nhiệm của chủ xe.",
+    "takeaway": "Điểm cần nhớ: người lái xe phải mang đủ giấy tờ theo quy định của pháp luật; phương tiện vận chuyển phải có kết cấu phù hợp với loại động vật chuyên chở; đồng thời trong quá trình vận…"
+  },
+  "176": {
+    "reason": "Phải có giấy phép vận chuyển; trong trường hợp cần thiết, đơn vị vận chuyển hàng hoá nguy hiểm phải bố trí người áp tải để bảo đảm trật tự, an toàn giao thông đường bộ. Tải trọng và cách xếp hàng ảnh hưởng trực tiếp đến độ ổn định, quãng đường phanh, tầm nhìn và khả năng chịu tải của đường.",
+    "takeaway": "Điểm cần nhớ: phải có giấy phép vận chuyển; trong trường hợp cần thiết, đơn vị vận chuyển hàng hoá nguy hiểm phải bố trí người áp tải để bảo đảm trật tự, an toàn giao thông đường bộ."
+  },
+  "177": {
+    "reason": "Phải chấp hành quy định của pháp luật về trật tự, an toàn giao thông đường bộ của Việt Nam. Trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên có quy định khác thì áp dụng theo điều ước quốc tế đó; tham gia giao thông đúng trong phạm vi, tuyến đường, thời gian đã được cơ quan có thẩm quyền của Việt Nam cấp phép; đồng thời xe ô tô của người nước ngoài đăng ký tại nước ngoài có tay lái ở bên phải phải đi theo đoàn và có người, phương tiện hỗ trợ, hướng dẫn giao thông. Phương tiện nước ngoài chỉ được lưu hành theo phạm vi giấy phép và điều ước áp dụng; xe tay lái bên phải còn cần đi theo đoàn có phương tiện hướng dẫn.",
+    "takeaway": "Điểm cần nhớ: phải chấp hành quy định của pháp luật về trật tự, an toàn giao thông đường bộ của Việt Nam. Trường hợp điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành…"
+  },
+  "178": {
+    "reason": "Kiểm tra điều kiện bảo đảm an toàn của xe trước khi tham gia giao thông đường bộ; mang đủ giấy tờ theo quy định của pháp luật; đồng thời kiểm tra việc sắp xếp hàng hóa bảo đảm an toàn; không chở quá số người, chở hành lý, hàng hoá vượt quá khối lượng cho phép hoặc vượt quá khổ giới hạn của xe. Xe hai bánh dễ mất cân bằng và người ngồi trên xe ít được bảo vệ, nên mọi thao tác làm giảm khả năng điều khiển đều có rủi ro cao.",
+    "takeaway": "Điểm cần nhớ: kiểm tra điều kiện bảo đảm an toàn của xe trước khi tham gia giao thông đường bộ; mang đủ giấy tờ theo quy định của pháp luật; đồng thời kiểm tra việc sắp xếp hàng hóa bảo đảm…"
+  },
+  "179": {
+    "reason": "Phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người, phương tiện tham gia giao thông đường bộ khác và thực hiện các biện pháp bảo đảm an toàn giao thông khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ. Đây là loại hình lưu thông có kích thước, tải trọng hoặc điều kiện quản lý đặc thù, nên phải tuân thủ đầy đủ giấy phép, báo hiệu và biện pháp hỗ trợ.",
+    "takeaway": "Điểm cần nhớ: phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người,…"
+  },
+  "180": {
+    "reason": "Xe cứu hộ giao thông đường bộ phải có dấu hiệu nhận diện, niêm yết thông tin trên xe, gắn thiết bị giám sát hành trình và thiết bị ghi nhận hình ảnh người lái xe; đồng thời phải tuân thủ quy định của pháp luật về khối lượng hàng hóa chuyên chở của xe cứu hộ và khối lượng của xe được cứu hộ ghi trên Chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường. Các điều kiện về người lái, giấy tờ và thiết bị giúp xác nhận đúng năng lực điều khiển, tình trạng phương tiện và trách nhiệm của chủ xe.",
+    "takeaway": "Điểm cần nhớ: xe cứu hộ giao thông đường bộ phải có dấu hiệu nhận diện, niêm yết thông tin trên xe, gắn thiết bị giám sát hành trình và thiết bị ghi nhận hình ảnh người lái xe; đồng thời…"
+  },
+  "206": {
+    "reason": "Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ."
+  },
+  "207": {
+    "reason": "Đạp bàn đạp phanh chân hết hành trình, vào số và nhả phanh đỗ, kiểm tra lại xem có bị nhầm số không rồi mới cho xe lăn bánh. Giữ phanh và kiểm tra đúng vị trí số ngăn xe chồm hoặc chạy sai hướng; nhả côn, phanh và tăng ga tuần tự giúp xe chuyển động êm.",
+    "takeaway": "Nhớ đúng trình tự: đạp bàn đạp phanh chân hết hành trình, vào số và nhả phanh đỗ, kiểm tra lại xem có bị nhầm số không rồi mới cho xe lăn bánh."
+  },
+  "208": {
+    "reason": "Dùng lực tay phải bóp khóa hãm đẩy cần phanh tay về phía trước hết hành trình; nếu khóa hãm bị kẹt cứng phải kéo cần phanh tay về phía sau đồng thời bóp khóa hãm. Phanh sớm và tăng lực từ từ giúp lốp duy trì độ bám, xe giữ thẳng hướng và phương tiện phía sau có thời gian phản ứng.",
+    "takeaway": "Nhớ đúng trình tự: dùng lực tay phải bóp khóa hãm đẩy cần phanh tay về phía trước hết hành trình; nếu khóa hãm bị kẹt cứng phải kéo cần phanh tay về phía sau đồng thời bóp khóa hãm."
+  },
+  "209": {
+    "reason": "Kiểm tra an toàn xung quanh xe ô tô; đạp ly hợp (côn) hết hành trình; vào số 1; nhả hết phanh tay, báo hiệu bằng còi, đèn trước khi xuất phát; tăng ga đủ để xuất phát; nhả từ từ đến 1/2 hành trình bàn đạp côn và giữ trong khoảng 3 giây, sau đó vừa tăng ga vừa nhả hết côn để cho xe ô tô chuyển động. Giữ phanh và kiểm tra đúng vị trí số ngăn xe chồm hoặc chạy sai hướng; nhả côn, phanh và tăng ga tuần tự giúp xe chuyển động êm.",
+    "takeaway": "Nhớ đúng trình tự: kiểm tra an toàn xung quanh xe ô tô; đạp ly hợp (côn) hết hành trình; vào số 1; nhả hết phanh tay, báo hiệu bằng còi, đèn trước khi xuất phát; tăng ga đủ để xuất phát; nhả từ…"
+  },
+  "210": {
+    "reason": "Quan sát biển báo hiệu để biết nơi được phép quay đầu; quan sát kỹ địa hình nơi chọn để quay đầu; lựa chọn quỹ đạo quay đầu xe cho thích hợp; quay đầu xe với tốc độ thấp; thường xuyên báo tín hiệu để người, các phương tiện xung quanh được biết; nếu quay đầu xe ở nơi nguy hiểm thì đưa đầu xe về phía nguy hiểm, đưa đuôi xe về phía an toàn. Giảm tốc trước khi đổi hướng và quan sát cả phía trước, sau lẫn điểm mù giúp xe đi đúng quỹ đạo mà không cắt bất ngờ vào dòng xe khác.",
+    "takeaway": "Nhớ đúng trình tự: quan sát biển báo hiệu để biết nơi được phép quay đầu; quan sát kỹ địa hình nơi chọn để quay đầu; lựa chọn quỹ đạo quay đầu xe cho thích hợp; quay đầu xe với tốc độ thấp;…"
+  },
+  "211": {
+    "reason": "Điều chỉnh ghế sao cho chân có thể đạp phanh và ga dễ dàng, ngồi thẳng lưng, hai tay nắm vô lăng, tay trái nắm ở vị trí 9 đến 10 giờ và tay phải nắm ở vị trí từ 2 đến 4 giờ. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: điều chỉnh ghế sao cho chân có thể đạp phanh và ga dễ dàng, ngồi thẳng lưng, hai tay nắm vô lăng, tay trái nắm ở vị trí 9 đến 10 giờ và tay phải nắm ở vị trí từ 2 đến 4 giờ."
+  },
+  "212": {
+    "reason": "Về số thấp từ chân dốc, điều chỉnh ga cho xe từ từ lên dốc; đến gần đỉnh dốc phải đi chậm, đi sát về phía bên phải đường, có tín hiệu (còi, đèn) để báo cho người lái xe đi ngược chiều biết. Chọn số thấp từ sớm giúp xe đủ lực kéo, còn giảm tốc gần đỉnh dốc tạo thời gian xử lý xe ngược chiều bị khuất tầm nhìn.",
+    "takeaway": "Nhớ đúng trình tự: về số thấp từ chân dốc, điều chỉnh ga cho xe từ từ lên dốc; đến gần đỉnh dốc phải đi chậm, đi sát về phía bên phải đường, có tín hiệu (còi, đèn) để báo cho người lái xe đi…"
+  },
+  "213": {
+    "reason": "Về số thấp, nhả bàn đạp ga ở mức độ phù hợp, kết hợp với phanh chân để khống chế tốc độ. Số thấp tạo lực hãm bằng động cơ; phối hợp phanh đúng mức tránh phải rà phanh liên tục gây nóng và mất hiệu lực phanh.",
+    "takeaway": "Nhớ đúng trình tự: về số thấp, nhả bàn đạp ga ở mức độ phù hợp, kết hợp với phanh chân để khống chế tốc độ."
+  },
+  "214": {
+    "reason": "Có tín hiệu rẽ phải, điều khiển xe sát vào lề đường bên phải; đạp phanh sớm và mạnh hơn lúc dừng xe trên đường bằng để xe đi với tốc độ chậm đến mức dễ dàng dừng lại được; về số 1, đạp 1/2 ly hợp (côn) cho xe đến chỗ dừng; khi xe đã dừng, về số không (N), đạp phanh chân, sử dụng phanh đỗ. Số thấp tạo lực hãm bằng động cơ; phối hợp phanh đúng mức tránh phải rà phanh liên tục gây nóng và mất hiệu lực phanh.",
+    "takeaway": "Nhớ đúng trình tự: có tín hiệu rẽ phải, điều khiển xe sát vào lề đường bên phải; đạp phanh sớm và mạnh hơn lúc dừng xe trên đường bằng để xe đi với tốc độ chậm đến mức dễ dàng dừng lại được; về…"
+  },
+  "215": {
+    "reason": "Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng coi, đèn; giảm tốc độ tới mức cần thiết, về số thấp và thực hiện quay vòng với tốc độ phù hợp với bán kính cong của đường vòng. Giảm tốc trước khi đổi hướng và quan sát cả phía trước, sau lẫn điểm mù giúp xe đi đúng quỹ đạo mà không cắt bất ngờ vào dòng xe khác.",
+    "takeaway": "Nhớ đúng trình tự: quan sát cẩn thận các chướng ngại vật và báo hiệu bằng coi, đèn; giảm tốc độ tới mức cần thiết, về số thấp và thực hiện quay vòng với tốc độ phù hợp với bán kính cong của…"
+  },
+  "216": {
+    "reason": "Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ phải; giảm tốc độ, quan sát an toàn phía trước, sau, bên phải và điều khiển xe từ từ rẽ phải. Giảm tốc trước khi đổi hướng và quan sát cả phía trước, sau lẫn điểm mù giúp xe đi đúng quỹ đạo mà không cắt bất ngờ vào dòng xe khác.",
+    "takeaway": "Nhớ đúng trình tự: cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ phải; giảm tốc độ, quan sát an toàn phía trước, sau, bên phải và điều khiển xe từ từ rẽ phải."
+  },
+  "217": {
+    "reason": "Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ trái; giảm tốc độ, quan sát an toàn xung quanh đặc biệt là bên trái; đổi sang làn đường bên trái và điều khiển xe từ từ rẽ trái. Giảm tốc trước khi đổi hướng và quan sát cả phía trước, sau lẫn điểm mù giúp xe đi đúng quỹ đạo mà không cắt bất ngờ vào dòng xe khác.",
+    "takeaway": "Nhớ đúng trình tự: cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ trái; giảm tốc độ, quan sát an toàn xung quanh đặc biệt là bên trái; đổi sang làn đường bên trái và điều khiển xe từ từ rẽ…"
+  },
+  "218": {
+    "reason": "Vào số một (1) và từ từ cho hai bánh xe trước xuống rãnh, tăng ga cho hai bánh xe trước vượt lên khỏi rãnh, tiếp tục để bánh xe sau từ từ xuống rãnh rồi tăng dần ga cho xe ô tô lên khỏi rãnh. Số truyền phải phù hợp tốc độ và tải của xe; phối hợp côn, ga nhịp nhàng tránh giật xe, chết máy hoặc mất lực kéo.",
+    "takeaway": "Nhớ đúng trình tự: vào số một (1) và từ từ cho hai bánh xe trước xuống rãnh, tăng ga cho hai bánh xe trước vượt lên khỏi rãnh, tiếp tục để bánh xe sau từ từ xuống rãnh rồi tăng dần ga cho xe ô…"
+  },
+  "219": {
+    "reason": "Khi có chuông báo hoặc thanh chắn đã hạ xuống, người lái xe phải dừng xe tạm thời đúng khoảng cách an toàn, kéo phanh tay nếu đường dốc hoặc phải chờ lâu; đồng thời khi không có chuông báo hoặc thanh chắn không hạ xuống, người lái xe cần phải quan sát nếu thấy đủ điều kiện an toàn thì về số thấp, tăng ga nhẹ và không thay đổi số trong quá trình vượt qua đường sắt để tránh động cơ chết máy cho xe cho vượt qua. Quan sát và chọn số trước khi qua ray giúp xe không phải dừng hoặc chuyển số giữa đường sắt, nơi đặc biệt nguy hiểm nếu động cơ chết máy.",
+    "takeaway": "Nhớ đúng trình tự: khi có chuông báo hoặc thanh chắn đã hạ xuống, người lái xe phải dừng xe tạm thời đúng khoảng cách an toàn, kéo phanh tay nếu đường dốc hoặc phải chờ lâu; đồng thời khi không…"
+  },
+  "220": {
+    "reason": "Khi chạy trên đường xấu, nhiều ổ gà nên chạy chậm để thùng xe không bị lắc mạnh, không gây hiện tượng lệch \"ben\"; khi chạy vào đường vòng, cần giảm tốc độ, không lấy lái gấp và không phanh gấp; đồng thời khi đổ hàng phải chọn vị trí có nền đường cứng và phẳng, dừng hẳn xe, kéo hết phanh đỗ; sau đó mới điều khiển cơ cấu nâng \"ben\" để đổ hàng, đổ xong hàng mới hạ thùng xuống. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: khi chạy trên đường xấu, nhiều ổ gà nên chạy chậm để thùng xe không bị lắc mạnh, không gây hiện tượng lệch \"ben\"; khi chạy vào đường vòng, cần giảm tốc độ, không lấy lái gấp…"
+  },
+  "221": {
+    "reason": "Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác. Số truyền phải phù hợp tốc độ và tải của xe; phối hợp côn, ga nhịp nhàng tránh giật xe, chết máy hoặc mất lực kéo.",
+    "takeaway": "Điểm cần nhớ: không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác."
+  },
+  "222": {
+    "reason": "Không được nhìn xuống buồng lái, cần phải giảm thứ tự từ cao xuống thấp, phối hợp các động tác phải nhịp nhàng, chính xác, vù ga phải phù hợp với tốc độ. Số truyền phải phù hợp tốc độ và tải của xe; phối hợp côn, ga nhịp nhàng tránh giật xe, chết máy hoặc mất lực kéo.",
+    "takeaway": "Điểm cần nhớ: không được nhìn xuống buồng lái, cần phải giảm thứ tự từ cao xuống thấp, phối hợp các động tác phải nhịp nhàng, chính xác, vù ga phải phù hợp với tốc độ."
+  },
+  "223": {
+    "reason": "Về số thấp phù hợp, nhả bàn đạp ga, kết hợp đạp phanh chân với mức độ phù hợp để giảm tốc độ. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: về số thấp phù hợp, nhả bàn đạp ga, kết hợp đạp phanh chân với mức độ phù hợp để giảm tốc độ."
+  },
+  "224": {
+    "reason": "Quan sát, ước lượng độ ngập nước mà xe ô tô có thể vượt qua an toàn, về số thấp, giữ đều ga và giữ vững tay lái để ô tô vượt qua đoạn đường ngập nước. Giữ số thấp và ga đều hạn chế nước lọt vào đường nạp, đồng thời tránh tạo sóng nước hoặc mất lực kéo giữa vùng ngập.",
+    "takeaway": "Nhớ đúng trình tự: quan sát, ước lượng độ ngập nước mà xe ô tô có thể vượt qua an toàn, về số thấp, giữ đều ga và giữ vững tay lái để ô tô vượt qua đoạn đường ngập nước."
+  },
+  "225": {
+    "reason": "Chuyển từ đèn chiếu xa sang đèn chiếu gần; không nhìn thẳng vào đèn của xe chạy ngược chiều mà nhìn chếch sang phía phải theo chiều chuyển động của xe mình. Chuyển đèn chiếu gần và nhìn chếch sang phải hạn chế lóa mắt nhưng vẫn giữ được mốc mép đường để điều khiển xe.",
+    "takeaway": "Nhớ đúng trình tự: chuyển từ đèn chiếu xa sang đèn chiếu gần; không nhìn thẳng vào đèn của xe chạy ngược chiều mà nhìn chếch sang phía phải theo chiều chuyển động của xe mình."
+  },
+  "226": {
+    "reason": "Giữ vững tay lái cho xe đi đúng vệt bánh xe đi trước, sử dụng số thấp đi chậm, gài cầu (nếu có), giữ đều ga, không lấy nhiều lái, không đánh lái ngoặt và phanh gấp. Độ bám và tầm nhìn đều giảm trong điều kiện này, nên khoảng cách phải tăng còn các thao tác ga, phanh và lái cần nhẹ hơn.",
+    "takeaway": "Điểm cần nhớ: giữ vững tay lái cho xe đi đúng vệt bánh xe đi trước, sử dụng số thấp đi chậm, gài cầu (nếu có), giữ đều ga, không lấy nhiều lái, không đánh lái ngoặt và phanh gấp."
+  },
+  "227": {
+    "reason": "Đang sử dụng phanh đỗ. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: đang sử dụng phanh đỗ."
+  },
+  "228": {
+    "reason": "Áp suất dầu ở mức thấp. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: áp suất dầu ở mức thấp."
+  },
+  "229": {
+    "reason": "Cửa xe đóng chưa chặt hoặc có cửa xe chưa đóng. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: cửa xe đóng chưa chặt hoặc có cửa xe chưa đóng."
+  },
+  "230": {
+    "reason": "Lái xe và người ngồi ghế trước chưa cài dây đai an toàn. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: lái xe và người ngồi ghế trước chưa cài dây đai an toàn."
+  },
+  "231": {
+    "reason": "Sắp hết nhiên liệu. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: sắp hết nhiên liệu."
+  },
+  "232": {
+    "reason": "Xăng sinh học và khí sinh học. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: xăng sinh học và khí sinh học."
+  },
+  "233": {
+    "reason": "Bảo dưỡng xe theo định kỳ và có kế hoạch lộ trình trước khi xe chạy; đồng thời kiểm tra áp suất lốp theo quy định và chạy xe với tốc độ phù hợp với tình trạng mặt đường và mật độ giao thông trên đường. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: bảo dưỡng xe theo định kỳ và có kế hoạch lộ trình trước khi xe chạy; đồng thời kiểm tra áp suất lốp theo quy định và chạy xe với tốc độ phù hợp với tình trạng mặt đường và mật…"
+  },
+  "234": {
+    "reason": "Quan sát tình hình giao thông phía trước, phía sau và phía bên mở cửa xe, mở hé cánh cửa, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: quan sát tình hình giao thông phía trước, phía sau và phía bên mở cửa xe, mở hé cánh cửa, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô."
+  },
+  "235": {
+    "reason": "Giảm tốc độ, dừng lại trước vạch dừng, quan sát cả hai phía, nếu không có tàu đi tới, tăng ga nhẹ vượt qua đường sắt; đồng thời nếu thấy có tàu đi tới thì dừng lại trước vạch dừng, chỉ khi tàu đi qua mới được đi. Quan sát và chọn số trước khi qua ray giúp xe không phải dừng hoặc chuyển số giữa đường sắt, nơi đặc biệt nguy hiểm nếu động cơ chết máy.",
+    "takeaway": "Nhớ đúng trình tự: giảm tốc độ, dừng lại trước vạch dừng, quan sát cả hai phía, nếu không có tàu đi tới, tăng ga nhẹ vượt qua đường sắt; đồng thời nếu thấy có tàu đi tới thì dừng lại trước vạch…"
+  },
+  "236": {
+    "reason": "Đúng. Quan sát và chọn số trước khi qua ray giúp xe không phải dừng hoặc chuyển số giữa đường sắt, nơi đặc biệt nguy hiểm nếu động cơ chết máy.",
+    "takeaway": "Nhớ đúng trình tự: đúng."
+  },
+  "237": {
+    "reason": "Về số thấp, kết hợp phanh chân để giảm tốc độ. Số truyền phải phù hợp tốc độ và tải của xe; phối hợp côn, ga nhịp nhàng tránh giật xe, chết máy hoặc mất lực kéo.",
+    "takeaway": "Nhớ đúng trình tự: về số thấp, kết hợp phanh chân để giảm tốc độ."
+  },
+  "238": {
+    "reason": "Vị trí N hoặc vị trí P hoặc số 0. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: vị trí N hoặc vị trí P hoặc số 0."
+  },
+  "239": {
+    "reason": "Không sử dụng chân trái; chân phải điều khiển bàn đạp phanh và bàn đạp ga. Số truyền phải phù hợp tốc độ và tải của xe; phối hợp côn, ga nhịp nhàng tránh giật xe, chết máy hoặc mất lực kéo.",
+    "takeaway": "Điểm cần nhớ: không sử dụng chân trái; chân phải điều khiển bàn đạp phanh và bàn đạp ga."
+  },
+  "240": {
+    "reason": "Giảm tốc độ, chạy cách xa xe trước với khoảng cách an toàn, bật đèn sương mù và đèn chiếu gần. Độ bám và tầm nhìn đều giảm trong điều kiện này, nên khoảng cách phải tăng còn các thao tác ga, phanh và lái cần nhẹ hơn.",
+    "takeaway": "Nhớ đúng trình tự: giảm tốc độ, chạy cách xa xe trước với khoảng cách an toàn, bật đèn sương mù và đèn chiếu gần."
+  },
+  "241": {
+    "reason": "Giảm tốc độ, giữ vững tay lái, nhìn chếch sang lề đường bên phải. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: giảm tốc độ, giữ vững tay lái, nhìn chếch sang lề đường bên phải."
+  },
+  "242": {
+    "reason": "Giảm hết ga, sử dụng đồng thời cả phanh sau và phanh trước. Phanh sớm và tăng lực từ từ giúp lốp duy trì độ bám, xe giữ thẳng hướng và phương tiện phía sau có thời gian phản ứng.",
+    "takeaway": "Điểm cần nhớ: giảm hết ga, sử dụng đồng thời cả phanh sau và phanh trước."
+  },
+  "243": {
+    "reason": "Giảm tốc độ, về số thấp và giữ đều ga. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: giảm tốc độ, về số thấp và giữ đều ga."
+  },
+  "244": {
+    "reason": "Bật đèn chiếu gần và đèn vàng (nếu có), điều khiển gạt nước, điều khiển ô tô đi với tốc độ chậm để có thể quan sát được; tìm chỗ an toàn dừng xe, bật đèn dừng khẩn cấp báo hiệu cho các xe khác biết. Độ bám và tầm nhìn đều giảm trong điều kiện này, nên khoảng cách phải tăng còn các thao tác ga, phanh và lái cần nhẹ hơn.",
+    "takeaway": "Nhớ đúng trình tự: bật đèn chiếu gần và đèn vàng (nếu có), điều khiển gạt nước, điều khiển ô tô đi với tốc độ chậm để có thể quan sát được; tìm chỗ an toàn dừng xe, bật đèn dừng khẩn cấp báo…"
+  },
+  "245": {
+    "reason": "Giảm tốc độ, tăng cường quan sát, không nên phanh gấp, không nên tăng ga hay đánh vô lăng đột ngột, bật đèn chiếu gần, mở chế độ gạt nước ở chế độ phù hợp để đảm bảo quan sát. Độ bám và tầm nhìn đều giảm trong điều kiện này, nên khoảng cách phải tăng còn các thao tác ga, phanh và lái cần nhẹ hơn.",
+    "takeaway": "Nhớ đúng trình tự: giảm tốc độ, tăng cường quan sát, không nên phanh gấp, không nên tăng ga hay đánh vô lăng đột ngột, bật đèn chiếu gần, mở chế độ gạt nước ở chế độ phù hợp để đảm bảo quan sát."
+  },
+  "246": {
+    "reason": "Quan sát bên trái, bên phải, phía sau xe, có tín hiệu cần thiết và lùi xe với tốc độ phù hợp. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: quan sát bên trái, bên phải, phía sau xe, có tín hiệu cần thiết và lùi xe với tốc độ phù hợp."
+  },
+  "247": {
+    "reason": "Giảm tốc độ đến mức an toàn, quan sát, nhường đường cho người đi bộ, giữ khoảng cách an toàn với các xe phía trước; đồng thời đi đúng làn đường quy định, chỉ được chuyển làn đường ở nơi cho phép, nhưng phải quan sát. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: giảm tốc độ đến mức an toàn, quan sát, nhường đường cho người đi bộ, giữ khoảng cách an toàn với các xe phía trước; đồng thời đi đúng làn đường quy định, chỉ được chuyển làn…"
+  },
+  "248": {
+    "reason": "Quan sát, phát tín hiệu, nhường đường cho các xe đang chạy trên đường cao tốc, khi đủ điều kiện an toàn thì tăng tốc độ cho xe nhập vào làn đường cao tốc, nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi cho xe nhập vào làn của đường cao tốc. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: quan sát, phát tín hiệu, nhường đường cho các xe đang chạy trên đường cao tốc, khi đủ điều kiện an toàn thì tăng tốc độ cho xe nhập vào làn đường cao tốc, nếu có làn đường…"
+  },
+  "249": {
+    "reason": "Quan sát phía trước để tìm biển báo chỉ dẫn \"lối ra đường cao tốc\", kiểm tra tình trạng giao thông phía sau và bên phải, nếu bảo đảm điều kiện an toàn thì phát tín hiệu và điều khiển xe chuyển dần sang làn bên phải, nếu có làn đường giảm tốc thì phải cho xe di chuyển trên làn đường đó trước khi ra khỏi đường cao tốc. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: quan sát phía trước để tìm biển báo chỉ dẫn \"lối ra đường cao tốc\", kiểm tra tình trạng giao thông phía sau và bên phải, nếu bảo đảm điều kiện an toàn thì phát tín hiệu và…"
+  },
+  "250": {
+    "reason": "Xe gặp sự cố, tai nạn hoặc trường hợp khẩn cấp không thể di chuyển bình thường. Phanh sớm và tăng lực từ từ giúp lốp duy trì độ bám, xe giữ thẳng hướng và phương tiện phía sau có thời gian phản ứng.",
+    "takeaway": "Điểm cần nhớ: xe gặp sự cố, tai nạn hoặc trường hợp khẩn cấp không thể di chuyển bình thường."
+  },
+  "251": {
+    "reason": "Giữ khoảng cách an toàn, tránh đi vào vị trí điểm mù của xe kéo rơ moóc, bật xi nhan trái đồng thời kết hợp đèn, còi xin vượt; khi xe kéo rơ moóc đã có tín hiệu cho vượt (không có chướng ngại vật phía trước và xe đi ngược chiều), thấy đủ điều kiện an toàn thì vượt dứt khoát, không di chuyển song song bên cạnh xe kéo rơ moóc; đồng thời khi vượt qua, phải quan sát gương chiếu hậu bên phải nếu có khoảng trống an toàn mới được cho xe chạy vào làn của mình, tắt xi nhan và tiếp tục hành trình. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: giữ khoảng cách an toàn, tránh đi vào vị trí điểm mù của xe kéo rơ moóc, bật xi nhan trái đồng thời kết hợp đèn, còi xin vượt; khi xe kéo rơ moóc đã có tín hiệu cho vượt…"
+  },
+  "252": {
+    "reason": "Nhả bàn đạp ga, về số thấp, đạp phanh chân với mức độ phù hợp để giảm tốc độ. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: nhả bàn đạp ga, về số thấp, đạp phanh chân với mức độ phù hợp để giảm tốc độ."
+  },
+  "253": {
+    "reason": "Quan sát, giảm tốc độ, phát tín hiệu, nhường đường cho xe trên đường chính từ bất kỳ hướng nào tới. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: quan sát, giảm tốc độ, phát tín hiệu, nhường đường cho xe trên đường chính từ bất kỳ hướng nào tới."
+  },
+  "254": {
+    "reason": "Giảm tốc độ để dừng xe ở nơi cho phép sau đó sử dụng điện thoại để liên lạc. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: giảm tốc độ để dừng xe ở nơi cho phép sau đó sử dụng điện thoại để liên lạc."
+  },
+  "255": {
+    "reason": "Chỉ sử dụng phanh trước. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: chỉ sử dụng phanh trước."
+  },
+  "256": {
+    "reason": "Quan sát phía trước, phía sau và bên phía mở cửa để phát hiện các phương tiện đang di chuyển tới gần, khi đủ điều kiện an toàn, mở hé cửa, sau đó mở ở mức cần thiết để xuống xe. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: quan sát phía trước, phía sau và bên phía mở cửa để phát hiện các phương tiện đang di chuyển tới gần, khi đủ điều kiện an toàn, mở hé cửa, sau đó mở ở mức cần thiết để xuống…"
+  },
+  "257": {
+    "reason": "Bật tín hiệu báo rẽ trước khi quay đầu, từ từ giảm tốc độ đến mức có thể dừng lại; chỉ quay đầu xe tại những nơi được phép quay đầu; đồng thời quan sát an toàn các phương tiện tới từ phía trước, phía sau, hai bên đồng thời nhường đường cho xe từ bên phải và phía trước đi tới. Giảm tốc trước khi đổi hướng và quan sát cả phía trước, sau lẫn điểm mù giúp xe đi đúng quỹ đạo mà không cắt bất ngờ vào dòng xe khác.",
+    "takeaway": "Điểm cần nhớ: bật tín hiệu báo rẽ trước khi quay đầu, từ từ giảm tốc độ đến mức có thể dừng lại; chỉ quay đầu xe tại những nơi được phép quay đầu; đồng thời quan sát an toàn các phương tiện…"
+  },
+  "258": {
+    "reason": "Để điều khiển xe chạy về phía trước; đồng thời để điều tiết công suất động cơ qua đó điều khiển tốc độ của xe. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: để điều khiển xe chạy về phía trước; đồng thời để điều tiết công suất động cơ qua đó điều khiển tốc độ của xe."
+  },
+  "259": {
+    "reason": "Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng."
+  },
+  "260": {
+    "reason": "Tăng ga từ từ, giảm ga thật nhanh. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Điểm cần nhớ: tăng ga từ từ, giảm ga thật nhanh."
+  },
+  "261": {
+    "reason": "Đi ở tốc độ thấp, quan sát liên tục khoảng cách từ 05 m đến 10 m phía trước để điều chỉnh sớm hướng di chuyển; trong quá trình di chuyển không nên dùng phanh trước tránh làm khóa bánh dẫn hướng; đồng thời không được lắc người sang trái hoặc phải nhiều, trọng tâm cơ thể cần trùng với trọng tâm của xe. Trình tự đúng giữ cho người lái còn đủ thời gian quan sát, kiểm soát tốc độ và sửa sai trước khi tình huống trở nên nguy hiểm.",
+    "takeaway": "Nhớ đúng trình tự: đi ở tốc độ thấp, quan sát liên tục khoảng cách từ 05 m đến 10 m phía trước để điều chỉnh sớm hướng di chuyển; trong quá trình di chuyển không nên dùng phanh trước tránh làm…"
+  },
+  "262": {
+    "reason": "Kiểm tra hệ thống an toàn, pin của xe trước khi xuất phát; nhả chân ga để phanh tái sinh hoạt động; đồng thời rà phanh chân để kịp thời xử lý tình huống khẩn cấp. Số thấp tạo lực hãm bằng động cơ; phối hợp phanh đúng mức tránh phải rà phanh liên tục gây nóng và mất hiệu lực phanh.",
+    "takeaway": "Điểm cần nhớ: kiểm tra hệ thống an toàn, pin của xe trước khi xuất phát; nhả chân ga để phanh tái sinh hoạt động; đồng thời rà phanh chân để kịp thời xử lý tình huống khẩn cấp."
+  },
+  "263": {
+    "reason": "Người lái xe phải tìm hiểu khả năng chìm trong nước của xe để xác định cung đường di chuyển; giữ vững tay lái, đi đều ga, tránh không để xe chết máy giữa dòng, không nên dừng xe trên đường ngập nước; đồng thời lái xe tốc độ chậm, không tạo sóng và giữ khoảng cách an toàn với các phương tiện xung quanh, nhất là người đi bộ. Giữ số thấp và ga đều hạn chế nước lọt vào đường nạp, đồng thời tránh tạo sóng nước hoặc mất lực kéo giữa vùng ngập.",
+    "takeaway": "Điểm cần nhớ: người lái xe phải tìm hiểu khả năng chìm trong nước của xe để xác định cung đường di chuyển; giữ vững tay lái, đi đều ga, tránh không để xe chết máy giữa dòng, không nên dừng…"
+  },
+  "264": {
+    "reason": "Rút que thăm dầu trên các-te, lau sạch que thăm sau đó cắm vào các-te và rút ra quan sát vệt dầu trên que thăm, mức dầu phải nằm trong khoảng vạch mức tối thiểu và tối đa được thể hiện trên que thăm. Dầu đúng mức và sạch tạo màng ngăn ma sát, mang nhiệt và cặn bẩn khỏi bề mặt làm việc; thiếu hoặc thừa dầu đều có thể hại động cơ.",
+    "takeaway": "Điểm cần nhớ: rút que thăm dầu trên các-te, lau sạch que thăm sau đó cắm vào các-te và rút ra quan sát vệt dầu trên que thăm, mức dầu phải nằm trong khoảng vạch mức tối thiểu và tối đa được…"
+  },
+  "265": {
+    "reason": "Kính chắn gió, kính cửa phải là loại kính an toàn, bảo đảm tầm nhìn cho người điều khiển; có đủ hệ thống hãm và hệ thống chuyển hướng có hiệu lực, tay lái xe ô tô ở bên trái của xe, có còi với âm lượng đúng quy chuẩn kỹ thuật; đồng thời có đủ đèn chiếu sáng gần và xa, đèn soi biển số, đèn báo hãm, đèn tín hiệu; có đủ bộ phận giảm thanh, giảm khói, các kết cấu phải đủ độ bền và bảo đảm tính năng vận hành ổn định. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: kính chắn gió, kính cửa phải là loại kính an toàn, bảo đảm tầm nhìn cho người điều khiển; có đủ hệ thống hãm và hệ thống chuyển hướng có hiệu lực, tay lái xe ô tô ở bên trái…"
+  },
+  "266": {
+    "reason": "Bắt buộc. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: bắt buộc."
+  },
+  "267": {
+    "reason": "Đèn chiếu sáng gần và xa; đồng thời đèn soi biển số, đèn báo hãm và đèn tín hiệu. Bộ phận quan sát và chiếu sáng phải cho hình ảnh rõ, đúng hướng để người lái nhận biết chướng ngại và để xe khác nhận ra phương tiện.",
+    "takeaway": "Điểm cần nhớ: đèn chiếu sáng gần và xa; đồng thời đèn soi biển số, đèn báo hãm và đèn tín hiệu."
+  },
+  "268": {
+    "reason": "Loại kính an toàn, kính nhiều lớp, đúng quy cách, không rạn nứt, bảo đảm hình ảnh quan sát rõ ràng, không bị méo mó. Bộ phận quan sát và chiếu sáng phải cho hình ảnh rõ, đúng hướng để người lái nhận biết chướng ngại và để xe khác nhận ra phương tiện.",
+    "takeaway": "Điểm cần nhớ: loại kính an toàn, kính nhiều lớp, đúng quy cách, không rạn nứt, bảo đảm hình ảnh quan sát rõ ràng, không bị méo mó."
+  },
+  "269": {
+    "reason": "Bánh xe phải có kết cấu chắc chắn, lắp đặt đúng quy cách của nhà sản xuât; đồng thời lốp phải đủ số lượng, đủ áp suất, không phồng rộp, đúng cỡ lốp của nhà sản xuất hoặc tài liệu kỹ thuật quy định; lốp trên cùng một trục của xe sử dụng trong điều kiện hoạt động bình thường phải cùng kiểu loại. Lốp là điểm tiếp xúc duy nhất với mặt đường, nên sai kích thước, mòn hoặc hư hỏng sẽ làm giảm độ bám và ổn định của xe.",
+    "takeaway": "Điểm cần nhớ: bánh xe phải có kết cấu chắc chắn, lắp đặt đúng quy cách của nhà sản xuât; đồng thời lốp phải đủ số lượng, đủ áp suất, không phồng rộp, đúng cỡ lốp của nhà sản xuất hoặc tài…"
+  },
+  "270": {
+    "reason": "Bảo đảm cho xe chuyển hướng chính xác, điều khiển nhẹ nhàng, an toàn ở mọi vận tốc và tải trọng trong phạm vi tính năng kỹ thuật cho phép của xe; đồng thời khi hoạt động các cơ cấu chuyển động của hệ thống lái không được va chạm với bất kỳ bộ phận nào của xe; khi quay vô lăng lái về bên phải và bên trái thì không được có sự khác biệt đáng kể về lực tác động lên vành tay lái. Độ rơ và liên kết của hệ thống lái quyết định xe có phản ứng chính xác theo thao tác vô lăng hay không.",
+    "takeaway": "Điểm cần nhớ: bảo đảm cho xe chuyển hướng chính xác, điều khiển nhẹ nhàng, an toàn ở mọi vận tốc và tải trọng trong phạm vi tính năng kỹ thuật cho phép của xe; đồng thời khi hoạt động các…"
+  },
+  "271": {
+    "reason": "Bảo dưỡng ô tô thường xuyên làm cho ô tô luôn luôn có tính năng kỹ thuật tốt, giảm cường độ hao mòn của các chi tiết, kéo dài tuổi thọ của xe; đồng thời ngăn ngừa và phát hiện kịp thời các hư hỏng và sai lệch kỹ thuật để khắc phục, giữ gìn được hình thức bên ngoài. Bảo dưỡng định kỳ phát hiện hao mòn trước khi thành hư hỏng, đồng thời duy trì độ tin cậy và tuổi thọ của phương tiện.",
+    "takeaway": "Điểm cần nhớ: bảo dưỡng ô tô thường xuyên làm cho ô tô luôn luôn có tính năng kỹ thuật tốt, giảm cường độ hao mòn của các chi tiết, kéo dài tuổi thọ của xe; đồng thời ngăn ngừa và phát hiện…"
+  },
+  "272": {
+    "reason": "Hết nhiên liệu, lõi lọc nhiên liệu bị tắc, lọc khí bị tắc, nhiên liệu lẫn không khí, tạp chất. Động cơ chỉ làm việc ổn định khi nhiên liệu, không khí, bôi trơn và quá trình sinh công được cung cấp đúng điều kiện.",
+    "takeaway": "Điểm cần nhớ: hết nhiên liệu, lõi lọc nhiên liệu bị tắc, lọc khí bị tắc, nhiên liệu lẫn không khí, tạp chất."
+  },
+  "273": {
+    "reason": "Ống xả không được đặt ở vị trí có thể gây cháy xe hoặc ảnh hưởng đến người ngồi trên xe và gây cản trở hoạt động của hệ thống khác; đồng thời miệng thoát khí thải của ống xả không được hướng về phía trước và không được hướng về bên phải theo chiều tiến của xe. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: ống xả không được đặt ở vị trí có thể gây cháy xe hoặc ảnh hưởng đến người ngồi trên xe và gây cản trở hoạt động của hệ thống khác; đồng thời miệng thoát khí thải của ống xả…"
+  },
+  "274": {
+    "reason": "Đủ số lượng, lắp đặt chắc chắn không bị rách, đứt, khóa cài đóng, mở nhẹ nhàng, không tự mở, không bị kẹt; kéo ra thu vào dễ dàng, cơ cấu hãm giữ chặt dây khi giật dây đột ngột. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: đủ số lượng, lắp đặt chắc chắn không bị rách, đứt, khóa cài đóng, mở nhẹ nhàng, không tự mở, không bị kẹt; kéo ra thu vào dễ dàng, cơ cấu hãm giữ chặt dây khi giật dây đột…"
+  },
+  "275": {
+    "reason": "Loại động cơ: để hoàn thành một chu trình công tác của động cơ, pít tông thực hiện 4 (bốn) hành trình, trong đó có một lần sinh công. Động cơ chỉ làm việc ổn định khi nhiên liệu, không khí, bôi trơn và quá trình sinh công được cung cấp đúng điều kiện.",
+    "takeaway": "Điểm cần nhớ: loại động cơ: để hoàn thành một chu trình công tác của động cơ, pít tông thực hiện 4 (bốn) hành trình, trong đó có một lần sinh công."
+  },
+  "276": {
+    "reason": "Cung cấp một lượng dầu bôi trơn đủ và sạch dưới áp suất nhất định đi bôi trơn cho các chi tiết của động cơ để giảm ma sát, giảm mài mòn, làm kín, làm sạch, làm mát và chống gỉ. Dầu đúng mức và sạch tạo màng ngăn ma sát, mang nhiệt và cặn bẩn khỏi bề mặt làm việc; thiếu hoặc thừa dầu đều có thể hại động cơ.",
+    "takeaway": "Điểm cần nhớ: cung cấp một lượng dầu bôi trơn đủ và sạch dưới áp suất nhất định đi bôi trơn cho các chi tiết của động cơ để giảm ma sát, giảm mài mòn, làm kín, làm sạch, làm mát và chống gỉ."
+  },
+  "277": {
+    "reason": "Mốc cần chọn là 25 năm. Niên hạn được tính từ năm sản xuất và là giới hạn pháp lý riêng theo loại xe, không căn cứ vào số năm chủ xe đã sử dụng.",
+    "takeaway": "Chốt đúng mốc: 25 năm."
+  },
+  "278": {
+    "reason": "Mốc cần chọn là 20 năm. Niên hạn được tính từ năm sản xuất và là giới hạn pháp lý riêng theo loại xe, không căn cứ vào số năm chủ xe đã sử dụng.",
+    "takeaway": "Chốt đúng mốc: 20 năm."
+  },
+  "279": {
+    "reason": "Khi làm việc, nhiệt năng được biến đổi thành cơ năng làm trục khủy động cơ quay, truyền lực đến các bánh xe chủ động tạo ra chuyển động tịnh tiến cho xe ô tô. Động cơ chỉ làm việc ổn định khi nhiên liệu, không khí, bôi trơn và quá trình sinh công được cung cấp đúng điều kiện.",
+    "takeaway": "Điểm cần nhớ: khi làm việc, nhiệt năng được biến đổi thành cơ năng làm trục khủy động cơ quay, truyền lực đến các bánh xe chủ động tạo ra chuyển động tịnh tiến cho xe ô tô."
+  },
+  "280": {
+    "reason": "Dùng để truyền mô men quay từ động cơ tới các bánh xe chủ động của xe ô tô. Cụm truyền lực tiếp nhận và biến đổi mô-men từ động cơ trước khi đưa tới bánh chủ động, nhờ đó xe khởi hành và thay đổi tốc độ phù hợp.",
+    "takeaway": "Điểm cần nhớ: dùng để truyền mô men quay từ động cơ tới các bánh xe chủ động của xe ô tô."
+  },
+  "281": {
+    "reason": "Dùng để truyền hoặc ngắt truyền động từ động cơ đến hộp số của xe ô tô. Cụm truyền lực tiếp nhận và biến đổi mô-men từ động cơ trước khi đưa tới bánh chủ động, nhờ đó xe khởi hành và thay đổi tốc độ phù hợp.",
+    "takeaway": "Điểm cần nhớ: dùng để truyền hoặc ngắt truyền động từ động cơ đến hộp số của xe ô tô."
+  },
+  "282": {
+    "reason": "Truyền và thay đổi mô men từ động cơ đến bánh xe chủ động, cắt truyền động từ động cơ đến bánh xe chủ động, bảo đảm cho xe ô tô chuyển động lùi. Cụm truyền lực tiếp nhận và biến đổi mô-men từ động cơ trước khi đưa tới bánh chủ động, nhờ đó xe khởi hành và thay đổi tốc độ phù hợp.",
+    "takeaway": "Điểm cần nhớ: truyền và thay đổi mô men từ động cơ đến bánh xe chủ động, cắt truyền động từ động cơ đến bánh xe chủ động, bảo đảm cho xe ô tô chuyển động lùi."
+  },
+  "283": {
+    "reason": "Dùng để thay đổi hướng chuyển động hoặc giữ cho xe ô tô chuyển động ổn định theo hướng xác định. Độ rơ và liên kết của hệ thống lái quyết định xe có phản ứng chính xác theo thao tác vô lăng hay không.",
+    "takeaway": "Điểm cần nhớ: dùng để thay đổi hướng chuyển động hoặc giữ cho xe ô tô chuyển động ổn định theo hướng xác định."
+  },
+  "284": {
+    "reason": "Dùng để giảm tốc độ, dừng chuyển động của xe ô tô và giữ cho xe ô tô đứng yên trên dốc. Hệ thống phanh phải tạo lực hãm cân bằng và tin cậy để xe giảm tốc, dừng đúng quãng đường mà không bị lệch hướng.",
+    "takeaway": "Điểm cần nhớ: dùng để giảm tốc độ, dừng chuyển động của xe ô tô và giữ cho xe ô tô đứng yên trên dốc."
+  },
+  "285": {
+    "reason": "Có tác dụng cảnh báo cho các xe phía sau biết xe đang giảm tốc để chủ động tránh hoặc giảm tốc để tránh va chạm; đồng thời có tác dụng định vị vào ban đêm với các xe từ phía sau tới để tránh va chạm. Hệ thống phanh phải tạo lực hãm cân bằng và tin cậy để xe giảm tốc, dừng đúng quãng đường mà không bị lệch hướng.",
+    "takeaway": "Điểm cần nhớ: có tác dụng cảnh báo cho các xe phía sau biết xe đang giảm tốc để chủ động tránh hoặc giảm tốc để tránh va chạm; đồng thời có tác dụng định vị vào ban đêm với các xe từ phía…"
+  },
+  "286": {
+    "reason": "Nhiệt độ nước làm mát động cơ quá ngưỡng cho phép. Động cơ chỉ làm việc ổn định khi nhiên liệu, không khí, bôi trơn và quá trình sinh công được cung cấp đúng điều kiện.",
+    "takeaway": "Điểm cần nhớ: nhiệt độ nước làm mát động cơ quá ngưỡng cho phép."
+  },
+  "287": {
+    "reason": "Cần kiểm tra động cơ. Động cơ chỉ làm việc ổn định khi nhiên liệu, không khí, bôi trơn và quá trình sinh công được cung cấp đúng điều kiện.",
+    "takeaway": "Điểm cần nhớ: cần kiểm tra động cơ."
+  },
+  "288": {
+    "reason": "Áp suất lốp không đủ. Động cơ chỉ làm việc ổn định khi nhiên liệu, không khí, bôi trơn và quá trình sinh công được cung cấp đúng điều kiện.",
+    "takeaway": "Điểm cần nhớ: áp suất lốp không đủ."
+  },
+  "289": {
+    "reason": "Báo hiệu hệ thống chống bó cứng phanh bị lỗi. Động cơ chỉ làm việc ổn định khi nhiên liệu, không khí, bôi trơn và quá trình sinh công được cung cấp đúng điều kiện.",
+    "takeaway": "Điểm cần nhớ: báo hiệu hệ thống chống bó cứng phanh bị lỗi."
+  },
+  "290": {
+    "reason": "Phải đạp hết hành trình bàn đạp chân phanh. Hệ thống phanh phải tạo lực hãm cân bằng và tin cậy để xe giảm tốc, dừng đúng quãng đường mà không bị lệch hướng.",
+    "takeaway": "Điểm cần nhớ: phải đạp hết hành trình bàn đạp chân phanh."
+  },
+  "291": {
+    "reason": "Để tích trữ điện năng, cung cấp cho các phụ tải khi máy phát chưa làm việc. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: để tích trữ điện năng, cung cấp cho các phụ tải khi máy phát chưa làm việc."
+  },
+  "292": {
+    "reason": "Để phát điện năng cung cấp cho các phụ tải làm việc và nạp điện cho ắc quy. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: để phát điện năng cung cấp cho các phụ tải làm việc và nạp điện cho ắc quy."
+  },
+  "293": {
+    "reason": "Giữ chặt người lái và hành khách trên ghế ngồi khi xe ô tô đột ngột dừng lại. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: giữ chặt người lái và hành khách trên ghế ngồi khi xe ô tô đột ngột dừng lại."
+  },
+  "294": {
+    "reason": "Giảm khả năng va đập của một số bộ phận cơ thể quan trọng với các vật thể trong xe; đồng thời hấp thụ một phần lực va đập lên người lái và hành khách. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: giảm khả năng va đập của một số bộ phận cơ thể quan trọng với các vật thể trong xe; đồng thời hấp thụ một phần lực va đập lên người lái và hành khách."
+  },
+  "295": {
+    "reason": "Hệ thống lái gặp sự cố. Động cơ chỉ làm việc ổn định khi nhiên liệu, không khí, bôi trơn và quá trình sinh công được cung cấp đúng điều kiện.",
+    "takeaway": "Điểm cần nhớ: hệ thống lái gặp sự cố."
+  },
+  "296": {
+    "reason": "Dùng để kích (hay nâng) xe ô tô. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: dùng để kích (hay nâng) xe ô tô."
+  },
+  "297": {
+    "reason": "Phá cửa kính xe ô tô trong các trường hợp khẩn cấp. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: phá cửa kính xe ô tô trong các trường hợp khẩn cấp."
+  },
+  "298": {
+    "reason": "Chữa cháy trong các trường hợp hỏa hoạn. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: chữa cháy trong các trường hợp hỏa hoạn."
+  },
+  "299": {
+    "reason": "Báo hiệu xe đang ở tình huống nguy hiểm. Yêu cầu kỹ thuật này liên quan trực tiếp đến khả năng quan sát, điều khiển hoặc độ bền của xe và phải được kiểm tra trước khi lưu thông.",
+    "takeaway": "Điểm cần nhớ: báo hiệu xe đang ở tình huống nguy hiểm."
+  },
+  "300": {
+    "reason": "Báo hiệu chế độ lái tiết kiệm nhiên liệu đã bật. Động cơ chỉ làm việc ổn định khi nhiên liệu, không khí, bôi trơn và quá trình sinh công được cung cấp đúng điều kiện.",
+    "takeaway": "Điểm cần nhớ: báo hiệu chế độ lái tiết kiệm nhiên liệu đã bật."
+  },
+  "301": {
+    "reason": "Biển 1 cấm các loại xe cơ giới đi vào, trừ xe máy hai bánh, xe gắn máy và các loại xe ưu tiên theo quy định. Nhóm biển cấm thường có dạng tròn, viền đỏ; hình bên trong xác định đúng loại xe hoặc hành vi bị hạn chế, còn gạch chéo thể hiện nội dung cấm cụ thể.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "302": {
+    "reason": "Biển 1 và biển 2 cấm xe ô tô tải. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "303": {
+    "reason": "Biển 2 và biển 3 cấm máy kéo. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2 và biển 3."
+  },
+  "304": {
+    "reason": "Biển 1 và biển 2 báo hiệu cấm xe mô tô ba bánh chở hàng đi qua. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "305": {
+    "reason": "Cả hai biển dưới đây xe gắn máy được phép đi vào. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cả hai biển."
+  },
+  "306": {
+    "reason": "Biển 1 báo hiệu cấm xe mô tô đi vào. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "307": {
+    "reason": "Khi gặp Biển 2 và biển 3, xe mô tô hai bánh được đi vào. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2 và biển 3."
+  },
+  "308": {
+    "reason": "Biển 1 và biển 3 cho phép xe ô tô con được vượt. Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 3."
+  },
+  "309": {
+    "reason": "Biển 2 không cho phép xe ô tô con vượt. Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "310": {
+    "reason": "Biển 2 và biển 3 cấm xe ô tô tải vượt. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2 và biển 3."
+  },
+  "311": {
+    "reason": "Cả hai biển cấm xe tải vượt. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cả hai biển."
+  },
+  "312": {
+    "reason": "Biển 2 xe ô tô con được phép vượt. Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "313": {
+    "reason": "Biển 2 cấm quay đầu xe. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "314": {
+    "reason": "Biển 1 cấm xe rẽ trái. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "315": {
+    "reason": "Khi gặp Biển 2, xe được rẽ trái. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "316": {
+    "reason": "Cả hai biển cấm xe ô tô rẽ trái. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cả hai biển."
+  },
+  "317": {
+    "reason": "Biển 1 và biển 2 cấm các phương tiện rẽ phải. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "318": {
+    "reason": "Biển 1 và biển 2 cấm các phương tiện rẽ trái. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "319": {
+    "reason": "Biển 1 dưới đây chỉ cấm xe ô tô quay đầu. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "320": {
+    "reason": "Biển 2 dưới đây cấm xe ô tô rẽ trái và quay đầu. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "321": {
+    "reason": "Biển 2 cấm xe taxi mà không cấm các phương tiện khác. Nhóm biển cấm thường có dạng tròn, viền đỏ; hình bên trong xác định đúng loại xe hoặc hành vi bị hạn chế, còn gạch chéo thể hiện nội dung cấm cụ thể.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "322": {
+    "reason": "Biển 2 xe được phép rẽ trái. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "323": {
+    "reason": "Cả hai biển xe quay đầu không bị cấm. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cả hai biển."
+  },
+  "324": {
+    "reason": "Biển 1 xe được phép quay đầu nhưng không được rẽ trái. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "325": {
+    "reason": "Biển 2 là biển \"Cấm đi ngược chiều\". Nhóm biển cấm thường có dạng tròn, viền đỏ; hình bên trong xác định đúng loại xe hoặc hành vi bị hạn chế, còn gạch chéo thể hiện nội dung cấm cụ thể.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "326": {
+    "reason": "Biển 1 và biển 2 dưới đây các phương tiện không được phép đi vào. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "327": {
+    "reason": "Biển 1 và biển 3. Biển nền xanh viền đỏ có một gạch chéo là cấm đỗ, hai gạch chéo là cấm cả dừng và đỗ; biển phụ hoặc mũi tên xác định phía có hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 3."
+  },
+  "328": {
+    "reason": "Biển 1 và biển 2. Biển nền xanh viền đỏ có một gạch chéo là cấm đỗ, hai gạch chéo là cấm cả dừng và đỗ; biển phụ hoặc mũi tên xác định phía có hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "329": {
+    "reason": "Khi gặp Biển 2, xe ưu tiên theo luật định vẫn phải dừng lại. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "330": {
+    "reason": "Biển 1 cấm tất cả các loại xe cơ giới và thô sơ đi lại trên đường, trừ xe ưu tiên theo luật định (nếu đường vẫn cho xe chạy được). Nhóm biển cấm thường có dạng tròn, viền đỏ; hình bên trong xác định đúng loại xe hoặc hành vi bị hạn chế, còn gạch chéo thể hiện nội dung cấm cụ thể.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "331": {
+    "reason": "Biển 3 là biển \"Cấm xe chở hàng nguy hiểm\". Nhóm biển cấm thường có dạng tròn, viền đỏ; hình bên trong xác định đúng loại xe hoặc hành vi bị hạn chế, còn gạch chéo thể hiện nội dung cấm cụ thể.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "332": {
+    "reason": "Biển 1 và biển 2. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "333": {
+    "reason": "Biển 3. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "334": {
+    "reason": "Báo hiệu trong hình mang nghĩa: đường cấm súc vật vận tải hàng hóa hoặc hành khách dù kéo xe hay chở trên lưng đi qua. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: đường cấm súc vật vận tải hàng hóa hoặc hành khách dù kéo xe hay chở trên lưng đi qua."
+  },
+  "335": {
+    "reason": "Báo hiệu trong hình mang nghĩa: tốc độ tối đa cho phép về ban đêm cho các phương tiện là 70 km/h. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: tốc độ tối đa cho phép về ban đêm cho các phương tiện là 70 km/h."
+  },
+  "336": {
+    "reason": "Không được phép. Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: không được phép."
+  },
+  "337": {
+    "reason": "Biển 1 hạn chế chiều cao của xe và hàng. Con số là giới hạn cho kích thước hoặc khối lượng được biểu thị bằng các mũi tên, nên phải đối chiếu cả xe và hàng trước khi đi qua.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "338": {
+    "reason": "Báo hiệu trong hình mang nghĩa: cho phép xe ô tô có tải trọng trên trục xe từ 7 tấn trở xuống đi qua. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cho phép xe ô tô có tải trọng trên trục xe từ 7 tấn trở xuống đi qua."
+  },
+  "339": {
+    "reason": "Báo hiệu trong hình mang nghĩa: cấm các loại xe có tải trọng toàn bộ trên 10 tấn đi qua. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cấm các loại xe có tải trọng toàn bộ trên 10 tấn đi qua."
+  },
+  "340": {
+    "reason": "Cả hai biển cấm máy kéo kéo theo rơ moóc. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cả hai biển."
+  },
+  "341": {
+    "reason": "Được đi vào. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: được đi vào."
+  },
+  "342": {
+    "reason": "Biển 1 và biển 2 không có hiệu lực đối với xe ô tô tải không kéo moóc. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "343": {
+    "reason": "Biển 2 và biển 3 cấm máy kéo. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2 và biển 3."
+  },
+  "344": {
+    "reason": "Không được phép. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: không được phép."
+  },
+  "345": {
+    "reason": "Có. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: có."
+  },
+  "346": {
+    "reason": "Báo hiệu trong hình mang nghĩa: cấm các loại xe cơ giới và xe mô tô (trừ xe ưu tiên theo luật định) đi về bên trái và bên phải. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cấm các loại xe cơ giới và xe mô tô (trừ xe ưu tiên theo luật định) đi về bên trái và bên phải."
+  },
+  "347": {
+    "reason": "Báo hiệu trong hình mang nghĩa: chiều dài đoạn đường cấm bóp còi từ nơi đặt biển. Biển phụ không đứng độc lập mà bổ sung cự ly, hướng hoặc đối tượng cho biển chính ngay phía trên, nên phải đọc hai biển như một cụm.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: chiều dài đoạn đường cấm bóp còi từ nơi đặt biển."
+  },
+  "348": {
+    "reason": "Không được phép. Biển phụ không đứng độc lập mà bổ sung cự ly, hướng hoặc đối tượng cho biển chính ngay phía trên, nên phải đọc hai biển như một cụm.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: không được phép."
+  },
+  "349": {
+    "reason": "Biển 1 và biển 3 xe mô tô hai bánh được đi vào. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 3."
+  },
+  "350": {
+    "reason": "Biển 2 xe mô tô hai bánh không được đi vào. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "351": {
+    "reason": "Cấm các loại xe ở biển phụ đi vào. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cấm các loại xe ở biển phụ đi vào."
+  },
+  "352": {
+    "reason": "Biển 1 báo hiệu chiều dài đoạn đường phải giữ cự ly tối thiểu giữa hai xe. Biển phụ không đứng độc lập mà bổ sung cự ly, hướng hoặc đối tượng cho biển chính ngay phía trên, nên phải đọc hai biển như một cụm.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "353": {
+    "reason": "Biển 2 báo hiệu khoảng cách thực tế từ nơi đặt biển đến nơi cần cự ly tối thiểu giữa hai xe. Biển phụ không đứng độc lập mà bổ sung cự ly, hướng hoặc đối tượng cho biển chính ngay phía trên, nên phải đọc hai biển như một cụm.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "354": {
+    "reason": "Báo hiệu trong hình mang nghĩa: cấm dừng và đỗ xe theo hướng bên phải. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cấm dừng và đỗ xe theo hướng bên phải."
+  },
+  "355": {
+    "reason": "Không được phép. Biển nền xanh viền đỏ có một gạch chéo là cấm đỗ, hai gạch chéo là cấm cả dừng và đỗ; biển phụ hoặc mũi tên xác định phía có hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: không được phép."
+  },
+  "356": {
+    "reason": "Không được phép. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: không được phép."
+  },
+  "357": {
+    "reason": "Không được phép. Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: không được phép."
+  },
+  "358": {
+    "reason": "Báo hiệu trong hình mang nghĩa: cấm xe ô tô khách. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cấm xe ô tô khách."
+  },
+  "359": {
+    "reason": "Báo hiệu trong hình mang nghĩa: hạn chế chiều ngang của xe và hàng. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: hạn chế chiều ngang của xe và hàng."
+  },
+  "360": {
+    "reason": "Biển 1 là biển \"Tốc độ tối đa cho phép về ban đêm\". Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "361": {
+    "reason": "Biển 1 báo hiệu bắt đầu đoạn đường vào phạm vi khu dân cư, các phương tiện tham gia giao thông phải tuân theo các quy định đi đường được áp dụng ở khu đông dân cư. Biển phụ không đứng độc lập mà bổ sung cự ly, hướng hoặc đối tượng cho biển chính ngay phía trên, nên phải đọc hai biển như một cụm.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "362": {
+    "reason": "Biển 2 báo hiệu hạn chế tốc độ của phương tiện không vượt quá trị số ghi trên biển? 1 2. Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "363": {
+    "reason": "Biển 2 báo hiệu \"Kết thúc đường cao tốc\". Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "364": {
+    "reason": "Báo hiệu trong hình mang nghĩa: tốc độ tối đa các xe cơ giới được phép chạy. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: tốc độ tối đa các xe cơ giới được phép chạy."
+  },
+  "365": {
+    "reason": "Biển 2 dưới đây chỉ dẫn bắt đầu đường cao tốc phân làn đường có tốc độ khác nhau. Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "366": {
+    "reason": "Báo hiệu trong hình mang nghĩa: báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy."
+  },
+  "367": {
+    "reason": "Biển 1. Biểu tượng người hoặc xe đạp xác định đúng đối tượng và phần đường dành riêng; cần phân biệt biển cấm với biển chỉ dẫn lối đi.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "368": {
+    "reason": "Biển 3 chỉ đường dành cho người đi bộ, các loại xe không được đi vào khi gặp biển này. Biểu tượng người hoặc xe đạp xác định đúng đối tượng và phần đường dành riêng; cần phân biệt biển cấm với biển chỉ dẫn lối đi.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "369": {
+    "reason": "Biển 1 báo hiệu \"Đường dành cho xe thô sơ\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "370": {
+    "reason": "Cả ba biển báo hiệu sắp đến chỗ giao nhau nguy hiểm. Biển cảnh báo nguy hiểm có dạng tam giác viền đỏ; hình vẽ bên trong cho biết loại nguy cơ để người lái giảm tốc và chuẩn bị xử lý.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cả ba biển."
+  },
+  "371": {
+    "reason": "Biển 1 báo hiệu \"Giao nhau với đường sắt có rào chắn\". Hình đầu máy, rào chắn hoặc dấu chữ thập cho biết dạng giao cắt đường sắt và mức cảnh báo để người lái chuẩn bị dừng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "372": {
+    "reason": "Biển 3 báo hiệu \"Giao nhau có tín hiệu đèn\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "373": {
+    "reason": "Biển 1 và biển 3 báo hiệu nguy hiểm giao nhau với đường sắt. Hình đầu máy, rào chắn hoặc dấu chữ thập cho biết dạng giao cắt đường sắt và mức cảnh báo để người lái chuẩn bị dừng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 3."
+  },
+  "374": {
+    "reason": "Biển 2 và biển 3 báo hiệu đường bộ giao nhau với đường sắt không có rào chắn. Hình đầu máy, rào chắn hoặc dấu chữ thập cho biết dạng giao cắt đường sắt và mức cảnh báo để người lái chuẩn bị dừng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2 và biển 3."
+  },
+  "375": {
+    "reason": "Biển 1 báo hiệu sắp đến chỗ giao nhau giữa đường bộ và đường sắt. Hình đầu máy, rào chắn hoặc dấu chữ thập cho biết dạng giao cắt đường sắt và mức cảnh báo để người lái chuẩn bị dừng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "376": {
+    "reason": "Biển 2 báo hiệu \"Cửa chui\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "377": {
+    "reason": "Báo hiệu trong hình mang nghĩa: để chỉ nơi đường sắt giao vuông góc với đường bộ không có rào chắn. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: để chỉ nơi đường sắt giao vuông góc với đường bộ không có rào chắn."
+  },
+  "378": {
+    "reason": "Biển 1 và biển 2 báo hiệu \"Nơi đường sắt giao vuông góc với đường bộ\". Hình đầu máy, rào chắn hoặc dấu chữ thập cho biết dạng giao cắt đường sắt và mức cảnh báo để người lái chuẩn bị dừng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "379": {
+    "reason": "Báo hiệu trong hình mang nghĩa: để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn."
+  },
+  "380": {
+    "reason": "Biển 3 báo hiệu \"Hết đoạn đường ưu tiên\". Hình thoi vàng báo đường ưu tiên, còn biển kết thúc có thêm gạch chéo; tại nút giao phải đọc biển theo hướng xe đang đi tới.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "381": {
+    "reason": "Biển 1 và biển 3 báo hiệu, chỉ dẫn xe đi trên đường này được quyền ưu tiên qua nơi giao nhau. Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 3."
+  },
+  "382": {
+    "reason": "Biển 1 báo hiệu \"Giao nhau với đường không ưu tiên\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "383": {
+    "reason": "Biển 2 báo hiệu \"Giao nhau với đường ưu tiên\". Hình thoi vàng báo đường ưu tiên, còn biển kết thúc có thêm gạch chéo; tại nút giao phải đọc biển theo hướng xe đang đi tới.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "384": {
+    "reason": "Biển 1 và biển 2 báo hiệu \"Đường bị thu hẹp\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "385": {
+    "reason": "Biển 2 và biển 3. Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2 và biển 3."
+  },
+  "386": {
+    "reason": "Biển 3 báo hiệu \"Giao nhau với đường ưu tiên\". Hình thoi vàng báo đường ưu tiên, còn biển kết thúc có thêm gạch chéo; tại nút giao phải đọc biển theo hướng xe đang đi tới.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "387": {
+    "reason": "Biển 1 báo hiệu \"Đường giao nhau\" của các tuyến đường cùng cấp. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "388": {
+    "reason": "Biển 2 báo hiệu \"Giao nhau với đường không ưu tiên\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "389": {
+    "reason": "Biển 1 báo hiệu \"Đường hai chiều\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "390": {
+    "reason": "Biển 2 báo hiệu phải giảm tốc độ, nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp. Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "391": {
+    "reason": "Biển 3 chỉ dẫn \"Được ưu tiên qua đường hẹp\". Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "392": {
+    "reason": "Biển 2 báo hiệu \"Đường đôi\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "393": {
+    "reason": "Biển 3 báo hiệu \"Đường đôi\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "394": {
+    "reason": "Biển 3 báo hiệu \"Kết thúc đường đôi\". Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "395": {
+    "reason": "Biển 1 báo hiệu \"Giao nhau với đường hai chiều\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "396": {
+    "reason": "Biển 2 báo hiệu \"Đường hai chiều\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "397": {
+    "reason": "Biển 2 báo hiệu \"Giao nhau với đường hai chiều\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "398": {
+    "reason": "Biển 2 và biển 3 báo hiệu \"Chú ý chướng ngại vật\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2 và biển 3."
+  },
+  "399": {
+    "reason": "Biển 2 chỉ dẫn cho người tham gia giao thông biết vị trí và khoảng cách có làn đường cứu nạn hay làn thoát xe khẩn cấp. Biển phụ không đứng độc lập mà bổ sung cự ly, hướng hoặc đối tượng cho biển chính ngay phía trên, nên phải đọc hai biển như một cụm.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "400": {
+    "reason": "Biển 2 báo hiệu \"Đường hầm\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "401": {
+    "reason": "Biển 2 dưới đây là biển \"Cầu hẹp\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "402": {
+    "reason": "Biển 3 dưới đây là biển \"Cầu quay - cầu cất\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "403": {
+    "reason": "Biển 1 dưới đây là biển \"Kè, vực sâu phía trước\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "404": {
+    "reason": "Biển 3 sau đây là biển \"Kè, vực sâu bên đường phía bên trái\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "405": {
+    "reason": "Biển 2 sau đây là biển \"Kè, vực sâu bên đường phía bên phải\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "406": {
+    "reason": "Biển 2 sau đây là biển \"Đường trơn\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "407": {
+    "reason": "Biển 2 sau đây là biển \"Lề đường nguy hiểm\". Biển cảnh báo nguy hiểm có dạng tam giác viền đỏ; hình vẽ bên trong cho biết loại nguy cơ để người lái giảm tốc và chuẩn bị xử lý.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "408": {
+    "reason": "Biển 1 sau đây báo trước gần tới đoạn đường đang tiến hành thi công sửa chữa. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "409": {
+    "reason": "Biển 2 sau đây cảnh báo nguy hiểm đoạn đường thường xảy ra tai nạn. Biển cảnh báo nguy hiểm có dạng tam giác viền đỏ; hình vẽ bên trong cho biết loại nguy cơ để người lái giảm tốc và chuẩn bị xử lý.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "410": {
+    "reason": "Biển 2 dưới đây báo hiệu đoạn đường hay xảy ra ùn tắc giao thông. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "411": {
+    "reason": "Biển 2. Biển hiệu lệnh dạng tròn nền xanh yêu cầu đi theo hướng hoặc cách thức biểu thị; đây là lệnh phải chấp hành, không chỉ là gợi ý.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "412": {
+    "reason": "Biển 2 chỉ dẫn nơi bắt đầu đoạn đường dành cho người đi bộ. Biểu tượng người hoặc xe đạp xác định đúng đối tượng và phần đường dành riêng; cần phân biệt biển cấm với biển chỉ dẫn lối đi.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "413": {
+    "reason": "Biển 2 dưới đây báo hiệu gần đến đoạn đường thường có trẻ em đi ngang qua. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "414": {
+    "reason": "Biển 1. Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "415": {
+    "reason": "Biển 1 sau đây là biển \"Dốc xuống nguy hiểm\". Biển cảnh báo nguy hiểm có dạng tam giác viền đỏ; hình vẽ bên trong cho biết loại nguy cơ để người lái giảm tốc và chuẩn bị xử lý.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "416": {
+    "reason": "Biển 2 sau đây là biển \"Dốc lên nguy hiểm\". Biển cảnh báo nguy hiểm có dạng tam giác viền đỏ; hình vẽ bên trong cho biết loại nguy cơ để người lái giảm tốc và chuẩn bị xử lý.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "417": {
+    "reason": "Báo hiệu trong hình mang nghĩa: chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái."
+  },
+  "418": {
+    "reason": "Báo hiệu trong hình mang nghĩa: báo trước sắp đến bến phà. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: báo trước sắp đến bến phà."
+  },
+  "419": {
+    "reason": "Báo hiệu trong hình mang nghĩa: báo hiệu đường có ổ gà, lồi lõm. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: báo hiệu đường có ổ gà, lồi lõm."
+  },
+  "420": {
+    "reason": "Báo hiệu trong hình mang nghĩa: báo hiệu đường có gồ giảm tốc phía trước. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: báo hiệu đường có gồ giảm tốc phía trước."
+  },
+  "421": {
+    "reason": "Báo hiệu trong hình mang nghĩa: để cảnh báo những đoạn nền đường yếu, đoạn đường đang theo dõi lún mà việc vận hành xe ở tốc độ cao có thể gây nguy hiểm. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: để cảnh báo những đoạn nền đường yếu, đoạn đường đang theo dõi lún mà việc vận hành xe ở tốc độ cao có thể gây nguy hiểm."
+  },
+  "422": {
+    "reason": "Báo hiệu trong hình mang nghĩa: để báo trước gần tới đoạn đường có hiện tượng đất đá từ trên ta luy dương sụt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: để báo trước gần tới đoạn đường có hiện tượng đất đá từ trên ta luy dương sụt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường."
+  },
+  "423": {
+    "reason": "Báo hiệu trong hình mang nghĩa: để báo trước nơi có kết cấu mặt đường rời rạc, khi phương tiện đi qua, làm cho các viên đá, sỏi văng lên gây nguy hiểm và mất an toàn cho người và phương tiện tham gia giao thông. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: để báo trước nơi có kết cấu mặt đường rời rạc, khi phương tiện đi qua, làm cho các viên đá, sỏi văng lên gây nguy hiểm và mất an toàn cho người và phương tiện tham gia giao…"
+  },
+  "424": {
+    "reason": "Đi chậm, quan sát và dừng lại nếu gặp gia súc trên đường. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: đi chậm, quan sát và dừng lại nếu gặp gia súc trên đường."
+  },
+  "425": {
+    "reason": "Báo hiệu trong hình mang nghĩa: báo hiệu khu vực có đường dây điện cắt ngang phía trên tuyến đường. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: báo hiệu khu vực có đường dây điện cắt ngang phía trên tuyến đường."
+  },
+  "426": {
+    "reason": "Biển 2 báo hiệu các phương tiện phải đi đúng làn đường quy định và tuân thủ tốc độ tối đa cho phép. Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "427": {
+    "reason": "Cả hai biển báo hiệu các phương tiện phải tuân thủ tốc độ tối đa cho phép trên từng làn đường. Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cả hai biển."
+  },
+  "428": {
+    "reason": "Biển 1 báo hiệu \"Đường dành cho xe ô tô\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "429": {
+    "reason": "Biển 2 báo hiệu \"Hết đoạn đường dành cho xe ô tô\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "430": {
+    "reason": "Khi gặp Biển 1, các phương tiện không được đi vào, trừ xe ô tô và xe mô tô. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "431": {
+    "reason": "Báo hiệu trong hình mang nghĩa: biển báo hiệu cho người lái xe biết số lượng làn đường trên mặt đường và hướng đi trên mỗi làn đường phải theo. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển báo hiệu cho người lái xe biết số lượng làn đường trên mặt đường và hướng đi trên mỗi làn đường phải theo."
+  },
+  "432": {
+    "reason": "Không biển nào (đặt trước ngã ba, ngã tư) cho phép xe được rẽ sang hướng khác. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: không biển nào."
+  },
+  "433": {
+    "reason": "Biển 1 báo hiệu \"Hướng đi thẳng phải theo\". Biển hiệu lệnh dạng tròn nền xanh yêu cầu đi theo hướng hoặc cách thức biểu thị; đây là lệnh phải chấp hành, không chỉ là gợi ý.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "434": {
+    "reason": "Biển 2 báo hiệu \"Đường một chiều\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "435": {
+    "reason": "Biển 1. Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "436": {
+    "reason": "Biển 1 và biển 2. Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "437": {
+    "reason": "Biển 3. Con số trong vòng tròn đỏ là tốc độ tối đa, còn vòng tròn xanh biểu thị tốc độ tối thiểu; gạch chéo báo kết thúc hạn chế tương ứng.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "438": {
+    "reason": "Biển 2 và biển 3 dưới đây báo hiệu hết cấm vượt. Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2 và biển 3."
+  },
+  "439": {
+    "reason": "Biển 2. Nhóm biển cấm thường có dạng tròn, viền đỏ; hình bên trong xác định đúng loại xe hoặc hành vi bị hạn chế, còn gạch chéo thể hiện nội dung cấm cụ thể.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "440": {
+    "reason": "Biển 3 cho phép được quay đầu xe đi theo hướng ngược lại khi đặt biển trước ngã ba, ngã tư. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "441": {
+    "reason": "Biển 1 không cho phép rẽ phải. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "442": {
+    "reason": "Biển 1 và biển 2. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "443": {
+    "reason": "Cả hai biển cho phép quay đầu xe. Mũi tên mô tả đúng thao tác quay hoặc rẽ; vạch chéo đỏ phủ lên hướng nào thì hướng đó bị cấm, không tự động cấm các hướng còn lại.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cả hai biển."
+  },
+  "444": {
+    "reason": "Biển 3 chỉ dẫn tên đường trên các tuyến đường đối ngoại. Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "445": {
+    "reason": "Báo hiệu trong hình mang nghĩa: biển chỉ dẫn hết cấm đỗ xe theo giờ trong khu vực. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển chỉ dẫn hết cấm đỗ xe theo giờ trong khu vực."
+  },
+  "446": {
+    "reason": "Báo hiệu trong hình mang nghĩa: biển hạn chế tốc độ tối đa trong khu vực. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển hạn chế tốc độ tối đa trong khu vực."
+  },
+  "447": {
+    "reason": "Biển 2 báo hiệu \"Đường phía trước có làn đường dành cho ô tô khách\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "448": {
+    "reason": "Biển 3 báo hiệu \"Rẽ ra đường có làn đường dành cho ô tô khách\". Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "449": {
+    "reason": "Biển 1 và 2 đặt trên đường chính trước khi đến nơi đường giao nhau để rẽ vào đường cụt. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và 2."
+  },
+  "450": {
+    "reason": "Biển 1 chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường. Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "451": {
+    "reason": "Biển 2 chỉ dẫn cho người đi bộ sử dụng hầm chui qua đường. Biểu tượng người hoặc xe đạp xác định đúng đối tượng và phần đường dành riêng; cần phân biệt biển cấm với biển chỉ dẫn lối đi.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "452": {
+    "reason": "Biển 2 báo hiệu \"Nơi đỗ xe dành cho người khuyết tật\". Biển nền xanh viền đỏ có một gạch chéo là cấm đỗ, hai gạch chéo là cấm cả dừng và đỗ; biển phụ hoặc mũi tên xác định phía có hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "453": {
+    "reason": "Đỗ từ 1/2 thân xe trở lên trên hè phố. Biển nền xanh viền đỏ có một gạch chéo là cấm đỗ, hai gạch chéo là cấm cả dừng và đỗ; biển phụ hoặc mũi tên xác định phía có hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: đỗ từ 1/2 thân xe trở lên trên hè phố."
+  },
+  "454": {
+    "reason": "Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này."
+  },
+  "455": {
+    "reason": "Bắt buộc. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: bắt buộc."
+  },
+  "456": {
+    "reason": "Biển 2 dưới đây chỉ dẫn địa giới hành chính giữa các thành phố, tỉnh, huyện. Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "457": {
+    "reason": "Biển 1 và biển 3 báo hiệu \"Cầu vượt liên thông\". Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 3."
+  },
+  "458": {
+    "reason": "Báo hiệu trong hình mang nghĩa: báo hiệu cầu vượt liên thông. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: báo hiệu cầu vượt liên thông."
+  },
+  "459": {
+    "reason": "Biển 1 và biển 2 báo hiệu \"Tuyến đường cầu vượt cắt qua\". Ký hiệu hai xe đặt trong vòng tròn đỏ liên quan đến cấm vượt; loại xe được vẽ màu đen hoặc đỏ quyết định lệnh cấm áp dụng cho xe nào.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 2."
+  },
+  "460": {
+    "reason": "Báo hiệu trong hình mang nghĩa: chỉ dẫn khoảng cách đến làn đường cứu nạn (làn thoát xe khẩn cấp). Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: chỉ dẫn khoảng cách đến làn đường cứu nạn (làn thoát xe khẩn cấp)."
+  },
+  "461": {
+    "reason": "Được phép chuyển sang làn khác. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: được phép chuyển sang làn khác."
+  },
+  "462": {
+    "reason": "Có. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: có."
+  },
+  "463": {
+    "reason": "Không. Hình phương tiện bên trong vòng tròn cho biết đúng đối tượng bị tác động; nếu có con số hoặc biển phụ thì còn phải kiểm tra tải trọng và tổ hợp xe.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: không."
+  },
+  "464": {
+    "reason": "Biển 2 báo hiệu kết thúc đường cao tốc. Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "465": {
+    "reason": "Báo hiệu trong hình mang nghĩa: chỉ dẫn vị trí nhập làn xe cách 250 m. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: chỉ dẫn vị trí nhập làn xe cách 250 m."
+  },
+  "466": {
+    "reason": "Cả hai biển chỉ dẫn nhập làn xe. Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: cả hai biển."
+  },
+  "467": {
+    "reason": "Báo hiệu trong hình mang nghĩa: bắt đầu đường cao tốc; đồng thời tên và ký hiệu đường cao tốc, giá trị hạn chế tốc độ tối đa và tối thiểu. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: bắt đầu đường cao tốc; đồng thời tên và ký hiệu đường cao tốc, giá trị hạn chế tốc độ tối đa và tối thiểu."
+  },
+  "468": {
+    "reason": "Xăng dầu, ăn uống, thông tin, sửa chữa xe. Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: xăng dầu, ăn uống, thông tin, sửa chữa xe."
+  },
+  "469": {
+    "reason": "Báo hiệu trong hình mang nghĩa: chỉ dẫn khoảng cách đến trạm kiểm tra tải trọng xe cách 750 m. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: chỉ dẫn khoảng cách đến trạm kiểm tra tải trọng xe cách 750 m."
+  },
+  "470": {
+    "reason": "Biển 1. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1."
+  },
+  "471": {
+    "reason": "Biển 3. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 3."
+  },
+  "472": {
+    "reason": "Biển 2. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "473": {
+    "reason": "Biển 1 và biển 3. Biển cảnh báo nguy hiểm có dạng tam giác viền đỏ; hình vẽ bên trong cho biết loại nguy cơ để người lái giảm tốc và chuẩn bị xử lý.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 1 và biển 3."
+  },
+  "474": {
+    "reason": "Biển 2 chỉ dẫn người lái xe đi được cả hai hướng. Biển chỉ dẫn cung cấp hướng đi hoặc phạm vi bắt đầu, kết thúc; ký hiệu gạch chéo thường báo hiệu quy định trước đó đã hết hiệu lực.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: biển 2."
+  },
+  "475": {
+    "reason": "Báo hiệu trong hình mang nghĩa: chỉ dẫn hướng rẽ để nhắc người điều khiển phương tiện chuẩn bị đổi hướng đi khi sắp vào đường cong nguy hiểm, có bán kính cong nhỏ. Muốn phân biệt chính xác phải đọc đồng thời hình dạng, màu nền, viền và biểu tượng; không nên chỉ dựa vào một chi tiết giống nhau giữa các biển.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: chỉ dẫn hướng rẽ để nhắc người điều khiển phương tiện chuẩn bị đổi hướng đi khi sắp vào đường cong nguy hiểm, có bán kính cong nhỏ."
+  },
+  "476": {
+    "reason": "Vạch 3. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: vạch 3."
+  },
+  "477": {
+    "reason": "Vạch 1 và vạch 2. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: vạch 1 và vạch 2."
+  },
+  "478": {
+    "reason": "Vạch 2. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: vạch 2."
+  },
+  "479": {
+    "reason": "Vạch 1 và vạch 3. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: vạch 1 và vạch 3."
+  },
+  "480": {
+    "reason": "Phân chia hai chiều xe chạy ngược chiều nhau. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: phân chia hai chiều xe chạy ngược chiều nhau."
+  },
+  "481": {
+    "reason": "Phân chia các làn xe chạy cùng chiều nhau. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: phân chia các làn xe chạy cùng chiều nhau."
+  },
+  "482": {
+    "reason": "Vạch 1 và vạch 3. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: vạch 1 và vạch 3."
+  },
+  "483": {
+    "reason": "Dùng để xác định khoảng cách giữa các phương tiện trên đường. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: dùng để xác định khoảng cách giữa các phương tiện trên đường."
+  },
+  "484": {
+    "reason": "Báo hiệu trong hình mang nghĩa: báo hiệu sắp đến chỗ có bố trí vạch đi bộ qua đường. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: báo hiệu sắp đến chỗ có bố trí vạch đi bộ qua đường."
+  },
+  "485": {
+    "reason": "Báo hiệu trong hình mang nghĩa: vị trí dừng xe của các phương tiện vận tải hành khách công cộng. Cần đọc màu, kiểu liền hoặc đứt và vị trí vạch theo chiều xe chạy; cùng một nét vạch nhưng đặt ở vị trí khác có thể mang hiệu lực khác.",
+    "takeaway": "Nhìn đủ hình, màu, ký hiệu: vị trí dừng xe của các phương tiện vận tải hành khách công cộng."
+  },
+  "486": {
+    "reason": "Chỉ xe con chấp hành đúng hướng đi trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: chỉ xe con."
+  },
+  "487": {
+    "reason": "Thứ tự đúng là: xe tải, xe mô tô, xe khách, xe con. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải, xe mô tô, xe khách, xe con."
+  },
+  "488": {
+    "reason": "Thứ tự đúng là: xe công an đi làm nhiệm vụ khẩn cấp, xe con, xe tải, xe khách. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe công an đi làm nhiệm vụ khẩn cấp, xe con, xe tải, xe khách."
+  },
+  "489": {
+    "reason": "Thứ tự đúng là: xe công an đi làm nhiệm vụ khẩn cấp, xe tải, xe khách, xe con. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe công an đi làm nhiệm vụ khẩn cấp, xe tải, xe khách, xe con."
+  },
+  "490": {
+    "reason": "Thứ tự đúng là: xe mô tô, xe con, xe tải. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe mô tô, xe con, xe tải."
+  },
+  "491": {
+    "reason": "Xe con phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con."
+  },
+  "492": {
+    "reason": "Xe con được quyền đi trước. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con."
+  },
+  "493": {
+    "reason": "Thứ tự đúng là: xe con (A), xe cứu thương đi làm nhiệm vụ cấp cứu, xe con (B). Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con (A), xe cứu thương đi làm nhiệm vụ cấp cứu, xe con (B)."
+  },
+  "494": {
+    "reason": "Thứ tự đúng là: xe chữa cháy đi làm nhiệm vụ chữa cháy, xe cứu thương đi làm nhiệm vụ cấp cứu, xe con. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe chữa cháy đi làm nhiệm vụ chữa cháy, xe cứu thương đi làm nhiệm vụ cấp cứu, xe con."
+  },
+  "495": {
+    "reason": "Xe cứu thương đi làm nhiệm vụ cấp cứu được quyền đi trước. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe cứu thương đi làm nhiệm vụ cấp cứu."
+  },
+  "496": {
+    "reason": "Xe khách phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe khách."
+  },
+  "497": {
+    "reason": "Xe con phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con."
+  },
+  "498": {
+    "reason": "Xe chữa cháy đi làm nhiệm vụ chữa cháy được quyền đi trước. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe chữa cháy đi làm nhiệm vụ chữa cháy."
+  },
+  "499": {
+    "reason": "Xe con và xe khách. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con và xe khách."
+  },
+  "500": {
+    "reason": "Xe con, xe tải. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con, xe tải."
+  },
+  "501": {
+    "reason": "Xe quân sự đi làm nhiệm vụ khẩn cấp được quyền đi trước. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe quân sự đi làm nhiệm vụ khẩn cấp."
+  },
+  "502": {
+    "reason": "Chỉ hướng 1. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: chỉ hướng 1."
+  },
+  "503": {
+    "reason": "Xe khách, xe tải, xe mô tô vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe khách, xe tải, xe mô tô."
+  },
+  "504": {
+    "reason": "Thứ tự đúng là: xe mô tô, xe tải, xe khách, xe con. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe mô tô, xe tải, xe khách, xe con."
+  },
+  "505": {
+    "reason": "Xe tải. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải."
+  },
+  "506": {
+    "reason": "Xe con (B) được quyền đi trước. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con (B)."
+  },
+  "507": {
+    "reason": "Cả ba hướng. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: cả ba hướng."
+  },
+  "508": {
+    "reason": "Cả hai xe. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: cả hai xe."
+  },
+  "509": {
+    "reason": "Cả ba xe. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: cả ba xe."
+  },
+  "510": {
+    "reason": "Không đúng. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: không đúng."
+  },
+  "511": {
+    "reason": "Chỉ hướng 1. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: chỉ hướng 1."
+  },
+  "512": {
+    "reason": "Hướng 3. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: hướng 3."
+  },
+  "513": {
+    "reason": "Cả hai xe đều đúng. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: cả hai xe đều đúng."
+  },
+  "514": {
+    "reason": "Hướng 2 và 3. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: hướng 2 và 3."
+  },
+  "515": {
+    "reason": "Vi phạm. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: vi phạm."
+  },
+  "516": {
+    "reason": "Xe khách phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe khách."
+  },
+  "517": {
+    "reason": "Xe mô tô được quyền đi trước. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe mô tô."
+  },
+  "518": {
+    "reason": "Không đúng. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: không đúng."
+  },
+  "519": {
+    "reason": "Hướng 1, 3 và 4. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: hướng 1, 3 và 4."
+  },
+  "520": {
+    "reason": "Thứ tự đúng là: xe mô tô + xe đạp, xe con (A), xe con (B). Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe mô tô + xe đạp, xe con (A), xe con (B)."
+  },
+  "521": {
+    "reason": "Chỉ hướng 1. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: chỉ hướng 1."
+  },
+  "522": {
+    "reason": "Hướng 2 và 3. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: hướng 2 và 3."
+  },
+  "523": {
+    "reason": "Hướng 1 và 5. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: hướng 1 và 5."
+  },
+  "524": {
+    "reason": "Trừ hướng 2. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: trừ hướng 2."
+  },
+  "525": {
+    "reason": "Xe mô tô được quyền đi trước. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe mô tô."
+  },
+  "526": {
+    "reason": "Vi phạm. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: vi phạm."
+  },
+  "527": {
+    "reason": "Xe con vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con."
+  },
+  "528": {
+    "reason": "Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi."
+  },
+  "529": {
+    "reason": "Xe mô tô, xe tải. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe mô tô, xe tải."
+  },
+  "530": {
+    "reason": "Đúng. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: đúng."
+  },
+  "531": {
+    "reason": "Xe con. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con."
+  },
+  "532": {
+    "reason": "Xe tải vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải."
+  },
+  "533": {
+    "reason": "Thứ tự đúng là: xe tải, xe khách, xe con. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải, xe khách, xe con."
+  },
+  "534": {
+    "reason": "Thứ tự đúng là: xe khách và xe tải, xe con. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe khách và xe tải, xe con."
+  },
+  "535": {
+    "reason": "Trừ hướng 4. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: trừ hướng 4."
+  },
+  "536": {
+    "reason": "Thứ tự đúng là: xe công an đi làm nhiệm vụ khẩn cấp, xe con, xe tải, xe khách. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe công an đi làm nhiệm vụ khẩn cấp, xe con, xe tải, xe khách."
+  },
+  "537": {
+    "reason": "Hướng 1, 3 và 4. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: hướng 1, 3 và 4."
+  },
+  "538": {
+    "reason": "Tất cả các loại xe trên chấp hành đúng hướng đi trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: tất cả các loại xe trên."
+  },
+  "539": {
+    "reason": "Hướng 1 và 3. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: hướng 1 và 3."
+  },
+  "540": {
+    "reason": "Thứ tự đúng là: xe quân sự đi làm nhiệm vụ khẩn cấp, xe công an đi làm nhiệm vụ khẩn cấp, xe con + xe mô tô. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe quân sự đi làm nhiệm vụ khẩn cấp, xe công an đi làm nhiệm vụ khẩn cấp, xe con + xe mô tô."
+  },
+  "541": {
+    "reason": "Xe A phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe A."
+  },
+  "542": {
+    "reason": "Vi phạm. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: vi phạm."
+  },
+  "543": {
+    "reason": "Xe con (E), xe mô tô (C) vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con (E), xe mô tô (C)."
+  },
+  "544": {
+    "reason": "Cách xử lý đúng: nhường xe con rẽ trái trước. Chủ động nhường giúp tách các quỹ đạo xung đột; chỉ tiếp tục khi người hoặc xe được ưu tiên đã đi qua hoàn toàn.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: nhường xe con rẽ trái trước."
+  },
+  "545": {
+    "reason": "Hướng 1 và 2. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: hướng 1 và 2."
+  },
+  "546": {
+    "reason": "Xe con (B) phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con (B)."
+  },
+  "547": {
+    "reason": "Nhường đường cho xe buýt và xe tải. Chủ động nhường giúp tách các quỹ đạo xung đột; chỉ tiếp tục khi người hoặc xe được ưu tiên đã đi qua hoàn toàn.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: nhường đường cho xe buýt và xe tải."
+  },
+  "548": {
+    "reason": "Xe con (E), xe mô tô (D) vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con (E), xe mô tô (D)."
+  },
+  "549": {
+    "reason": "Xe tải. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải."
+  },
+  "550": {
+    "reason": "Quay đầu theo hướng A. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: quay đầu theo hướng A."
+  },
+  "551": {
+    "reason": "Thứ tự đúng là: xe của bạn và xe con, xe tải. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe của bạn và xe con, xe tải."
+  },
+  "552": {
+    "reason": "Cách xử lý đúng: bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua."
+  },
+  "553": {
+    "reason": "Xe con, xe tải. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con, xe tải."
+  },
+  "554": {
+    "reason": "Xe con (A), xe con (C), xe con (E), xe buýt (G). Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con (A), xe con (C), xe con (E), xe buýt (G)."
+  },
+  "555": {
+    "reason": "Cấm vượt. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: cấm vượt."
+  },
+  "556": {
+    "reason": "Không được vượt. Vượt trong vị trí bị hạn chế tầm nhìn hoặc có đối tượng cần bảo vệ sẽ không còn đủ khoảng trống để quay về làn an toàn.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: không được vượt."
+  },
+  "557": {
+    "reason": "Vị trí B và C. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: vị trí B và C."
+  },
+  "558": {
+    "reason": "Không được dừng. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: không được dừng."
+  },
+  "559": {
+    "reason": "Cả hai xe vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: cả hai xe."
+  },
+  "560": {
+    "reason": "Xe tải vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải."
+  },
+  "561": {
+    "reason": "Xe khách, xe tải vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe khách, xe tải."
+  },
+  "562": {
+    "reason": "Xe tải, xe khách, xe mô tô vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải, xe khách, xe mô tô."
+  },
+  "563": {
+    "reason": "Xe khách, xe tải vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe khách, xe tải."
+  },
+  "564": {
+    "reason": "Cách xử lý đúng: quan sát phía trước, phía sau, khi đủ điều kiện an toàn, bật tín hiệu bằng đèn hoặc còi rồi cho xe chạy vượt qua. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: quan sát phía trước, phía sau, khi đủ điều kiện an toàn, bật tín hiệu bằng đèn hoặc còi rồi cho xe chạy vượt qua."
+  },
+  "565": {
+    "reason": "Xe khách, xe mô tô chấp hành đúng hướng đi trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe khách, xe mô tô."
+  },
+  "566": {
+    "reason": "Xe tải ( D), xe con (B) vi phạm quy tắc trong hình. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải ( D), xe con (B)."
+  },
+  "567": {
+    "reason": "Thứ tự đúng là: xe mô tô, xe con, xe của bạn. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe mô tô, xe con, xe của bạn."
+  },
+  "568": {
+    "reason": "Thứ tự đúng là: xe con, xe của bạn, xe mô tô. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con, xe của bạn, xe mô tô."
+  },
+  "569": {
+    "reason": "Xe con. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con."
+  },
+  "570": {
+    "reason": "Xe của bạn được đi thẳng, rẽ trái. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: đi thẳng, rẽ trái."
+  },
+  "571": {
+    "reason": "Xe của bạn được dừng lại trước vạch dừng và đi thẳng hoặc rẽ trái khi đèn xanh. Mỗi xe phải đối chiếu đúng tín hiệu với làn và hướng của chính mình; tín hiệu cho làn bên cạnh không làm phát sinh quyền đi cho xe đang xét.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: dừng lại trước vạch dừng và đi thẳng hoặc rẽ trái khi đèn xanh."
+  },
+  "572": {
+    "reason": "Cách xử lý đúng: giảm tốc độ, rẽ phải sau xe tải và xe đạp. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: giảm tốc độ, rẽ phải sau xe tải và xe đạp."
+  },
+  "573": {
+    "reason": "Cách xử lý đúng: giảm tốc độ, để người đi bộ qua đường và rẽ phải sau xe con màu xanh. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: giảm tốc độ, để người đi bộ qua đường và rẽ phải sau xe con màu xanh."
+  },
+  "574": {
+    "reason": "Cách xử lý đúng: nhường đường cho xe đạp và xe khách. Chủ động nhường giúp tách các quỹ đạo xung đột; chỉ tiếp tục khi người hoặc xe được ưu tiên đã đi qua hoàn toàn.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: nhường đường cho xe đạp và xe khách."
+  },
+  "575": {
+    "reason": "Xe tải phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải."
+  },
+  "576": {
+    "reason": "Xe của bạn phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe của bạn."
+  },
+  "577": {
+    "reason": "Cách xử lý đúng: không được vượt những người đi xe đạp. Vượt trong vị trí bị hạn chế tầm nhìn hoặc có đối tượng cần bảo vệ sẽ không còn đủ khoảng trống để quay về làn an toàn.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: không được vượt những người đi xe đạp."
+  },
+  "578": {
+    "reason": "Cách xử lý đúng: nếu phía sau không có xe xin vượt, chuyển sang làn đường bên trái; đồng thời nếu phía sau có xe xin vượt, thì giảm tốc độ, ở lại làn đường, dừng lại khi cần thiết. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: nếu phía sau không có xe xin vượt, chuyển sang làn đường bên trái; đồng thời nếu phía sau có xe xin vượt, thì giảm tốc độ, ở lại làn đường, dừng lại khi cần thiết."
+  },
+  "579": {
+    "reason": "Cách xử lý đúng: giảm tốc độ, dừng lại nhường đường. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: giảm tốc độ, dừng lại nhường đường."
+  },
+  "580": {
+    "reason": "Cách xử lý đúng: phanh xe giảm tốc độ và đi sát lề đường bên phải. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: phanh xe giảm tốc độ và đi sát lề đường bên phải."
+  },
+  "581": {
+    "reason": "Cách xử lý đúng: phanh xe giảm tốc độ chờ xe tải phía trước chuyển làn đường. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: phanh xe giảm tốc độ chờ xe tải phía trước chuyển làn đường."
+  },
+  "582": {
+    "reason": "Cách xử lý đúng: giảm tốc độ và đi thẳng qua ngã tư. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: giảm tốc độ và đi thẳng qua ngã tư."
+  },
+  "583": {
+    "reason": "Thứ tự đúng là: xe đạp, xe mô tô, xe của bạn. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe đạp, xe mô tô, xe của bạn."
+  },
+  "584": {
+    "reason": "Thứ tự đúng là: xe của bạn, xe con, xe tải. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe của bạn, xe con, xe tải."
+  },
+  "585": {
+    "reason": "Xe của bạn phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe của bạn."
+  },
+  "586": {
+    "reason": "Xe của bạn phải nhường đường. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe của bạn."
+  },
+  "587": {
+    "reason": "Cách xử lý đúng: giảm tốc độ, để người đi bộ sang đường trước, sau đó cho xe đi qua vạch người đi bộ sang đường. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: giảm tốc độ, để người đi bộ sang đường trước, sau đó cho xe đi qua vạch người đi bộ sang đường."
+  },
+  "588": {
+    "reason": "Xe của bạn được quyền đi trước. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe của bạn."
+  },
+  "589": {
+    "reason": "Thứ tự đúng là: xe tải, xe con, xe của bạn. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải, xe con, xe của bạn."
+  },
+  "590": {
+    "reason": "Cách xử lý đúng: giảm tốc độ cho xe đi sát phần đường bên phải. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: giảm tốc độ cho xe đi sát phần đường bên phải."
+  },
+  "591": {
+    "reason": "Xe tải được quyền đi trước. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe tải."
+  },
+  "592": {
+    "reason": "Xe con. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe con."
+  },
+  "593": {
+    "reason": "Thứ tự đúng là: xe của bạn, xe tải, xe đạp. Xác định lần lượt theo hiệu lệnh, xe ưu tiên, đường ưu tiên rồi mới áp dụng quy tắc nhường bên phải hoặc xe rẽ trái nhường xe đi thẳng.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: xe của bạn, xe tải, xe đạp."
+  },
+  "594": {
+    "reason": "Hướng 1. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: hướng 1."
+  },
+  "595": {
+    "reason": "Cách xử lý đúng: giữ nguyên đèn chiếu gần, giảm tốc độ, đi sau xe phía trước. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: giữ nguyên đèn chiếu gần, giảm tốc độ, đi sau xe phía trước."
+  },
+  "596": {
+    "reason": "Dừng lại trước rào chắn một khoảng cách an toàn. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: dừng lại trước rào chắn một khoảng cách an toàn."
+  },
+  "597": {
+    "reason": "Sai. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: sai."
+  },
+  "598": {
+    "reason": "Không được vượt. Vượt trong vị trí bị hạn chế tầm nhìn hoặc có đối tượng cần bảo vệ sẽ không còn đủ khoảng trống để quay về làn an toàn.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: không được vượt."
+  },
+  "599": {
+    "reason": "Đúng. Phải kiểm tra toàn bộ báo hiệu và khoảng trống quanh xe trước khi thực hiện; một hướng đi hợp lệ vẫn chưa an toàn nếu đang có người hoặc xe chiếm quỹ đạo.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: đúng."
+  },
+  "600": {
+    "reason": "Giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi. Giảm tốc từ sớm tạo thêm thời gian quan sát và giữ khoảng trống phanh, tránh phải đánh lái gấp khi diễn biến phía trước thay đổi.",
+    "takeaway": "Xét tín hiệu rồi đến quyền ưu tiên: giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi."
   }
 }

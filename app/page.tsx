@@ -9,21 +9,32 @@ import {
   ChevronRight,
   CircleAlert,
   Clock3,
+  Cloud,
+  Copy,
+  EyeOff,
   GraduationCap,
   HeartHandshake,
   Home,
   Lightbulb,
   ListChecks,
+  LogOut,
   Moon,
+  Pencil,
   Play,
+  RefreshCw,
   RotateCcw,
   Route,
   Search,
   Settings,
   ShieldCheck,
+  StickyNote,
   Sun,
+  SquareTerminal,
+  Trash2,
   TrafficCone,
   Trophy,
+  User,
+  UserCheck,
   Wrench,
   X,
   type LucideIcon,
@@ -33,6 +44,7 @@ import criticalExplanationsData from "./data/critical-explanations.json";
 import criticalQuestionsData from "./data/critical-questions.json";
 import questionExplanationsData from "./data/question-explanations.json";
 import questionsData from "./data/questions.json";
+import { chapter1Theory, type TheoryBlock, type TheoryTreeNode } from "./data/chapter-1";
 
 type Question = {
   id: number;
@@ -81,6 +93,10 @@ const PROGRESS_KEY = "lai-vung-progress-v1";
 const BOOKMARK_KEY = "lai-vung-bookmarks-v1";
 const DAYS_KEY = "lai-vung-study-days-v1";
 const THEME_KEY = "lai-vung-theme-v1";
+const NOTES_KEY = "lai-vung-notes-v1";
+const AUTH_USER_KEY = "lai-vung-auth-user-v1";
+const AUTH_PASS_KEY = "lai-vung-auth-pass-v1";
+const AUTH_TIME_KEY = "lai-vung-auth-time-v1";
 
 const chapterMeta: ChapterMeta[] = [
   {
@@ -357,11 +373,52 @@ function formatClock(seconds: number) {
   return `${String(minutes).padStart(2, "0")}:${String(remainder).padStart(2, "0")}`;
 }
 
+function TheoryTree({ node }: { node: TheoryTreeNode }) {
+  return (
+    <li className="theory-tree-node">
+      <div className="theory-tree-label"><strong>{node.label}</strong>{node.description && <span>{node.description}</span>}</div>
+      {node.children && node.children.length > 0 && (
+        <ul>
+          {node.children.map((child) => <TheoryTree key={child.label} node={child} />)}
+        </ul>
+      )}
+    </li>
+  );
+}
+
+function TheoryBlockView({ block }: { block: TheoryBlock }) {
+  if (block.type === "paragraph") return <p className="theory-paragraph">{block.text}</p>;
+  if (block.type === "note") {
+    return <aside className="theory-note"><strong>{block.title}</strong><p>{block.text}</p></aside>;
+  }
+  if (block.type === "bullets") {
+    return <div className="theory-bullets">
+      {block.title && <h4>{block.title}</h4>}
+      <ul>{block.items.map((item) => <li key={item}>{item}</li>)}</ul>
+    </div>;
+  }
+  if (block.type === "tree") {
+    return <div className="theory-tree-block">
+      {block.title && <h4>{block.title}</h4>}
+      <ul className="theory-tree"><TheoryTree node={block.root} /></ul>
+    </div>;
+  }
+  return <div className="theory-table-block">
+    {block.title && <h4>{block.title}</h4>}
+    <div className="theory-table-scroll"><table><thead><tr>{block.columns.map((column) => <th key={column}>{column}</th>)}</tr></thead>
+      <tbody>{block.rows.map((row, rowIndex) => <tr key={`${rowIndex}-${row[0]}`}>{row.map((cell, cellIndex) => <td key={`${rowIndex}-${cellIndex}`}>{cell}</td>)}</tr>)}</tbody>
+    </table></div>
+  </div>;
+}
+
 export default function HomePage() {
   const [progress, setProgress] = useState<Record<number, QuestionProgress>>({});
   const [bookmarks, setBookmarks] = useState<number[]>([]);
+  const [userNotes, setUserNotes] = useState<Record<number, string>>({});
+  const [editingNoteId, setEditingNoteId] = useState<number | null>(null);
+  const [tempNoteText, setTempNoteText] = useState<string>("");
   const [studyDays, setStudyDays] = useState<string[]>([]);
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark" | "codex">("light");
   const [hydrated, setHydrated] = useState(false);
   const [session, setSession] = useState<Question[]>([]);
   const [sessionMode, setSessionMode] = useState<SessionMode>("learn");
@@ -374,23 +431,89 @@ export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [testSecondsLeft, setTestSecondsLeft] = useState(20 * 60);
   const [chaptersOpen, setChaptersOpen] = useState(false);
+  const [theoryOpen, setTheoryOpen] = useState(false);
   const [activeChapter, setActiveChapter] = useState<number | null>(null);
   const [chapterReplay, setChapterReplay] = useState(false);
   const [answerSheetOpen, setAnswerSheetOpen] = useState(false);
+  const [hideCorrect, setHideCorrect] = useState(false);
+  const [justAnsweredId, setJustAnsweredId] = useState<number | null>(null);
+
+  const [authModalOpen, setAuthModalOpen] = useState(false);
+  const [currentUser, setCurrentUser] = useState<string>("");
+  const [currentPass, setCurrentPass] = useState<string>("");
+  const [lastSyncedTime, setLastSyncedTime] = useState<string>("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [authStatusMsg, setAuthStatusMsg] = useState<{ type: "success" | "error"; text: string } | null>(null);
+  const [authTab, setAuthTab] = useState<"login" | "register">("login");
+
+  const [loginUser, setLoginUser] = useState("");
+  const [loginPass, setLoginPass] = useState("");
+  const [regUser, setRegUser] = useState("");
+  const [regPass, setRegPass] = useState("");
+  const [regConfirmPass, setRegConfirmPass] = useState("");
 
   useEffect(() => {
     try {
       const storedProgress = localStorage.getItem(PROGRESS_KEY);
       const storedBookmarks = localStorage.getItem(BOOKMARK_KEY);
+      const storedNotes = localStorage.getItem(NOTES_KEY);
       const storedDays = localStorage.getItem(DAYS_KEY);
-      const storedTheme = localStorage.getItem(THEME_KEY) as "light" | "dark" | null;
+      const storedTheme = localStorage.getItem(THEME_KEY) as "light" | "dark" | "codex" | null;
+      const storedUser = localStorage.getItem(AUTH_USER_KEY);
+      const storedPass = localStorage.getItem(AUTH_PASS_KEY);
+      const storedTime = localStorage.getItem(AUTH_TIME_KEY);
+
       if (storedProgress) setProgress(JSON.parse(storedProgress));
       if (storedBookmarks) setBookmarks(JSON.parse(storedBookmarks));
+      if (storedNotes) setUserNotes(JSON.parse(storedNotes));
       if (storedDays) setStudyDays(JSON.parse(storedDays));
+      if (storedUser) setCurrentUser(storedUser);
+      if (storedPass) setCurrentPass(storedPass);
+      if (storedTime) setLastSyncedTime(storedTime);
+
       if (storedTheme) {
         setTheme(storedTheme);
       } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
         setTheme("dark");
+      }
+
+      // Tự động kiểm tra và đồng bộ phiên bản mới nhất từ đám mây khi mở trang
+      if (storedUser && storedPass) {
+        fetch("/api/sync", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            action: "login",
+            username: storedUser,
+            password: storedPass,
+          }),
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            if (res.success && res.data) {
+              if (res.data.progress) {
+                setProgress((prev) => ({ ...prev, ...res.data.progress }));
+              }
+              if (Array.isArray(res.data.bookmarks)) {
+                setBookmarks((prev) => Array.from(new Set([...prev, ...res.data.bookmarks])));
+              }
+              if (res.data.userNotes) {
+                setUserNotes((prev) => ({ ...prev, ...res.data.userNotes }));
+              }
+              if (Array.isArray(res.data.studyDays)) {
+                setStudyDays((prev) => Array.from(new Set([...prev, ...res.data.studyDays])));
+              }
+              if (res.updatedAt) {
+                const timeStr = new Date(res.updatedAt).toLocaleTimeString("vi-VN", {
+                  hour: "2-digit",
+                  minute: "2-digit",
+                });
+                setLastSyncedTime(timeStr);
+                localStorage.setItem(AUTH_TIME_KEY, timeStr);
+              }
+            }
+          })
+          .catch(() => {});
       }
     } catch {
       // A corrupted local cache should never prevent the learning app from opening.
@@ -412,8 +535,224 @@ export default function HomePage() {
   }, [bookmarks, hydrated]);
 
   useEffect(() => {
+    if (hydrated) localStorage.setItem(NOTES_KEY, JSON.stringify(userNotes));
+  }, [userNotes, hydrated]);
+
+  useEffect(() => {
     if (hydrated) localStorage.setItem(DAYS_KEY, JSON.stringify(studyDays));
   }, [studyDays, hydrated]);
+
+  // Tự động đồng bộ ngầm lên tài khoản khi người dùng học bài (Debounce 2 giây)
+  useEffect(() => {
+    if (!hydrated || !currentUser || !currentPass) return;
+    const timer = setTimeout(() => {
+      fetch("/api/sync", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "push",
+          username: currentUser,
+          password: currentPass,
+          data: {
+            progress,
+            bookmarks,
+            userNotes,
+            studyDays,
+            theme,
+          },
+        }),
+      })
+        .then((res) => res.json())
+        .then((res) => {
+          if (res.success) {
+            const timeStr = new Date().toLocaleTimeString("vi-VN", {
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+            setLastSyncedTime(timeStr);
+            localStorage.setItem(AUTH_TIME_KEY, timeStr);
+          }
+        })
+        .catch(() => {});
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [progress, bookmarks, userNotes, studyDays, theme, currentUser, currentPass, hydrated]);
+
+  const handleLogin = useCallback(
+    async (e: React.FormEvent) => {
+      e.preventDefault();
+      if (!loginUser.trim() || !loginPass.trim()) {
+        setAuthStatusMsg({ type: "error", text: "Vui lòng nhập đầy đủ tên tài khoản và mật khẩu." });
+        return;
+      }
+      setIsSubmitting(true);
+      setAuthStatusMsg(null);
+      try {
+        const res = await fetch("/api/sync", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            action: "login",
+            username: loginUser.trim(),
+            password: loginPass.trim(),
+          }),
+        });
+        const data = await res.json();
+        if (!res.ok || data.error) {
+          setAuthStatusMsg({ type: "error", text: data.error || "Đăng nhập thất bại." });
+        } else {
+          const cloudData = data.data || {};
+          if (cloudData.progress) setProgress((prev) => ({ ...prev, ...cloudData.progress }));
+          if (Array.isArray(cloudData.bookmarks)) setBookmarks((prev) => Array.from(new Set([...prev, ...cloudData.bookmarks])));
+          if (cloudData.userNotes) setUserNotes((prev) => ({ ...prev, ...cloudData.userNotes }));
+          if (Array.isArray(cloudData.studyDays)) setStudyDays((prev) => Array.from(new Set([...prev, ...cloudData.studyDays])));
+          if (cloudData.theme && (cloudData.theme === "light" || cloudData.theme === "dark" || cloudData.theme === "codex")) {
+            setTheme(cloudData.theme);
+          }
+
+          setCurrentUser(data.username);
+          setCurrentPass(loginPass.trim());
+          const timeStr = new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" });
+          setLastSyncedTime(timeStr);
+          localStorage.setItem(AUTH_USER_KEY, data.username);
+          localStorage.setItem(AUTH_PASS_KEY, loginPass.trim());
+          localStorage.setItem(AUTH_TIME_KEY, timeStr);
+
+          setAuthStatusMsg({ type: "success", text: `Đăng nhập thành công! Chào mừng @${data.username}` });
+          setLoginUser("");
+          setLoginPass("");
+        }
+      } catch {
+        setAuthStatusMsg({ type: "error", text: "Lỗi kết nối máy chủ. Vui lòng thử lại!" });
+      } finally {
+        setIsSubmitting(false);
+      }
+    },
+    [loginUser, loginPass]
+  );
+
+  const handleRegister = useCallback(
+    async (e: React.FormEvent) => {
+      e.preventDefault();
+      const u = regUser.trim();
+      const p = regPass.trim();
+      const cp = regConfirmPass.trim();
+
+      if (u.length < 3) {
+        setAuthStatusMsg({ type: "error", text: "Tên tài khoản (hoặc SĐT) phải có ít nhất 3 ký tự." });
+        return;
+      }
+      if (p.length < 4) {
+        setAuthStatusMsg({ type: "error", text: "Mật khẩu phải có ít nhất 4 ký tự." });
+        return;
+      }
+      if (p !== cp) {
+        setAuthStatusMsg({ type: "error", text: "Mật khẩu xác nhận không khớp. Vui lòng nhập lại!" });
+        return;
+      }
+
+      setIsSubmitting(true);
+      setAuthStatusMsg(null);
+      try {
+        const res = await fetch("/api/sync", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            action: "register",
+            username: u,
+            password: p,
+            data: { progress, bookmarks, userNotes, studyDays, theme },
+          }),
+        });
+        const data = await res.json();
+        if (!res.ok || data.error) {
+          setAuthStatusMsg({ type: "error", text: data.error || "Không thể tạo tài khoản." });
+        } else {
+          setCurrentUser(data.username);
+          setCurrentPass(p);
+          const timeStr = new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" });
+          setLastSyncedTime(timeStr);
+          localStorage.setItem(AUTH_USER_KEY, data.username);
+          localStorage.setItem(AUTH_PASS_KEY, p);
+          localStorage.setItem(AUTH_TIME_KEY, timeStr);
+
+          setAuthStatusMsg({ type: "success", text: `Đăng ký thành công! Đã lưu toàn bộ tiến độ vào tài khoản @${data.username}` });
+          setRegUser("");
+          setRegPass("");
+          setRegConfirmPass("");
+        }
+      } catch {
+        setAuthStatusMsg({ type: "error", text: "Lỗi kết nối máy chủ. Vui lòng thử lại!" });
+      } finally {
+        setIsSubmitting(false);
+      }
+    },
+    [regUser, regPass, regConfirmPass, progress, bookmarks, userNotes, studyDays, theme]
+  );
+
+  const handleManualSync = useCallback(async () => {
+    if (!currentUser || !currentPass) return;
+    setIsSubmitting(true);
+    setAuthStatusMsg(null);
+    try {
+      await fetch("/api/sync", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "push",
+          username: currentUser,
+          password: currentPass,
+          data: { progress, bookmarks, userNotes, studyDays, theme },
+        }),
+      });
+      const timeStr = new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" });
+      setLastSyncedTime(timeStr);
+      localStorage.setItem(AUTH_TIME_KEY, timeStr);
+      setAuthStatusMsg({ type: "success", text: "Đã đồng bộ dữ liệu mới nhất thành công!" });
+    } catch {
+      setAuthStatusMsg({ type: "error", text: "Đồng bộ thất bại, vui lòng thử lại!" });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }, [currentUser, currentPass, progress, bookmarks, userNotes, studyDays, theme]);
+
+  const handleLogout = useCallback(() => {
+    if (window.confirm(`Bạn có chắc muốn đăng xuất khỏi tài khoản @${currentUser}? Dữ liệu hiện tại trên máy này vẫn sẽ được giữ lại.`)) {
+      setCurrentUser("");
+      setCurrentPass("");
+      setLastSyncedTime("");
+      localStorage.removeItem(AUTH_USER_KEY);
+      localStorage.removeItem(AUTH_PASS_KEY);
+      localStorage.removeItem(AUTH_TIME_KEY);
+      setAuthStatusMsg({ type: "success", text: "Đã đăng xuất tài khoản thành công." });
+    }
+  }, [currentUser]);
+
+  const saveNote = useCallback((questionId: number, text: string) => {
+    const trimmed = text.trim();
+    setUserNotes((current) => {
+      const next = { ...current };
+      if (trimmed) {
+        next[questionId] = trimmed;
+      } else {
+        delete next[questionId];
+      }
+      return next;
+    });
+    setEditingNoteId(null);
+    setTempNoteText("");
+  }, []);
+
+  const deleteNote = useCallback((questionId: number) => {
+    setUserNotes((current) => {
+      const next = { ...current };
+      delete next[questionId];
+      return next;
+    });
+    setEditingNoteId(null);
+    setTempNoteText("");
+  }, []);
 
   const activeQuestion = session[0];
   const answeredCount = session.filter(
@@ -436,6 +775,26 @@ export default function HomePage() {
     if (sessionAnswers[question.id] !== undefined) return true;
     return Boolean(activeChapter && !chapterReplay && progress[question.id]?.attempts);
   }).length;
+
+  const hiddenCount = useMemo(() => {
+    return session.filter(
+      (question) =>
+        sessionAnswers[question.id] === question.correctAnswer &&
+        !userNotes[question.id]?.trim(),
+    ).length;
+  }, [session, sessionAnswers, userNotes]);
+
+  const displayedSession = useMemo(() => {
+    if (!hideCorrect || sessionMode === "test") return session;
+    return session.filter((question) => {
+      const isCorrect = sessionAnswers[question.id] === question.correctAnswer;
+      if (!isCorrect) return true;
+      // Giữ lại câu có ghi chú cá nhân của người học
+      if (userNotes[question.id]?.trim()) return true;
+      if (question.id === justAnsweredId) return true;
+      return false;
+    });
+  }, [session, hideCorrect, sessionMode, sessionAnswers, userNotes, justAnsweredId]);
 
   const summary = useMemo(() => {
     const values = Object.entries(progress)
@@ -486,10 +845,11 @@ export default function HomePage() {
       .filter(
         (question) =>
           question.id === exactId ||
-          question.question.toLocaleLowerCase("vi").includes(term),
+          question.question.toLocaleLowerCase("vi").includes(term) ||
+          (userNotes[question.id] && userNotes[question.id].toLocaleLowerCase("vi").includes(term)),
       )
       .slice(0, 30);
-  }, [searchTerm, bookmarks, libraryChapter]);
+  }, [searchTerm, bookmarks, libraryChapter, userNotes]);
 
   const openLibrary = useCallback((chapter: number | null = null) => {
     setLibraryChapter(chapter);
@@ -603,12 +963,15 @@ export default function HomePage() {
       }
       setSession(selected);
       setSessionMode(mode);
+      setTheoryOpen(false);
       setActiveChapter(nextActiveChapter);
       setChapterReplay(nextChapterReplay);
       setSessionAnswers(restoredAnswers);
       setShowResults(false);
       setLibraryOpen(false);
       setAnswerSheetOpen(false);
+      setHideCorrect(false);
+      setJustAnsweredId(null);
       if (mode === "test") setTestSecondsLeft(20 * 60);
       window.scrollTo({ top: 0, behavior: "auto" });
     },
@@ -618,6 +981,7 @@ export default function HomePage() {
   const chooseAnswer = useCallback(
     (question: Question, answer: number) => {
       if (sessionMode !== "test" && sessionAnswers[question.id] !== undefined) return;
+      setJustAnsweredId(question.id);
       setSessionAnswers((current) => ({
         ...current,
         [question.id]: answer,
@@ -649,11 +1013,20 @@ export default function HomePage() {
     setSessionAnswers({});
     setChapterReplay(false);
     setAnswerSheetOpen(false);
+    setHideCorrect(false);
+    setJustAnsweredId(null);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const jumpToQuestion = (questionId: number) => {
     setAnswerSheetOpen(false);
+    if (
+      hideCorrect &&
+      sessionAnswers[questionId] === questions.find((q) => q.id === questionId)?.correctAnswer &&
+      !userNotes[questionId]?.trim()
+    ) {
+      setJustAnsweredId(questionId);
+    }
     window.requestAnimationFrame(() => {
       document.getElementById(`cau-${questionId}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
@@ -715,12 +1088,22 @@ export default function HomePage() {
     setActiveChapter(null);
     setChapterReplay(false);
     setAnswerSheetOpen(false);
+    setHideCorrect(false);
+    setJustAnsweredId(null);
+    setTheoryOpen(false);
     setChaptersOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const showChapters = () => {
+    setTheoryOpen(false);
     setChaptersOpen(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const showTheory = () => {
+    setTheoryOpen(true);
+    setChaptersOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -759,6 +1142,28 @@ export default function HomePage() {
                 <RotateCcw size={18} />
               </button>
             )}
+            {activeQuestion && !showResults && sessionMode !== "test" && (
+              <button
+                className={`icon-button ${hideCorrect ? "active" : ""}`}
+                onClick={() => {
+                  setHideCorrect((prev) => !prev);
+                  setJustAnsweredId(null);
+                }}
+                aria-label={hideCorrect ? "Hiện lại các câu đã ẩn" : "Ẩn câu đúng (không có ghi chú)"}
+                title={
+                  hideCorrect
+                    ? `Đang ẩn ${hiddenCount} câu đúng không có ghi chú (Bấm để hiện lại)`
+                    : hiddenCount > 0
+                      ? `Ẩn ${hiddenCount} câu đúng không có ghi chú (giữ lại câu có note)`
+                      : "Ẩn câu đúng (không có ghi chú)"
+                }
+              >
+                <EyeOff size={18} />
+                {hideCorrect && hiddenCount > 0 && (
+                  <span className="icon-badge">{hiddenCount}</span>
+                )}
+              </button>
+            )}
             {activeQuestion && !showResults && (
               <button className="icon-button" onClick={() => setAnswerSheetOpen(true)} aria-label="Mở Answer sheet" title="Answer sheet">
                 <ListChecks size={19} />
@@ -771,6 +1176,18 @@ export default function HomePage() {
             )}
             {(!activeQuestion || showResults) && (
               <>
+                <button
+                  className={`icon-button topbar-auth ${currentUser ? "is-logged-in" : ""}`}
+                  onClick={() => {
+                    setAuthStatusMsg(null);
+                    setAuthModalOpen(true);
+                  }}
+                  aria-label={currentUser ? `Tài khoản: @${currentUser}` : "Đăng nhập tài khoản"}
+                  title={currentUser ? `Tài khoản: @${currentUser} (Đang đồng bộ)` : "Đăng nhập / Đăng ký để đồng bộ tiến độ"}
+                >
+                  <User size={19} />
+                  {currentUser && <span className="sync-dot-badge" />}
+                </button>
                 <button className="icon-button topbar-search" onClick={() => openLibrary()} aria-label="Tìm câu hỏi"><Search size={19} /></button>
                 <button className="icon-button topbar-settings" onClick={() => setSettingsOpen(true)} aria-label="Cài đặt"><Settings size={19} /></button>
               </>
@@ -782,7 +1199,7 @@ export default function HomePage() {
       {(!activeQuestion || showResults) && (
       <>
       <div className="content-wrap">
-        {!chaptersOpen && (
+        {!theoryOpen && !chaptersOpen && (
         <>
         <section className="exam-summary" aria-label="Cấu trúc đề thi hạng B">
           <div className="exam-stat"><strong>30</strong><span>Câu hỏi/đề</span></div>
@@ -840,7 +1257,7 @@ export default function HomePage() {
         </>
         )}
 
-        {chaptersOpen && (
+        {!theoryOpen && chaptersOpen && (
         <section className="chapters-section chapters-page" id="lo-trinh-600">
           <div className="section-heading">
             <div><span>Lộ trình 600 câu</span><h2>Học theo 6 chương</h2></div>
@@ -860,15 +1277,46 @@ export default function HomePage() {
                   <h3>{chapter.title}</h3>
                   <div className="chapter-meta"><span>{chapter.count} câu hỏi</span><span>{chapter.percent}%</span></div>
                   <div className="chapter-progress"><span style={{ width: `${chapter.percent}%`, background: chapter.color }} /></div>
-                  <button onClick={() => startSession("learn", chapter.id)}>
-                    {chapter.percent === 100 ? "Học lại chương này" : chapter.attempted ? "Học tiếp chương này" : "Bắt đầu chương này"}
-                    <ChevronRight size={17} />
-                  </button>
-                </article>
+                    <div className="chapter-card-actions">
+                      <button onClick={() => startSession("learn", chapter.id)}>
+                        {chapter.percent === 100 ? "Học lại chương này" : chapter.attempted ? "Học tiếp chương này" : "Bắt đầu chương này"}
+                        <ChevronRight size={17} />
+                      </button>
+                      {chapter.id === 1 && <button className="chapter-theory-link" onClick={showTheory}><BookOpen size={16} /> Đọc lý thuyết</button>}
+                    </div>
+                  </article>
               );
             })}
           </div>
         </section>
+        )}
+
+        {theoryOpen && (
+          <section className="theory-page" aria-label="Lý thuyết chương 1">
+            <div className="theory-hero">
+              <div>
+                <span className="eyebrow">CHƯƠNG I · 180 CÂU HỎI</span>
+                <h1>{chapter1Theory.title}</h1>
+                <p>{chapter1Theory.subtitle}</p>
+              </div>
+              <div className="theory-hero-meta"><span>{chapter1Theory.updated}</span><span>{chapter1Theory.source}</span></div>
+            </div>
+            <div className="theory-layout">
+              <aside className="theory-index" aria-label="Mục lục chương 1">
+                <strong>Mục lục chương</strong>
+                {chapter1Theory.sections.map((section) => <a href={`#ly-thuyet-${section.id}`} key={section.id}>{section.title}</a>)}
+              </aside>
+              <div className="theory-sections">
+                {chapter1Theory.sections.map((section) => (
+                  <article className="theory-section-card" id={`ly-thuyet-${section.id}`} key={section.id}>
+                    <div className="theory-section-heading"><div><span className="theory-section-kicker">PHẦN ÔN TẬP</span><h2>{section.title}</h2></div>{section.source && <small>{section.source}</small>}</div>
+                    <div className="theory-section-content">{section.blocks.map((block, index) => <TheoryBlockView block={block} key={`${section.id}-${index}`} />)}</div>
+                  </article>
+                ))}
+                <div className="theory-footer-note"><CircleAlert size={17} /><span>Nội dung là bản tóm tắt học nhanh, không thay thế toàn văn luật, nghị định xử phạt hoặc quy chuẩn kỹ thuật.</span></div>
+              </div>
+            </div>
+          </section>
         )}
 
       </div>
@@ -886,7 +1334,9 @@ export default function HomePage() {
         <section className="quiz-page" aria-label={modeLabel(sessionMode)}>
           <div className="quiz-page-content">
             <div className="quiz-body quiz-list-body">
-              {session.map((question, questionIndex) => {
+              {displayedSession.map((question) => {
+                const originalIndex = session.findIndex((item) => item.id === question.id);
+                const questionIndex = originalIndex >= 0 ? originalIndex : 0;
                 const selectedAnswer = sessionAnswers[question.id];
                 const reveal = sessionMode !== "test" && selectedAnswer !== undefined;
                 const selectedIsCorrect = selectedAnswer === question.correctAnswer;
@@ -895,19 +1345,40 @@ export default function HomePage() {
                   : null;
 
                 return (
-                  <article className="quiz-question-card" id={`cau-${question.id}`} key={`${sessionMode}-${question.id}-${questionIndex}`}>
+                  <article className="quiz-question-card" id={`cau-${question.id}`} key={`${sessionMode}-${question.id}-${originalIndex}`}>
                     <div className="quiz-question-heading">
                       <span className="question-number">{sessionMode === "critical" ? questionIndex + 1 : question.id}</span>
                       <div>
                         <h2>{question.question}</h2>
                       </div>
-                      <button
-                        className={`question-bookmark ${bookmarks.includes(question.id) ? "bookmarked" : ""}`}
-                        onClick={() => toggleBookmark(question.id)}
-                        aria-label={`Đánh dấu câu ${question.id}`}
-                      >
-                        <Bookmark size={17} fill={bookmarks.includes(question.id) ? "currentColor" : "none"} />
-                      </button>
+                      <div className="question-heading-actions">
+                        {hideCorrect && selectedIsCorrect && question.id === justAnsweredId && !userNotes[question.id]?.trim() && (
+                          <button
+                            type="button"
+                            className="hide-this-question-btn"
+                            onClick={() => setJustAnsweredId(null)}
+                            title="Ẩn câu này"
+                          >
+                            <EyeOff size={13} />
+                            <span>Ẩn</span>
+                          </button>
+                        )}
+                        <button
+                          className={`question-note-btn ${userNotes[question.id] ? "has-note" : ""}`}
+                          onClick={() => {
+                            if (editingNoteId === question.id) {
+                              setEditingNoteId(null);
+                            } else {
+                              setEditingNoteId(question.id);
+                              setTempNoteText(userNotes[question.id] || "");
+                            }
+                          }}
+                          aria-label={`Ghi chú câu ${question.id}`}
+                          title={userNotes[question.id] ? "Xem / Sửa ghi chú của bạn" : "Thêm ghi chú cá nhân"}
+                        >
+                          <StickyNote size={17} fill={userNotes[question.id] ? "currentColor" : "none"} />
+                        </button>
+                      </div>
                     </div>
 
                     {question.images.length > 0 && (
@@ -970,9 +1441,91 @@ export default function HomePage() {
                         </div>
                       </div>
                     )}
+
+                    {(userNotes[question.id] || editingNoteId === question.id) && (
+                      <div className="user-note-section">
+                        {editingNoteId === question.id ? (
+                          <div className="user-note-editor">
+                            <div className="user-note-editor-header">
+                              <span className="user-note-title"><StickyNote size={14} /> NOTE</span>
+                              <small>Tự động lưu vào thiết bị của bạn</small>
+                            </div>
+                            <textarea
+                              value={tempNoteText}
+                              onChange={(e) => setTempNoteText(e.target.value)}
+                              placeholder="Nhập ghi chú cá nhân của bạn cho câu này (ví dụ: mẹo nhớ, tại sao dễ nhầm, lưu ý thực tế...)..."
+                              rows={3}
+                              autoFocus
+                            />
+                            <div className="user-note-editor-footer">
+                              <button
+                                type="button"
+                                className="btn-cancel-note"
+                                onClick={() => setEditingNoteId(null)}
+                              >
+                                <X size={13} /> Hủy
+                              </button>
+                              {userNotes[question.id] && (
+                                <button
+                                  type="button"
+                                  className="user-note-btn danger"
+                                  onClick={() => deleteNote(question.id)}
+                                >
+                                  <Trash2 size={13} /> Xóa ghi chú
+                                </button>
+                              )}
+                              <button
+                                type="button"
+                                className="btn-save-note"
+                                onClick={() => saveNote(question.id, tempNoteText)}
+                              >
+                                <Check size={14} /> Lưu ghi chú
+                              </button>
+                            </div>
+                          </div>
+                        ) : (
+                          <div className="user-note-card">
+                            <p className="user-note-body">{userNotes[question.id]}</p>
+                            <div className="user-note-actions">
+                              <button
+                                type="button"
+                                className="user-note-btn"
+                                onClick={() => {
+                                  setEditingNoteId(question.id);
+                                  setTempNoteText(userNotes[question.id]);
+                                }}
+                                title="Chỉnh sửa ghi chú"
+                              >
+                                <Pencil size={12} /> Sửa
+                              </button>
+                              <button
+                                type="button"
+                                className="user-note-btn danger"
+                                onClick={() => deleteNote(question.id)}
+                                title="Xóa ghi chú"
+                              >
+                                <Trash2 size={12} /> Xóa
+                              </button>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </article>
                 );
               })}
+              {displayedSession.length === 0 && (
+                <div className="quiz-empty-filtered">
+                  <div className="quiz-empty-icon">
+                    <Check size={28} />
+                  </div>
+                  <h3>Bạn đã làm đúng tất cả các câu hỏi trong phần này!</h3>
+                  <p>Hiện có {hiddenCount} câu làm đúng (không có ghi chú) đang được ẩn.</p>
+                  <button type="button" className="primary-button" onClick={() => setHideCorrect(false)}>
+                    <EyeOff size={16} /> Hiển thị lại tất cả câu hỏi
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </section>
@@ -1069,7 +1622,13 @@ export default function HomePage() {
               {searchResults.map((question) => (
                 <button key={question.id} onClick={() => startSession("single", undefined, question)}>
                   <span className="question-list-number">{question.id}</span>
-                  <span><strong>{question.question}</strong><small>Chương {chapterMeta[question.chapter - 1].roman} · {question.options.length} lựa chọn</small></span>
+                  <span>
+                    <strong>{question.question}</strong>
+                    <small>
+                      Chương {chapterMeta[question.chapter - 1].roman} · {question.options.length} lựa chọn
+                      {userNotes[question.id] && <span style={{ color: "var(--orange)", fontWeight: 600 }}> · 📝 Đã có ghi chú</span>}
+                    </small>
+                  </span>
                   {progress[question.id]?.mastered ? <Check className="mastered-check" size={17} /> : <ChevronRight size={17} />}
                 </button>
               ))}
@@ -1115,14 +1674,312 @@ export default function HomePage() {
           <button className="modal-backdrop" aria-label="Đóng" onClick={() => setSettingsOpen(false)} />
           <section className="settings-popover">
             <header className="sheet-header"><div><small>TÙY CHỈNH</small><h2>Cài đặt</h2></div><button className="icon-button quiet" onClick={() => setSettingsOpen(false)}><X size={19} /></button></header>
-            <button className="setting-row" onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-              <span className="setting-icon">{theme === "light" ? <Moon size={19} /> : <Sun size={19} />}</span>
-              <span><strong>Giao diện</strong><small>{theme === "light" ? "Chuyển sang nền tối" : "Chuyển sang nền sáng"}</small></span>
-              <ChevronRight size={17} />
-            </button>
-            <div className="setting-row informational">
-              <span className="setting-icon"><ShieldCheck size={19} /></span>
-              <span><strong>Tiến độ riêng tư</strong><small>Dữ liệu chỉ lưu trên thiết bị này</small></span>
+            <div className="theme-selector-wrap">
+              <span className="theme-selector-label">Chế độ giao diện</span>
+              <div className="theme-segmented-group" role="radiogroup" aria-label="Chọn giao diện">
+                <button
+                  type="button"
+                  className={`theme-pill-btn ${theme === "light" ? "active" : ""}`}
+                  onClick={() => setTheme("light")}
+                  aria-pressed={theme === "light"}
+                >
+                  <Sun size={16} />
+                  <span>Sáng</span>
+                </button>
+                <button
+                  type="button"
+                  className={`theme-pill-btn ${theme === "dark" ? "active" : ""}`}
+                  onClick={() => setTheme("dark")}
+                  aria-pressed={theme === "dark"}
+                >
+                  <Moon size={16} />
+                  <span>Tối</span>
+                </button>
+                <button
+                  type="button"
+                  className={`theme-pill-btn ${theme === "codex" ? "active" : ""}`}
+                  onClick={() => setTheme("codex")}
+                  aria-pressed={theme === "codex"}
+                >
+                  <SquareTerminal size={16} />
+                  <span>Codex</span>
+                </button>
+              </div>
+            </div>
+            <div
+              className="setting-row informational"
+              onClick={() => {
+                setSettingsOpen(false);
+                setSyncStatusMsg(null);
+                setSyncModalOpen(true);
+              }}
+              style={{ cursor: "pointer" }}
+            >
+              <span className="setting-icon" style={{ color: currentUser ? "#10b981" : undefined }}>
+                <User size={19} />
+              </span>
+              <span>
+                <strong>{currentUser ? `Tài khoản: @${currentUser}` : "Tài khoản học tập"}</strong>
+                <small>{currentUser ? "Đã đăng nhập · Tự động đồng bộ đa thiết bị" : "Đăng nhập / Đăng ký để đồng bộ tiến độ"}</small>
+              </span>
+              <ChevronRight size={18} style={{ marginLeft: "auto", color: "var(--muted)" }} />
+            </div>
+          </section>
+        </div>
+      )}
+
+      {authModalOpen && (
+        <div className="modal-layer" role="dialog" aria-modal="true" aria-label="Tài khoản học tập">
+          <button className="modal-backdrop" aria-label="Đóng" onClick={() => setAuthModalOpen(false)} />
+          <section className="sync-modal">
+            <header className="sheet-header">
+              <div>
+                <small>ĐỒNG BỘ TIẾN ĐỘ</small>
+                <h2>Tài khoản Học tập</h2>
+              </div>
+              <button className="icon-button quiet" onClick={() => setAuthModalOpen(false)}>
+                <X size={19} />
+              </button>
+            </header>
+
+            <div className="sync-modal-body">
+              {authStatusMsg && (
+                <div className={`sync-banner ${authStatusMsg.type}`}>
+                  {authStatusMsg.type === "success" ? <Check size={16} /> : <CircleAlert size={16} />}
+                  <span>{authStatusMsg.text}</span>
+                </div>
+              )}
+
+              {currentUser ? (
+                <>
+                  <div className="sync-status-card">
+                    <div className="sync-status-header">
+                      <span className="sync-live-pill">
+                        <span className="sync-live-dot" />
+                        Đã đăng nhập
+                      </span>
+                      {lastSyncedTime && (
+                        <small style={{ color: "var(--muted)", fontSize: "0.78rem" }}>
+                          Đồng bộ: {lastSyncedTime}
+                        </small>
+                      )}
+                    </div>
+
+                    <div className="auth-user-card">
+                      <div className="auth-avatar">
+                        {currentUser.slice(0, 2).toUpperCase()}
+                      </div>
+                      <div className="auth-user-meta">
+                        <strong className="auth-username">@{currentUser}</strong>
+                        <small style={{ color: "var(--muted)" }}>Tự động lưu bài học lên đám mây</small>
+                      </div>
+                    </div>
+
+                    <div className="sync-meta-info">
+                      <span>Tiến độ tài khoản: <strong>{summary.attempts} lượt làm · {summary.mastered} câu thuộc</strong></span>
+                    </div>
+                  </div>
+
+                  <div className="sync-instructions-box">
+                    <h4>Học tiếp trên thiết bị khác:</h4>
+                    <ol>
+                      <li>Mở web này trên trình duyệt điện thoại hoặc máy tính bảng.</li>
+                      <li>Bấm biểu tượng <strong>Tài khoản (Người dùng)</strong> góc trên.</li>
+                      <li>Điền tên <strong>@{currentUser}</strong> và mật khẩu của bạn để đăng nhập.</li>
+                    </ol>
+                  </div>
+
+                  <div className="sync-actions-row">
+                    <button
+                      type="button"
+                      className="primary-button"
+                      style={{ flex: 1 }}
+                      onClick={handleManualSync}
+                      disabled={isSubmitting}
+                    >
+                      <RefreshCw size={16} className={isSubmitting ? "spinning" : ""} />
+                      <span>{isSubmitting ? "Đang đồng bộ..." : "Đồng bộ ngay"}</span>
+                    </button>
+                    <button
+                      type="button"
+                      className="secondary-button"
+                      onClick={handleLogout}
+                      title="Đăng xuất khỏi thiết bị này"
+                    >
+                      <LogOut size={15} />
+                      <span>Đăng xuất</span>
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="sync-tabs-nav" role="tablist">
+                    <button
+                      type="button"
+                      className={`sync-tab-button ${authTab === "login" ? "active" : ""}`}
+                      onClick={() => {
+                        setAuthTab("login");
+                        setAuthStatusMsg(null);
+                      }}
+                    >
+                      Đăng nhập
+                    </button>
+                    <button
+                      type="button"
+                      className={`sync-tab-button ${authTab === "register" ? "active" : ""}`}
+                      onClick={() => {
+                        setAuthTab("register");
+                        setAuthStatusMsg(null);
+                      }}
+                    >
+                      Đăng ký tài khoản
+                    </button>
+                  </div>
+
+                  {authTab === "login" ? (
+                    <form className="sync-form" onSubmit={handleLogin}>
+                      <p style={{ fontSize: "0.85rem", color: "var(--muted)", margin: 0 }}>
+                        Đăng nhập để tải toàn bộ tiến độ ôn tập, câu điểm liệt và ghi chú về máy này.
+                      </p>
+
+                      <div className="sync-field">
+                        <label htmlFor="login-username">Tên tài khoản hoặc Số điện thoại *</label>
+                        <input
+                          id="login-username"
+                          type="text"
+                          placeholder="Ví dụ: hieu2022 hoặc SĐT của bạn"
+                          value={loginUser}
+                          onChange={(e) => setLoginUser(e.target.value)}
+                          autoComplete="username"
+                          required
+                        />
+                      </div>
+
+                      <div className="sync-field">
+                        <label htmlFor="login-password">Mật khẩu *</label>
+                        <input
+                          id="login-password"
+                          type="password"
+                          placeholder="Nhập mật khẩu của bạn"
+                          value={loginPass}
+                          onChange={(e) => setLoginPass(e.target.value)}
+                          autoComplete="current-password"
+                          required
+                        />
+                      </div>
+
+                      <button
+                        type="submit"
+                        className="primary-button"
+                        style={{ marginTop: 6 }}
+                        disabled={isSubmitting || !loginUser.trim() || !loginPass.trim()}
+                      >
+                        {isSubmitting ? (
+                          <>
+                            <RefreshCw size={16} className="spinning" />
+                            <span>Đang đăng nhập...</span>
+                          </>
+                        ) : (
+                          <>
+                            <UserCheck size={16} />
+                            <span>Đăng nhập &amp; Đồng bộ</span>
+                          </>
+                        )}
+                      </button>
+
+                      <div style={{ textAlign: "center", marginTop: 4 }}>
+                        <small style={{ color: "var(--muted)", fontSize: "0.8rem" }}>
+                          Chưa có tài khoản?{" "}
+                          <button
+                            type="button"
+                            onClick={() => { setAuthTab("register"); setAuthStatusMsg(null); }}
+                            style={{ background: "none", border: "none", color: "var(--accent)", cursor: "pointer", fontWeight: 600, padding: 0 }}
+                          >
+                            Đăng ký ngay
+                          </button>
+                        </small>
+                      </div>
+                    </form>
+                  ) : (
+                    <form className="sync-form" onSubmit={handleRegister}>
+                      <p style={{ fontSize: "0.85rem", color: "var(--muted)", margin: 0 }}>
+                        Tạo tài khoản mới để lưu toàn bộ tiến độ bạn đang học lên đám mây.
+                      </p>
+
+                      <div className="sync-field">
+                        <label htmlFor="reg-username">Tên tài khoản hoặc Số điện thoại *</label>
+                        <input
+                          id="reg-username"
+                          type="text"
+                          placeholder="Ví dụ: hieu2022 hoặc SĐT"
+                          value={regUser}
+                          onChange={(e) => setRegUser(e.target.value)}
+                          autoComplete="username"
+                          required
+                        />
+                      </div>
+
+                      <div className="sync-field">
+                        <label htmlFor="reg-password">Mật khẩu *</label>
+                        <input
+                          id="reg-password"
+                          type="password"
+                          placeholder="Tối thiểu 4 ký tự"
+                          value={regPass}
+                          onChange={(e) => setRegPass(e.target.value)}
+                          autoComplete="new-password"
+                          required
+                        />
+                      </div>
+
+                      <div className="sync-field">
+                        <label htmlFor="reg-confirm-password">Xác nhận mật khẩu *</label>
+                        <input
+                          id="reg-confirm-password"
+                          type="password"
+                          placeholder="Nhập lại mật khẩu phía trên"
+                          value={regConfirmPass}
+                          onChange={(e) => setRegConfirmPass(e.target.value)}
+                          autoComplete="new-password"
+                          required
+                        />
+                      </div>
+
+                      <button
+                        type="submit"
+                        className="primary-button"
+                        style={{ marginTop: 6 }}
+                        disabled={isSubmitting || regUser.trim().length < 3 || regPass.length < 4}
+                      >
+                        {isSubmitting ? (
+                          <>
+                            <RefreshCw size={16} className="spinning" />
+                            <span>Đang tạo tài khoản...</span>
+                          </>
+                        ) : (
+                          <>
+                            <User size={16} />
+                            <span>Tạo Tài Khoản &amp; Lưu Tiến Độ</span>
+                          </>
+                        )}
+                      </button>
+
+                      <div style={{ textAlign: "center", marginTop: 4 }}>
+                        <small style={{ color: "var(--muted)", fontSize: "0.8rem" }}>
+                          Đã có tài khoản?{" "}
+                          <button
+                            type="button"
+                            onClick={() => { setAuthTab("login"); setAuthStatusMsg(null); }}
+                            style={{ background: "none", border: "none", color: "var(--accent)", cursor: "pointer", fontWeight: 600, padding: 0 }}
+                          >
+                            Đăng nhập ngay
+                          </button>
+                        </small>
+                      </div>
+                    </form>
+                  )}
+                </>
+              )}
             </div>
           </section>
         </div>
