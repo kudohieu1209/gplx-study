@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  ArrowLeft,
   ArrowRight,
   Bookmark,
   BookOpen,
@@ -1096,6 +1097,14 @@ export default function HomePage() {
   };
 
   const showChapters = () => {
+    setSession([]);
+    setSessionAnswers({});
+    setShowResults(false);
+    setActiveChapter(null);
+    setChapterReplay(false);
+    setAnswerSheetOpen(false);
+    setHideCorrect(false);
+    setJustAnsweredId(null);
     setTheoryOpen(false);
     setChaptersOpen(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -1114,8 +1123,20 @@ export default function HomePage() {
 
       <header className={`topbar ${activeQuestion && !showResults ? "session-topbar" : ""}`}>
         <div className={`topbar-inner ${activeQuestion && !showResults ? "session-active" : ""}`}>
-          <button className="brand" aria-label={activeQuestion ? "Rời phiên học và về trang tổng quan" : "Về trang tổng quan"} onClick={showDashboard}>
-            <span className="brand-mark"><CarFront size={22} strokeWidth={2.2} /></span>
+          <button
+            className="brand"
+            aria-label="Về trang tổng quan"
+            onClick={() => {
+              if (activeQuestion && !showResults && sessionMode === "test") {
+                if (window.confirm("Bạn có chắc muốn dừng bài thi thử này và quay về trang chủ?")) {
+                  showDashboard();
+                }
+              } else {
+                showDashboard();
+              }
+            }}
+          >
+            <span className="brand-mark" style={{ borderRadius: "50%" }}><CarFront size={22} strokeWidth={2.2} /></span>
             <span>
               <strong>GPLX</strong>
               <small>Hạng B</small>
@@ -1259,6 +1280,30 @@ export default function HomePage() {
 
         {!theoryOpen && chaptersOpen && (
         <section className="chapters-section chapters-page" id="lo-trinh-600">
+          <div className="subpage-nav-bar">
+            <button
+              className="back-icon-btn"
+              onClick={showDashboard}
+              style={{
+                width: "42px",
+                height: "42px",
+                borderRadius: "50%",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "var(--surface-solid, #ffffff)",
+                border: "1px solid var(--line, rgba(15, 23, 42, 0.12))",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.06)",
+                cursor: "pointer",
+                color: "var(--foreground, #101828)",
+                transition: "all 180ms ease",
+              }}
+              aria-label="Quay lại trang chủ"
+              title="Quay lại trang chủ"
+            >
+              <ArrowLeft size={20} />
+            </button>
+          </div>
           <div className="section-heading">
             <div><span>Lộ trình 600 câu</span><h2>Học theo 6 chương</h2></div>
             <button className="text-button" onClick={() => openLibrary()}>Xem tất cả <ChevronRight size={16} /></button>
@@ -1293,6 +1338,30 @@ export default function HomePage() {
 
         {theoryOpen && (
           <section className="theory-page" aria-label="Lý thuyết chương 1">
+            <div className="subpage-nav-bar">
+              <button
+                className="back-icon-btn"
+                onClick={showChapters}
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  borderRadius: "50%",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "var(--surface-solid, #ffffff)",
+                  border: "1px solid var(--line, rgba(15, 23, 42, 0.12))",
+                  boxShadow: "0 2px 8px rgba(0, 0, 0, 0.06)",
+                  cursor: "pointer",
+                  color: "var(--foreground, #101828)",
+                  transition: "all 180ms ease",
+                }}
+                aria-label="Quay lại danh sách 6 chương"
+                title="Quay lại"
+              >
+                <ArrowLeft size={20} />
+              </button>
+            </div>
             <div className="theory-hero">
               <div>
                 <span className="eyebrow">CHƯƠNG I · 180 CÂU HỎI</span>
@@ -1332,7 +1401,41 @@ export default function HomePage() {
 
       {activeQuestion && !showResults && (
         <section className="quiz-page" aria-label={modeLabel(sessionMode)}>
-          <div className="quiz-page-content">
+          <div className="quiz-page-nav" style={{ width: "min(980px, calc(100% - 40px))", margin: "16px auto 0", display: "flex", alignItems: "center" }}>
+            <button
+              className="back-icon-btn"
+              onClick={() => {
+                if (sessionMode === "test") {
+                  if (window.confirm("Bạn có chắc muốn dừng bài thi thử này và quay về trang chủ?")) {
+                    showDashboard();
+                  }
+                } else if (activeChapter) {
+                  showChapters();
+                } else {
+                  showDashboard();
+                }
+              }}
+              style={{
+                width: "42px",
+                height: "42px",
+                borderRadius: "50%",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "var(--surface-solid, #ffffff)",
+                border: "1px solid var(--line, rgba(15, 23, 42, 0.12))",
+                boxShadow: "0 2px 8px rgba(0, 0, 0, 0.06)",
+                cursor: "pointer",
+                color: "var(--foreground, #101828)",
+                transition: "all 180ms ease",
+              }}
+              aria-label="Quay lại"
+              title="Quay lại"
+            >
+              <ArrowLeft size={20} />
+            </button>
+          </div>
+          <div className="quiz-page-content" style={{ marginTop: "14px" }}>
             <div className="quiz-body quiz-list-body">
               {displayedSession.map((question) => {
                 const originalIndex = session.findIndex((item) => item.id === question.id);
@@ -1409,12 +1512,10 @@ export default function HomePage() {
                             onClick={() => chooseAnswer(question, optionIndex)}
                             disabled={reveal}
                             aria-pressed={isSelected}
+                            style={{ borderRadius: "9999px" }}
                           >
                             <span className="answer-letter">{String.fromCharCode(65 + optionIndex)}</span>
                             <span>{option}</span>
-                            <span className="answer-state">
-                              {reveal && isCorrect ? <Check size={17} /> : reveal && isSelected ? <X size={17} /> : null}
-                            </span>
                           </button>
                         );
                       })}
@@ -1495,16 +1596,18 @@ export default function HomePage() {
                                   setTempNoteText(userNotes[question.id]);
                                 }}
                                 title="Chỉnh sửa ghi chú"
+                                aria-label="Chỉnh sửa ghi chú"
                               >
-                                <Pencil size={12} /> Sửa
+                                <Pencil size={13} />
                               </button>
                               <button
                                 type="button"
                                 className="user-note-btn danger"
                                 onClick={() => deleteNote(question.id)}
                                 title="Xóa ghi chú"
+                                aria-label="Xóa ghi chú"
                               >
-                                <Trash2 size={12} /> Xóa
+                                <Trash2 size={13} />
                               </button>
                             </div>
                           </div>
@@ -1613,7 +1716,12 @@ export default function HomePage() {
           <button className="modal-backdrop" aria-label="Đóng" onClick={() => setLibraryOpen(false)} />
           <section className="library-sheet">
             <header className="sheet-header">
-              <div><small>THƯ VIỆN</small><h2>{libraryChapter === 5 ? "Tra cứu biển báo" : "Tra cứu 600 câu"}</h2></div>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <button className="icon-button quiet" onClick={() => setLibraryOpen(false)} aria-label="Trở về" title="Trở về">
+                  <ArrowLeft size={20} />
+                </button>
+                <div><small>THƯ VIỆN</small><h2>{libraryChapter === 5 ? "Tra cứu biển báo" : "Tra cứu 600 câu"}</h2></div>
+              </div>
               <button className="icon-button quiet" onClick={() => setLibraryOpen(false)} aria-label="Đóng"><X size={20} /></button>
             </header>
             <div className="search-box"><Search size={19} /><input autoFocus value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} placeholder="Nhập số câu hoặc nội dung…" /></div>
