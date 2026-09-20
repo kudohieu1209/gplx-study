@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" suppressHydrationWarning>
+    <html lang="vi" data-theme="codex" suppressHydrationWarning>
       <body>{children}</body>
     </html>
   );

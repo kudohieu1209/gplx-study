@@ -41,6 +41,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { Glass } from "@samasante/liquid-glass";
 import criticalExplanationsData from "./data/critical-explanations.json";
 import criticalQuestionsData from "./data/critical-questions.json";
 import questionExplanationsData from "./data/question-explanations.json";
@@ -419,7 +420,7 @@ export default function HomePage() {
   const [editingNoteId, setEditingNoteId] = useState<number | null>(null);
   const [tempNoteText, setTempNoteText] = useState<string>("");
   const [studyDays, setStudyDays] = useState<string[]>([]);
-  const [theme, setTheme] = useState<"light" | "dark" | "codex">("light");
+  const [theme, setTheme] = useState<"light" | "dark" | "codex">("codex");
   const [hydrated, setHydrated] = useState(false);
   const [session, setSession] = useState<Question[]>([]);
   const [sessionMode, setSessionMode] = useState<SessionMode>("learn");
@@ -1121,8 +1122,25 @@ export default function HomePage() {
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
 
-      <header className={`topbar ${activeQuestion && !showResults ? "session-topbar" : ""}`}>
-        <div className={`topbar-inner ${activeQuestion && !showResults ? "session-active" : ""}`}>
+      <header className={`topbar-wrapper ${activeQuestion && !showResults ? "session-topbar" : ""}`}>
+        <Glass
+          className="topbar"
+          style={{ display: "block", width: "100%" }}
+          optics={{
+            strength: 0.08,
+            depth: 0.6,
+            curvature: 0.35,
+            bend: 0.55,
+            bendWidth: 0.18,
+            dispersion: 0.45,
+            frost: 16,
+            saturate: 1.3,
+            specular: 1.4,
+            sheen: 0.45,
+            glow: 0.2,
+          }}
+        >
+          <div className={`topbar-inner ${activeQuestion && !showResults ? "session-active" : ""}`}>
           <button
             className="brand"
             aria-label="Về trang tổng quan"
@@ -1215,7 +1233,8 @@ export default function HomePage() {
             )}
           </div>
         </div>
-      </header>
+      </Glass>
+    </header>
 
       {(!activeQuestion || showResults) && (
       <>
@@ -1443,9 +1462,6 @@ export default function HomePage() {
                 const selectedAnswer = sessionAnswers[question.id];
                 const reveal = sessionMode !== "test" && selectedAnswer !== undefined;
                 const selectedIsCorrect = selectedAnswer === question.correctAnswer;
-                const explanation = selectedAnswer !== undefined
-                  ? getQuestionExplanation(question)
-                  : null;
 
                 return (
                   <article className="quiz-question-card" id={`cau-${question.id}`} key={`${sessionMode}-${question.id}-${originalIndex}`}>
@@ -1521,28 +1537,6 @@ export default function HomePage() {
                       })}
                     </div>
 
-                    {reveal && (
-                      <div className={`feedback-card explanation-card ${selectedIsCorrect ? "success" : "error"}`} aria-live="polite">
-                        <span className="explanation-icon">
-                          {selectedIsCorrect ? <Check size={18} /> : <CircleAlert size={18} />}
-                        </span>
-                        <div>
-                          <strong>{selectedIsCorrect ? "Chính xác" : "Bạn chọn chưa đúng"}</strong>
-                          <span className={!explanation ? "explanation-missing" : undefined}>
-                            {!selectedIsCorrect && (
-                              <><b>Đáp án đúng:</b> {String.fromCharCode(65 + question.correctAnswer)}. </>
-                            )}
-                            {explanation
-                              ? <><b>Vì sao?</b> {explanation.reason}</>
-                              : "Câu này chưa có lời giải chi tiết — hệ thống không hiển thị giải thích mẫu để tránh gây hiểu nhầm."}
-                          </span>
-                          {explanation && (
-                            <small className="explanation-takeaway"><Lightbulb size={14} /><b>Ghi nhớ:</b> {explanation.takeaway}</small>
-                          )}
-                        </div>
-                      </div>
-                    )}
-
                     {(userNotes[question.id] || editingNoteId === question.id) && (
                       <div className="user-note-section">
                         {editingNoteId === question.id ? (
@@ -1561,26 +1555,32 @@ export default function HomePage() {
                             <div className="user-note-editor-footer">
                               <button
                                 type="button"
-                                className="btn-cancel-note"
+                                className="user-note-btn"
                                 onClick={() => setEditingNoteId(null)}
+                                title="Hủy"
+                                aria-label="Hủy"
                               >
-                                <X size={13} /> Hủy
+                                <X size={15} />
                               </button>
                               {userNotes[question.id] && (
                                 <button
                                   type="button"
                                   className="user-note-btn danger"
                                   onClick={() => deleteNote(question.id)}
+                                  title="Xóa ghi chú"
+                                  aria-label="Xóa ghi chú"
                                 >
-                                  <Trash2 size={13} /> Xóa ghi chú
+                                  <Trash2 size={15} />
                                 </button>
                               )}
                               <button
                                 type="button"
-                                className="btn-save-note"
+                                className="user-note-btn save"
                                 onClick={() => saveNote(question.id, tempNoteText)}
+                                title="Lưu ghi chú"
+                                aria-label="Lưu ghi chú"
                               >
-                                <Check size={14} /> Lưu ghi chú
+                                <Check size={16} />
                               </button>
                             </div>
                           </div>
