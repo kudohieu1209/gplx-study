@@ -41,7 +41,6 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { Glass } from "@samasante/liquid-glass";
 import criticalExplanationsData from "./data/critical-explanations.json";
 import criticalQuestionsData from "./data/critical-questions.json";
 import questionExplanationsData from "./data/question-explanations.json";
@@ -1030,7 +1029,21 @@ export default function HomePage() {
       setJustAnsweredId(questionId);
     }
     window.requestAnimationFrame(() => {
-      document.getElementById(`cau-${questionId}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      const target = document.getElementById(`cau-${questionId}`);
+      if (!target) return;
+      // Nhảy tức thì (không "smooth"): cuộn mượt qua hàng chục nghìn pixel sẽ buộc
+      // mọi thẻ ở giữa phải dựng lại. Các thẻ ngoài vùng nhìn dùng chiều cao ước lượng
+      // (content-visibility: auto) nên lần cuộn đầu có thể lệch -> lặp tới khi ổn định.
+      let tries = 0;
+      const settle = () => {
+        const before = window.scrollY;
+        // scrollIntoView tự tôn trọng scroll-margin-top trong CSS
+        target.scrollIntoView({ behavior: "instant", block: "start" });
+        tries += 1;
+        if (Math.abs(window.scrollY - before) < 2 || tries >= 10) return;
+        window.requestAnimationFrame(settle);
+      };
+      settle();
     });
   };
 
@@ -1123,23 +1136,7 @@ export default function HomePage() {
       <div className="ambient ambient-two" />
 
       <header className={`topbar-wrapper ${activeQuestion && !showResults ? "session-topbar" : ""}`}>
-        <Glass
-          className="topbar"
-          style={{ display: "block", width: "100%" }}
-          optics={{
-            strength: 0.08,
-            depth: 0.6,
-            curvature: 0.35,
-            bend: 0.55,
-            bendWidth: 0.18,
-            dispersion: 0.45,
-            frost: 16,
-            saturate: 1.3,
-            specular: 1.4,
-            sheen: 0.45,
-            glow: 0.2,
-          }}
-        >
+        <div className="topbar">
           <div className={`topbar-inner ${activeQuestion && !showResults ? "session-active" : ""}`}>
           <button
             className="brand"
@@ -1233,7 +1230,7 @@ export default function HomePage() {
             )}
           </div>
         </div>
-      </Glass>
+      </div>
     </header>
 
       {(!activeQuestion || showResults) && (
@@ -1503,7 +1500,7 @@ export default function HomePage() {
                     {question.images.length > 0 && (
                       <div className={`question-images ${question.images.length > 1 ? "multiple" : ""}`}>
                         {question.images.map((image, imageIndex) => (
-                          <img src={image} alt={`Hình minh họa câu ${question.id}${imageIndex ? `, phần ${imageIndex + 1}` : ""}`} key={image} />
+                          <img src={image} alt={`Hình minh họa câu ${question.id}${imageIndex ? `, phần ${imageIndex + 1}` : ""}`} key={image} loading="lazy" decoding="async" />
                         ))}
                       </div>
                     )}

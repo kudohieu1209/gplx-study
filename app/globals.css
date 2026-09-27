@@ -135,27 +135,25 @@ input:focus-visible {
   position: fixed;
   z-index: 0;
   border-radius: 999px;
-  filter: blur(90px);
+  /* Dùng radial-gradient thay filter: blur() - cùng hiệu ứng, không tốn lượt blur mỗi khung hình */
   opacity: 0.28;
   pointer-events: none;
-  transform: translate3d(0, 0, 0);
-  will-change: transform;
 }
 
 .ambient-one {
-  width: 380px;
-  height: 380px;
-  background: #6ee7b7;
-  top: 80px;
-  left: -170px;
+  width: 560px;
+  height: 560px;
+  background: radial-gradient(circle closest-side, #6ee7b7 0%, rgba(110, 231, 183, 0) 100%);
+  top: -10px;
+  left: -260px;
 }
 
 .ambient-two {
-  width: 440px;
-  height: 440px;
-  background: #e3d9ff;
-  top: 380px;
-  right: -260px;
+  width: 640px;
+  height: 640px;
+  background: radial-gradient(circle closest-side, #e3d9ff 0%, rgba(227, 217, 255, 0) 100%);
+  top: 280px;
+  right: -360px;
 }
 
 :root[data-theme="dark"] .ambient {
@@ -167,13 +165,11 @@ input:focus-visible {
 }
 
 :root[data-theme="codex"] .ambient-one {
-  background: #41ff8b;
-  filter: blur(100px);
+  background: radial-gradient(circle closest-side, #41ff8b 0%, rgba(65, 255, 139, 0) 100%);
 }
 
 :root[data-theme="codex"] .ambient-two {
-  background: #ffb454;
-  filter: blur(110px);
+  background: radial-gradient(circle closest-side, #ffb454 0%, rgba(255, 180, 84, 0) 100%);
 }
 
 .topbar-wrapper {
@@ -183,7 +179,6 @@ input:focus-visible {
   width: min(1180px, calc(100% - 40px));
   margin: 14px auto 0;
   transition: width 420ms cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: width;
 }
 
 .topbar-wrapper.session-topbar {
@@ -200,8 +195,15 @@ input:focus-visible {
     0 20px 45px -8px rgba(20, 30, 55, 0.12),
     0 4px 14px -2px rgba(20, 30, 55, 0.05);
   transition: box-shadow 300ms cubic-bezier(0.16, 1, 0.3, 1), background 300ms cubic-bezier(0.16, 1, 0.3, 1);
-  transform: translateZ(0);
-  backface-visibility: hidden;
+  /* Một lớp kính mờ bằng CSS: rẻ hơn nhiều so với bộ lọc SVG khúc xạ */
+  backdrop-filter: blur(20px) saturate(155%);
+  -webkit-backdrop-filter: blur(20px) saturate(155%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.12) 45%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 :root[data-theme="dark"] .topbar {
@@ -398,9 +400,7 @@ input:focus-visible {
 }
 
 .topbar .icon-button {
-  background: color-mix(in srgb, var(--surface) 55%, transparent);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
   border: 1px solid color-mix(in srgb, var(--line) 75%, rgba(255, 255, 255, 0.45));
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.65);
 }
@@ -466,7 +466,9 @@ input:focus-visible {
   font-size: 12px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 160ms ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 160ms;
+  transition-timing-function: ease;
 }
 
 .hide-this-question-btn:hover {
@@ -530,9 +532,8 @@ input:focus-visible {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: stretch;
-  background: color-mix(in srgb, var(--surface-solid) 90%, transparent);
+  background: color-mix(in srgb, var(--surface-solid) 97%, transparent);
   box-shadow: 0 18px 42px rgba(34, 52, 87, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(24px) saturate(145%);
 }
 
 .exam-stat {
@@ -622,8 +623,7 @@ input:focus-visible {
   border-radius: 15px;
   display: grid;
   place-items: center;
-  background: rgba(255, 255, 255, 0.13);
-  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .exam-primary-card > div:nth-of-type(3) {
@@ -666,9 +666,8 @@ input:focus-visible {
   align-items: center;
   gap: 10px;
   color: #fff;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.22);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(12px);
   font-size: 13px;
   font-weight: 720;
   cursor: pointer;
@@ -700,7 +699,6 @@ input:focus-visible {
   box-shadow: var(--shadow-sm);
   text-align: left;
   cursor: pointer;
-  backdrop-filter: blur(18px);
   transition: transform 220ms cubic-bezier(.2,.8,.2,1), border-color 220ms ease, box-shadow 220ms ease;
 }
 
@@ -941,8 +939,7 @@ input:focus-visible {
   display: grid;
   place-content: center;
   text-align: center;
-  background: color-mix(in srgb, var(--surface-solid) 86%, transparent);
-  backdrop-filter: blur(10px);
+  background: color-mix(in srgb, var(--surface-solid) 96%, transparent);
 }
 
 .hero-progress-inner strong {
@@ -998,7 +995,6 @@ input:focus-visible {
   gap: 15px;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(18px);
 }
 
 .stat-icon {
@@ -1069,7 +1065,9 @@ input:focus-visible {
   border: 1px solid var(--line);
   box-shadow: var(--shadow-sm);
   cursor: pointer;
-  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .back-nav-button:hover {
@@ -1103,7 +1101,9 @@ input:focus-visible {
   border: 1px solid var(--line);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   cursor: pointer;
-  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .back-icon-btn:hover {
@@ -1136,7 +1136,9 @@ input:focus-visible {
   border: 1px solid var(--line);
   box-shadow: var(--shadow-sm);
   cursor: pointer;
-  transition: all 180ms ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: ease;
 }
 
 .topbar-back-btn svg {
@@ -1282,8 +1284,7 @@ input:focus-visible {
   align-items: center;
   gap: 5px;
   color: #fff;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.16);
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
@@ -1306,7 +1307,6 @@ input:focus-visible {
   justify-content: space-between;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(18px);
 }
 
 .quick-icon {
@@ -1363,7 +1363,6 @@ input:focus-visible {
   flex-direction: column;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(18px);
   transition: transform 220ms cubic-bezier(.2,.8,.2,1), border-color 220ms ease, box-shadow 220ms ease;
 }
 
@@ -1474,7 +1473,9 @@ input:focus-visible {
   background: transparent;
   font-size: 12px;
   font-weight: 700;
-  transition: all 180ms ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: ease;
 }
 
 .chapter-card-actions .chapter-theory-link:hover {
@@ -1876,10 +1877,8 @@ input:focus-visible {
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--line-strong) 72%, rgba(255, 255, 255, 0.82));
   border-radius: 9999px;
-  background: color-mix(in srgb, var(--surface-solid) 86%, transparent);
+  background: color-mix(in srgb, var(--surface-solid) 97%, transparent);
   box-shadow: 0 18px 48px rgba(26, 39, 70, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.78);
-  backdrop-filter: saturate(165%) blur(26px);
-  -webkit-backdrop-filter: saturate(165%) blur(26px);
 }
 
 .quiz-floating-bar .quiz-header {
@@ -2025,8 +2024,7 @@ input:focus-visible {
   align-items: center;
   gap: 9px;
   color: var(--muted-strong);
-  background: color-mix(in srgb, var(--surface-solid) 91%, transparent);
-  backdrop-filter: blur(18px);
+  background: color-mix(in srgb, var(--surface-solid) 97%, transparent);
   font-size: 12px;
 }
 
@@ -2040,6 +2038,10 @@ input:focus-visible {
   padding: 26px 2px 30px;
   border-bottom: 1px solid var(--line);
   scroll-margin-top: 104px;
+  /* Bỏ qua layout/paint cho các câu ngoài vùng nhìn (danh sách có tới 180 câu).
+     contain-intrinsic-size giữ chiều cao ước lượng nên thanh cuộn không nhảy. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 320px;
 }
 
 .quiz-question-card:last-child {
@@ -2102,7 +2104,9 @@ input:focus-visible {
   color: var(--muted);
   background: transparent;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
 }
 
 .question-note-btn:hover {
@@ -2246,7 +2250,9 @@ input:focus-visible {
   border: 1px solid var(--line);
   font-size: 12px;
   font-weight: 760;
-  transition: all 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 160ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .answer-state {
@@ -2428,7 +2434,9 @@ input:focus-visible {
   background: var(--surface-solid);
   color: var(--muted-strong);
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
   flex-shrink: 0;
 }
 
@@ -2538,7 +2546,9 @@ input:focus-visible {
   border: 1px dashed color-mix(in srgb, var(--orange) 45%, var(--line));
   border-radius: 9999px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
 }
 
 .btn-add-note:hover {
@@ -2579,7 +2589,9 @@ input:focus-visible {
   background: transparent;
   color: var(--muted);
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
 }
 
 .btn-cancel-note:hover {
@@ -2595,8 +2607,7 @@ input:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  background: color-mix(in srgb, var(--surface-solid) 88%, transparent);
-  backdrop-filter: blur(16px);
+  background: color-mix(in srgb, var(--surface-solid) 97%, transparent);
 }
 
 .keyboard-hint {
@@ -3140,7 +3151,9 @@ input:focus-visible {
   font-size: 13px;
   font-weight: 650;
   cursor: pointer;
-  transition: all 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .theme-pill-btn:hover:not(.active) {
@@ -3538,9 +3551,8 @@ input:focus-visible {
     border-radius: 22px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background: color-mix(in srgb, var(--surface-solid) 86%, transparent);
+    background: color-mix(in srgb, var(--surface-solid) 97%, transparent);
     box-shadow: 0 16px 44px rgba(16, 24, 40, 0.18);
-    backdrop-filter: blur(24px) saturate(150%);
   }
 
   .mobile-nav button {
@@ -3948,7 +3960,9 @@ input:focus-visible {
   background: var(--surface-solid);
   color: var(--foreground);
   cursor: pointer;
-  transition: all 180ms ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: ease;
 }
 
 .sync-copy-btn:hover {
@@ -4007,7 +4021,9 @@ input:focus-visible {
   font-size: 0.88rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 180ms ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: ease;
 }
 
 .sync-tab-button.active {
@@ -4040,7 +4056,9 @@ input:focus-visible {
   color: var(--foreground);
   font-size: 0.95rem;
   outline: none;
-  transition: all 180ms ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: ease;
 }
 
 .sync-field input:focus {
@@ -4165,7 +4183,9 @@ input:focus-visible {
   border: 1px solid #1d2a24;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-  transition: all 0.2s ease;
+  transition-property: transform, background, border-color, color, box-shadow, opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
 :root[data-theme="codex"] .feature-card:hover {
