@@ -41,6 +41,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { Glass } from "@samasante/liquid-glass";
 import criticalExplanationsData from "./data/critical-explanations.json";
 import criticalQuestionsData from "./data/critical-questions.json";
 import questionExplanationsData from "./data/question-explanations.json";
@@ -526,6 +527,27 @@ export default function HomePage() {
     document.documentElement.dataset.theme = theme;
     if (hydrated) localStorage.setItem(THEME_KEY, theme);
   }, [theme, hydrated]);
+
+  // Liquid glass: tắt khúc xạ nền trong lúc đang cuộn.
+  // Chuỗi lọc SVG của <Glass> chạy lại trên nền động ở mỗi khung hình, tốn
+  // khoảng 26ms/khung trên máy yếu. Lúc nội dung đang trôi thì mắt không kịp
+  // thấy phần khúc xạ, nên bỏ nó đi cho mượt rồi bật lại ngay khi dừng tay.
+  // Đổi class trực tiếp trên DOM (không dùng state) để tránh render lại cây 180 câu.
+  useEffect(() => {
+    const root = document.documentElement;
+    let timer = 0;
+    const onScroll = () => {
+      root.classList.add("is-scrolling");
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => root.classList.remove("is-scrolling"), 140);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.clearTimeout(timer);
+      root.classList.remove("is-scrolling");
+    };
+  }, []);
 
   useEffect(() => {
     if (hydrated) localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
@@ -1136,7 +1158,15 @@ export default function HomePage() {
       <div className="ambient ambient-two" />
 
       <header className={`topbar-wrapper ${activeQuestion && !showResults ? "session-topbar" : ""}`}>
-        <div className="topbar">
+        <Glass
+          className="topbar"
+          style={{ display: "block", width: "100%" }}
+          optics={{
+            strength: 0.08, depth: 0.6, curvature: 0.35, bend: 0.55,
+            bendWidth: 0.18, dispersion: 0.45, frost: 16, saturate: 1.3,
+            specular: 1.4, sheen: 0.45, glow: 0.2,
+          }}
+        >
           <div className={`topbar-inner ${activeQuestion && !showResults ? "session-active" : ""}`}>
           <button
             className="brand"
@@ -1230,7 +1260,7 @@ export default function HomePage() {
             )}
           </div>
         </div>
-      </div>
+      </Glass>
     </header>
 
       {(!activeQuestion || showResults) && (
