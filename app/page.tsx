@@ -47,6 +47,7 @@ import criticalQuestionsData from "./data/critical-questions.json";
 import questionExplanationsData from "./data/question-explanations.json";
 import questionsData from "./data/questions.json";
 import { chapter1Theory, type TheoryBlock, type TheoryTreeNode } from "./data/chapter-1";
+import { restoreChapterAnswers, type QuestionProgress } from "./study-progress";
 
 type Question = {
   id: number;
@@ -57,16 +58,6 @@ type Question = {
   correctAnswer: number;
   images: string[];
   sourcePage: number;
-};
-
-type QuestionProgress = {
-  attempts: number;
-  correct: number;
-  streak: number;
-  mastered: boolean;
-  lastSeen: number;
-  nextReview: number;
-  lastAnswer?: number;
 };
 
 type SessionMode = "learn" | "review" | "quick" | "test" | "single" | "critical";
@@ -435,7 +426,6 @@ export default function HomePage() {
   const [chaptersOpen, setChaptersOpen] = useState(false);
   const [theoryOpen, setTheoryOpen] = useState(false);
   const [activeChapter, setActiveChapter] = useState<number | null>(null);
-  const [chapterReplay, setChapterReplay] = useState(false);
   const [answerSheetOpen, setAnswerSheetOpen] = useState(false);
   const [hideCorrect, setHideCorrect] = useState(false);
   const [justAnsweredId, setJustAnsweredId] = useState<number | null>(null);
@@ -787,7 +777,7 @@ export default function HomePage() {
   const learnedChapterCount = activeChapterQuestions.filter(
     (question) => progress[question.id]?.attempts || sessionAnswers[question.id] !== undefined,
   ).length;
-  const sessionDisplayAnswered = activeChapter && !chapterReplay
+  const sessionDisplayAnswered = activeChapter
     ? learnedChapterCount
     : answeredCount;
   const sessionDisplayTotal = activeChapter
@@ -796,7 +786,7 @@ export default function HomePage() {
   const answerSheetQuestions = activeChapter ? activeChapterQuestions : session;
   const answerSheetCompleted = answerSheetQuestions.filter((question) => {
     if (sessionAnswers[question.id] !== undefined) return true;
-    return Boolean(activeChapter && !chapterReplay && progress[question.id]?.attempts);
+    return Boolean(activeChapter && progress[question.id]?.attempts);
   }).length;
 
   const hiddenCount = useMemo(() => {
@@ -921,9 +911,8 @@ export default function HomePage() {
   const startSession = useCallback(
     (mode: SessionMode, chapter?: number, singleQuestion?: Question) => {
       let selected: Question[] = [];
-      const restoredAnswers: Record<number, number> = {};
+      let restoredAnswers: Record<number, number> = {};
       let nextActiveChapter: number | null = null;
-      let nextChapterReplay = false;
       if (singleQuestion) {
         selected = [singleQuestion];
       } else if (mode === "learn" && chapter) {
@@ -931,18 +920,8 @@ export default function HomePage() {
           .filter((question) => question.chapter === chapter)
           .sort((first, second) => first.id - second.id);
         nextActiveChapter = chapter;
-        nextChapterReplay = chapterQuestions.every(
-          (question) => progress[question.id]?.attempts,
-        );
         selected = chapterQuestions;
-        if (!nextChapterReplay) {
-          chapterQuestions.forEach((question) => {
-            const savedProgress = progress[question.id];
-            const savedAnswer = savedProgress?.lastAnswer
-              ?? (savedProgress?.streak ? question.correctAnswer : undefined);
-            if (savedAnswer !== undefined) restoredAnswers[question.id] = savedAnswer;
-          });
-        }
+        restoredAnswers = restoreChapterAnswers(chapterQuestions, progress);
       } else if (mode === "critical") {
         selected = [...criticalQuestions].sort((first, second) => {
           const firstProgress = progress[first.id];
@@ -988,7 +967,6 @@ export default function HomePage() {
       setSessionMode(mode);
       setTheoryOpen(false);
       setActiveChapter(nextActiveChapter);
-      setChapterReplay(nextChapterReplay);
       setSessionAnswers(restoredAnswers);
       setShowResults(false);
       setLibraryOpen(false);
@@ -1034,7 +1012,6 @@ export default function HomePage() {
       ? [...resetQuestions].sort((first, second) => first.id - second.id)
       : [...resetQuestions]);
     setSessionAnswers({});
-    setChapterReplay(false);
     setAnswerSheetOpen(false);
     setHideCorrect(false);
     setJustAnsweredId(null);
@@ -1123,7 +1100,6 @@ export default function HomePage() {
     setSessionAnswers({});
     setShowResults(false);
     setActiveChapter(null);
-    setChapterReplay(false);
     setAnswerSheetOpen(false);
     setHideCorrect(false);
     setJustAnsweredId(null);
@@ -1137,7 +1113,6 @@ export default function HomePage() {
     setSessionAnswers({});
     setShowResults(false);
     setActiveChapter(null);
-    setChapterReplay(false);
     setAnswerSheetOpen(false);
     setHideCorrect(false);
     setJustAnsweredId(null);
@@ -1370,7 +1345,7 @@ export default function HomePage() {
                   <div className="chapter-progress"><span style={{ width: `${chapter.percent}%`, background: chapter.color }} /></div>
                     <div className="chapter-card-actions">
                       <button onClick={() => startSession("learn", chapter.id)}>
-                        {chapter.percent === 100 ? "Học lại chương này" : chapter.attempted ? "Học tiếp chương này" : "Bắt đầu chương này"}
+                        {chapter.percent === 100 ? "Xem lại chương này" : chapter.attempted ? "Học tiếp chương này" : "Bắt đầu chương này"}
                         <ChevronRight size={17} />
                       </button>
                       {chapter.id === 1 && <button className="chapter-theory-link" onClick={showTheory}><BookOpen size={16} /> Đọc lý thuyết</button>}
@@ -1684,7 +1659,7 @@ export default function HomePage() {
                 const currentAnswer = sessionAnswers[question.id];
                 const sessionIndex = session.findIndex((item) => item.id === question.id);
                 const isInCurrentSession = sessionIndex >= 0;
-                const answeredEarlier = Boolean(activeChapter && !chapterReplay && progress[question.id]?.attempts);
+                const answeredEarlier = Boolean(activeChapter && progress[question.id]?.attempts);
                 let status = "unanswered";
                 if (currentAnswer !== undefined) {
                   status = sessionMode === "test"

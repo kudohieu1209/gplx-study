@@ -13,7 +13,7 @@ from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_PDF = ROOT.parent / "docs" / "600 câu lý thuyết lái xe.pdf.pdf"
+DEFAULT_PDF = ROOT.parent / "docs" / "600 TN" / "600 câu lý thuyết lái xe.pdf"
 OUTPUT_JSON = ROOT / "app" / "data" / "questions.json"
 MEDIA_DIR = ROOT / "public" / "question-media"
 
@@ -188,15 +188,36 @@ def save_page_image(
     question["images"].append(f"/question-media/{filename}")
 
 
-def extract(pdf_path: Path) -> list[dict[str, Any]]:
+def page_image_events(page: Any, raw_page: Any) -> list[dict[str, Any]]:
+    # pdfplumber lists every placement, while pypdf lists unique resources.
+    # A reused image must be attached at each placement, and resource order
+    # need not match the order in which images appear on the page.
+    resources: dict[str, Any] = {}
+    events = []
+    for meta in page.images:
+        name = f"/{meta['name']}"
+        if name not in resources:
+            resources[name] = raw_page.images[name]
+        events.append(
+            {
+                "type": "image",
+                "top": meta.get("top", 0),
+                "x0": meta.get("x0", 0),
+                "raw": resources[name],
+            }
+        )
+    return events
+
+
+def extract(pdf_path: Path, media_dir: Path = MEDIA_DIR) -> list[dict[str, Any]]:
     questions: dict[int, dict[str, Any]] = {}
     current: dict[str, Any] | None = None
     current_option: int | None = None
     skipping_chapter_title = False
 
-    if MEDIA_DIR.exists():
-        shutil.rmtree(MEDIA_DIR)
-    MEDIA_DIR.mkdir(parents=True, exist_ok=True)
+    if media_dir.exists():
+        shutil.rmtree(media_dir)
+    media_dir.mkdir(parents=True, exist_ok=True)
 
     reader = PdfReader(str(pdf_path))
     with pdfplumber.open(str(pdf_path)) as pdf:
@@ -208,20 +229,7 @@ def extract(pdf_path: Path) -> list[dict[str, Any]]:
                 for line in group_lines(page)
                 for part in split_inline_options(line)
             ]
-            image_meta = page.images
-            raw_images = list(reader.pages[page_index].images)
-
-            image_events = []
-            for index, meta in enumerate(image_meta):
-                if index >= len(raw_images):
-                    continue
-                image_events.append(
-                    {
-                        "type": "image",
-                        "top": meta.get("top", 0),
-                        "raw": raw_images[index],
-                    }
-                )
+            image_events = page_image_events(page, reader.pages[page_index])
 
             events = sorted(
                 [*lines, *image_events],
@@ -235,7 +243,7 @@ def extract(pdf_path: Path) -> list[dict[str, Any]]:
             for event in events:
                 if event["type"] == "image":
                     if current is not None:
-                        save_page_image(current, event["raw"], MEDIA_DIR)
+                        save_page_image(current, event["raw"], media_dir)
                     continue
 
                 text = normalize_text(event["text"])

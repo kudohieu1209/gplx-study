@@ -4466,7 +4466,9 @@
       "Biển 2."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q312-1.jpg"
+    ],
     "sourcePage": 72
   },
   {
@@ -4497,7 +4499,9 @@
       "Cả hai biển."
     ],
     "correctAnswer": 0,
-    "images": [],
+    "images": [
+      "/question-media/q314-1.jpg"
+    ],
     "sourcePage": 73
   },
   {
@@ -4511,7 +4515,9 @@
       "Không biển nào."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q315-1.jpg"
+    ],
     "sourcePage": 73
   },
   {
@@ -4609,7 +4615,9 @@
       "Không biển nào."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q321-1.jpg"
+    ],
     "sourcePage": 75
   },
   {
@@ -4655,7 +4663,9 @@
       "Cả hai biển."
     ],
     "correctAnswer": 0,
-    "images": [],
+    "images": [
+      "/question-media/q324-1.jpg"
+    ],
     "sourcePage": 76
   },
   {
@@ -4702,7 +4712,9 @@
       "Biển 3."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q327-1.jpg"
+    ],
     "sourcePage": 77
   },
   {
@@ -4798,7 +4810,9 @@
       "Biển 3."
     ],
     "correctAnswer": 2,
-    "images": [],
+    "images": [
+      "/question-media/q333-1.jpg"
+    ],
     "sourcePage": 79
   },
   {
@@ -4828,7 +4842,7 @@
     ],
     "correctAnswer": 0,
     "images": [
-      "/question-media/q335-1.jpg"
+      "/question-media/q335-1.png"
     ],
     "sourcePage": 80
   },
@@ -4843,7 +4857,7 @@
     ],
     "correctAnswer": 1,
     "images": [
-      "/question-media/q336-1.png"
+      "/question-media/q336-1.jpg"
     ],
     "sourcePage": 80
   },
@@ -4873,7 +4887,9 @@
       "Cho phép xe ô tô có tải trọng trên trục xe từ 7 tấn trở xuống đi qua."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q338-1.jpg"
+    ],
     "sourcePage": 81
   },
   {
@@ -4887,7 +4903,9 @@
       "Hạn chế tải trọng trên trục xe."
     ],
     "correctAnswer": 0,
-    "images": [],
+    "images": [
+      "/question-media/q339-1.jpg"
+    ],
     "sourcePage": 81
   },
   {
@@ -4980,7 +4998,9 @@
       "Không."
     ],
     "correctAnswer": 0,
-    "images": [],
+    "images": [
+      "/question-media/q345-1.jpg"
+    ],
     "sourcePage": 83
   },
   {
@@ -5025,7 +5045,9 @@
       "Không được phép."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q348-1.jpg"
+    ],
     "sourcePage": 84
   },
   {
@@ -5070,7 +5092,9 @@
       "Cấm các loại xe cơ giới đi vào trừ loại xe ở biển phụ."
     ],
     "correctAnswer": 0,
-    "images": [],
+    "images": [
+      "/question-media/q351-1.jpg"
+    ],
     "sourcePage": 85
   },
   {
@@ -5116,7 +5140,9 @@
       "Được phép đỗ xe và dừng xe theo hướng bên phải."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q354-1.jpg"
+    ],
     "sourcePage": 86
   },
   {
@@ -5175,7 +5201,9 @@
       "Cấm xe ô tô con."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q358-1.png"
+    ],
     "sourcePage": 87
   },
   {
@@ -5253,7 +5281,7 @@
     ],
     "correctAnswer": 1,
     "images": [
-      "/question-media/q363-1.png"
+      "/question-media/q363-1.jpg"
     ],
     "sourcePage": 89
   },
@@ -5299,7 +5327,7 @@
     ],
     "correctAnswer": 1,
     "images": [
-      "/question-media/q366-1.jpg"
+      "/question-media/q366-1.png"
     ],
     "sourcePage": 89
   },
@@ -5347,7 +5375,9 @@
       "Biển 3."
     ],
     "correctAnswer": 0,
-    "images": [],
+    "images": [
+      "/question-media/q369-1.jpg"
+    ],
     "sourcePage": 90
   },
   {
@@ -5395,7 +5425,9 @@
       "Cả ba biển."
     ],
     "correctAnswer": 2,
-    "images": [],
+    "images": [
+      "/question-media/q372-1.jpg"
+    ],
     "sourcePage": 91
   },
   {
@@ -5592,7 +5624,9 @@
       "Cả ba biển."
     ],
     "correctAnswer": 0,
-    "images": [],
+    "images": [
+      "/question-media/q384-1.jpg"
+    ],
     "sourcePage": 95
   },
   {
@@ -5688,7 +5722,9 @@
       "Biển 3."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q390-1.jpg"
+    ],
     "sourcePage": 97
   },
   {
@@ -5879,7 +5915,9 @@
       "Biển 3."
     ],
     "correctAnswer": 2,
-    "images": [],
+    "images": [
+      "/question-media/q402-1.jpg"
+    ],
     "sourcePage": 101
   },
   {
@@ -5910,7 +5948,9 @@
       "Biển 1 và biển 2."
     ],
     "correctAnswer": 2,
-    "images": [],
+    "images": [
+      "/question-media/q404-1.jpg"
+    ],
     "sourcePage": 102
   },
   {
@@ -5924,7 +5964,9 @@
       "Biển 3."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q405-1.jpg"
+    ],
     "sourcePage": 102
   },
   {
@@ -6129,7 +6171,9 @@
       "Báo trước sắp đến bến phà."
     ],
     "correctAnswer": 2,
-    "images": [],
+    "images": [
+      "/question-media/q418-1.png"
+    ],
     "sourcePage": 106
   },
   {
@@ -6267,7 +6311,9 @@
       "Cả hai biển."
     ],
     "correctAnswer": 2,
-    "images": [],
+    "images": [
+      "/question-media/q427-1.jpg"
+    ],
     "sourcePage": 109
   },
   {
@@ -6374,7 +6420,7 @@
     ],
     "correctAnswer": 1,
     "images": [
-      "/question-media/q434-1.jpg"
+      "/question-media/q434-1.png"
     ],
     "sourcePage": 112
   },
@@ -6391,7 +6437,7 @@
     ],
     "correctAnswer": 0,
     "images": [
-      "/question-media/q435-1.png"
+      "/question-media/q435-1.jpg"
     ],
     "sourcePage": 112
   },
@@ -6407,7 +6453,9 @@
       "Biển 1 và biển 2."
     ],
     "correctAnswer": 3,
-    "images": [],
+    "images": [
+      "/question-media/q436-1.jpg"
+    ],
     "sourcePage": 112
   },
   {
@@ -6878,7 +6926,7 @@
     ],
     "correctAnswer": 1,
     "images": [
-      "/question-media/q465-1.png"
+      "/question-media/q465-1.jpg"
     ],
     "sourcePage": 122
   },
@@ -6894,7 +6942,7 @@
     ],
     "correctAnswer": 2,
     "images": [
-      "/question-media/q466-1.jpg"
+      "/question-media/q466-1.png"
     ],
     "sourcePage": 122
   },
@@ -6974,7 +7022,9 @@
       "Biển 3."
     ],
     "correctAnswer": 2,
-    "images": [],
+    "images": [
+      "/question-media/q471-1.jpg"
+    ],
     "sourcePage": 124
   },
   {
@@ -6988,7 +7038,9 @@
       "Biển 3."
     ],
     "correctAnswer": 1,
-    "images": [],
+    "images": [
+      "/question-media/q472-1.jpg"
+    ],
     "sourcePage": 124
   },
   {
